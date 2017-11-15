@@ -1,0 +1,82 @@
+
+.as_wrapper{
+	margin:0 auto;
+	width:auto;
+	color:#333;
+	position:relative;
+}
+.as_gridder_table {
+	border-collapse:collapse;
+	border:#c9e7e9 solid 1px;
+}
+.as_gridder_table tr.grid_header {
+	font-weight:bold;
+	background:#0da3dc;
+}
+.as_gridder_table input {font-size:1.1em;
+	}
+.as_gridder_table tr.odd {
+	background-color:#fffeff;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+.as_gridder_table tr.even {
+	background-color:#dafaf9;
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+.as_gridder_table tr.odd:hover, .as_gridder_table tr.even:hover, .as_gridder_table tr.odd.active, .as_gridder_table tr.odd.active {
+	background:#75E4F9;
+}
+.as_gridder_table tr td {
+	vertical-align:middle;
+	height:40px;
+}
+.grid_heading {
+font-family:Source Sans Pro;
+	display:block;
+	padding:8px 4px;
+}
+.grid_content {
+	display:block;
+	padding:8px 4px;
+	min-height:22px;
+}
+.grid_content.sno {
+	width:auto;
+}
+.grid_content span {
+	padding:3px 0px;
+	position:relative;
+	top:5px;
+	border:1px;
+}
+
+#addnew {
+	display:none;
+}
+.gridder_addrecord_button {
+	margin:0;
+	padding:0;
+	outline:none;
+	border:none;
+	background:url(../images/insert.png) no-repeat;
+	cursor:pointer;
+	display:inline-block;
+	height:16px;
+	width:16px;
+}
+#invoice_details_table.del_ExpenseRow {
+	cursor: pointer;
+	background: url(includes/images/delete.png) 5px 4px no-repeat;
+	width: 28px;
+	height: 26px;
+	border: 1px solid #e26c6c;
+	text-indent: -9999px;
+}
+
+
