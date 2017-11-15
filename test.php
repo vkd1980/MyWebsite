@@ -317,7 +317,7 @@ echo phpinfo();
 
 //Development
 //xammp 3.2.1
-//MysqlServer version: 5.6.21
+//MysqlServer version: 5.6.21 tested
 //Apache/2.4.10
 //PHP/5.6.3
 // include(__DIR__.'/includes/footer.php');*/
