@@ -37,7 +37,7 @@ $site   =   'http://'.$_SERVER['HTTP_HOST'];
 //Get all vars en skip the empty ones
 $crumbs =   array_filter( explode("/",$_SERVER["REQUEST_URI"]) );
 //Create the home breadcrumb
-$bc    .=   '<span typeof="v:Breadcrumb"><a href="'.$site.'" rel="v:url" property="v:title">'.$home.'</a>'.$sep.'</span>'; 
+$bc    .=   '<span typeof="v:Breadcrumb"><a href="'.$site.'" rel="v:url" property="v:title">'.$home.'</a>'.$sep.'</span>';
 //Count all not empty breadcrumbs
 $nm     =   count($crumbs);
 $i      =   1;
@@ -55,7 +55,7 @@ foreach($crumbs as $crumb){
 }
 $bc .=  '</div>';
 //Return the result
-return $bc;}	
+return $bc;}
 
 function output($Return=array()){
     /*Set response header*/
@@ -147,7 +147,7 @@ function curPageURL() {
 
     return $ip;
   }
-  
+
 
 /**
  * Ensures an ip address is both a valid IP and does not fall within
@@ -195,31 +195,31 @@ $CartHTMl= '<div class="modal-dialog">
 								  <th>Quantity</th>
 								  <th>Price</th>
 								  <th>Total</th>
-								  
+
 								</tr>
 							</thead>
 							<tbody>';
-							
+
         if($cart->total_items() > 0){
             //get cart items from session
             $cartItems = $cart->contents();
             foreach($cartItems as $item){
-        
+
 								$CartHTMl= $CartHTMl.'<tr>
 								  <td>'.$item["name"].'</td>
 								  <td>'.$item["qty"].'</td>
 								  <td align="right"><span class="fa fa-inr"></span> '. number_format( (float) $item["price"], 2, '.', '').'</td>
 								  <td align="right"><span class="fa fa-inr"></span> '. number_format( (float) $item["subtotal"], 2, '.', '').'</td>
 								  	</tr>';
-								 } }else{ 
+								 } }else{
         $CartHTMl=$CartHTMl.'<tr><td colspan="5"><p>Your cart is empty.....</p></td></tr>';
-       } 
+       }
 								$CartHTMl=$CartHTMl.'<tr>
 								  <th align="right">Total Weight:</th>
 								  <th>'.$cart->total_weight().'Kg</th>
 								  <th>Total</th>
 								  <th align="right"><span class="fa fa-inr"></span> '. number_format( (float) $cart->total(), 2, '.', '').'</th>
-								  
+
 								</tr>
 							</tbody>
 						</table>
@@ -260,14 +260,14 @@ $zones2_table=preg_split("/[:,]/" , $data);
 $shipping = 0;
 $pktnumber=0;
 for($b = $weight; $b>=0; $b-=1) {
-  
+
   for($i=0; $i<$size; $i+=2) {
       if ($weight == $zones2_table[$i]) {
-              
+
       $weight=$weight-$zones2_table[$i];
       $shipping=$shipping+$zones2_table[$i+1];
               $pktnumber+=1;
-              
+
             }
       else//$weight is not equal to $zones
             {
@@ -276,12 +276,12 @@ for($b = $weight; $b>=0; $b-=1) {
                               $shipping=$shipping+$zones2_table[($size-1)];
                               $pktnumber+=1;
                             }
-                         
+
             }
   }
- 
+
   $b = $weight;
-  
+
   }
   $itemData[] = array(
 		'ShippingID' => $rows['Shipping_Id'],
@@ -291,9 +291,9 @@ for($b = $weight; $b>=0; $b-=1) {
 		'Packets' => $pktnumber,
 		'Img' =>$rows['Shipping_Image']);
 		}
-		
+
 		/*Eof Zone*/
-		
+
 		}
 	}
 	else{
@@ -347,15 +347,15 @@ $con->close();
 		'Img' =>$rows['Payment_image']);
 		}
 	}
-	return $itemData;	
+	return $itemData;
 }
 function sendsms($Mob_No,$sms_text)
 {
 $ch = curl_init();
 $user="admin@prabhusbooks.com:Vinod123*";
-$receipientno=$Mob_No; 
-$senderID="PRABHU"; 
-$msgtxt=$sms_text; 
+$receipientno=$Mob_No;
+$senderID="PRABHU";
+$msgtxt=$sms_text;
 curl_setopt($ch,CURLOPT_URL,  "http://api.mVaayoo.com/mvaayooapi/MessageCompose");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
@@ -365,7 +365,28 @@ $SMSStat=explode(',', $buffer);
 if($SMSStat[0]=='Status=0')
 { return true; }
 else
-{ return false; } 
+{ return false; }
 curl_close($ch);
 }
+function hideEmail($email)
+{
+    $mail_parts = explode("@", $email);
+    $length = strlen($mail_parts[0]);
+    $show = floor($length/2);
+    $hide = $length - $show;
+    $replace = str_repeat("*", $hide);
+
+    return substr_replace ( $mail_parts[0] , $replace , $show, $hide ) . "@" . substr_replace($mail_parts[1], "**", 0, 2);
+}
+
+function generateRandomString($length) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
 ?>

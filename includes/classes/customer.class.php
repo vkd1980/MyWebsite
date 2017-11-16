@@ -1,9 +1,9 @@
 <?php
 //User.class.php
- 
+
 require_once (__DIR__.'/DB.class.php');
- 
- 
+
+
 class customer{
 
 public function Insertcustomer($customers_gender,$customers_firstname,$customers_lastname,$customers_dob,$customers_email_address,$customers_telephone,$customers_password,$customers_newsletter,$customers_authorization){
@@ -101,6 +101,14 @@ return false;
 }
 }
 
+function updatepassword($newpwd,$custemail){
+  $DBC = new DB();
+  $stmt ="UPDATE customers SET customers_password= $newpwd WHERE customers_email_address=$custemail;";
+  $result=$DBC->updatedb($stmt);
+  return $result;
+}
+
 
 }
+
 ?>

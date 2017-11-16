@@ -76,6 +76,7 @@ $(document).ready(function(){
                                               <input type="email" name="Email" class="form-control" id="Email" placeholder="Email address"  required autofocus>
 											  <input type="hidden" name="Token" value="<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'], $_SESSION['csrf_token']);?>" >
                   <input type="hidden" name="camefrom" value="<?php echo $camefrom;?>" >
+									<input type="hidden" name="process" value="logging" >
                                             </div>
                                           </div>
                                           <!-- Password -->
