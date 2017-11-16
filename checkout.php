@@ -1042,7 +1042,7 @@ if($("input:radio[name='Payment_mod']").is(":checked") && $('#terms').is(":check
   else
   {
  	//$("#data td").toggleClass("highlight");
-  alert('Either You have not Selected Any Payment Method'+ /n +'or not accepted Terms and Conditions !');
+  alert('Either You have not Selected Any Payment Method or/n not accepted Terms and Conditions !');
   }
 
 });

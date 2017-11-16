@@ -17,7 +17,8 @@ require_once(__DIR__.'/includes/header.php');
 			   </noscript>'; exit;
 			}
 	 }else{
-		 $results=$CustAddress->GetCustDAddress("'".$_SESSION['UserData'][1]."'");
+		 $email="'".$_SESSION['UserData'][1]."'";
+		 $results=$CustAddress->GetCustDAddress($email);
 		 $num_rows = mysqli_num_rows($results);
 	 if($num_rows > 0)
 	 {$rows =  mysqli_fetch_array($results);

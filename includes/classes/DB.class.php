@@ -6,8 +6,8 @@ class DB {
 	protected $db_name = 'prabhuszendb';
 	protected $db_user = 'root';
 	protected $db_pass = '';
-	protected $db_host = 'localhost:3308';
-
+	protected $db_host = 'localhost:3308';//prod
+	//protected $db_host = 'localhost:3307';//dev
 	//open a connection to the database. Make sure this is called
 	//on every page that needs to use the database.
 	public function connect() {

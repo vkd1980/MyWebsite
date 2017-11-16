@@ -124,7 +124,7 @@ elseif(!empty($_REQUEST['Cust_id'])&& !empty($_REQUEST['action'])&& !empty($_REQ
 		}
 		break;
 		case "Edit":
-		if($CustAddress->UpdateCustAddress($Cust_id,"'".$gender."'","'".$company."'","'".$FirstName."'","'".$LastName."'","'".$street_address."'","'".$suburb."'",$pin,$City,$State,$Country,$State,$Cust_address_book_id)==true){
+		if($CustAddress->UpdateCustAddress($Cust_address_book_id,$Cust_id,"'".$gender."'","'".$company."'","'".$FirstName."'","'".$LastName."'","'".$street_address."'","'".$suburb."'",$pin,$City,$State,$Country,$State)==true){
 			$data = array(
 						'status' => 'success',
 						'message' => 'Edited Successfully'

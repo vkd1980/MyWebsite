@@ -1,0 +1,59 @@
+#<Files *.css>
+	#Compress
+	SetOutputFilter DEFLATE
+#</Files>
+#<Files *.js>
+	#Compress
+	#SetOutputFilter DEFLATE
+#</Files>
+#<Files *.php>
+	#Compress
+	#SetOutputFilter DEFLATE
+#</Files>
+## EXPIRES CACHING ##
+#<IfModule mod_expires.c>
+#ExpiresActive On
+#ExpiresByType image/jpg "access 1 year"
+#ExpiresByType image/jpeg "access 1 year"
+#ExpiresByType image/gif "access 1 year"
+#ExpiresByType image/png "access 1 year"
+#ExpiresByType text/css "access 1 month"
+#ExpiresByType text/html "access 1 month"
+#ExpiresByType application/pdf "access 1 month"
+#ExpiresByType text/x-javascript "access 1 month"
+#ExpiresByType application/x-shockwave-flash "access 1 month"
+#ExpiresByType image/x-icon "access 1 year"
+#ExpiresDefault "access 1 month"
+#</IfModule>
+## EXPIRES CACHING ##
+###############################################################################
+# Common directives
+###############################################################################
+# NOTE: Replace /shop/ with the relative web path of your catalog in the "Rewrite Base" line below:
+DirectoryIndex index.html index.htm index.php
+ErrorDocument 404 /404.html
+<IfModule mod_rewrite.c>
+ Options +FollowSymlinks
+# Turn Rewrite Engine On
+RewriteEngine on
+RewriteBase /
+# Rewrite for products.php
+RewriteRule ^(.*)-c-([0-9_]+)/(.*)-p-([0-9]+)(.*)$ products\.php?Pid=$4&Type=Product&%{QUERY_STRING} [L]
+RewriteRule ^(.*)-c-([0-9_]+)/(.*)-ps-([0-9]+)(.*)$ products\.php?Pid=$4&Type=Specials&%{QUERY_STRING} [L]
+RewriteRule ^(.*)-c-([0-9_]+)/(.*)-pf-([0-9]+)(.*)$ products\.php?Pid=$4&Type=Featured&%{QUERY_STRING} [L]
+# Rewrite for Categories
+RewriteRule ^(.*)-c-([0-9_]+)(.*)$ categories\.php?categories_id=$2&categories_name=$1&%{QUERY_STRING} [L]
+# Rewrite for manufacturers.php
+RewriteRule ^(.*)-m-([0-9]+)(.*)$ manufacturers\.php?manufacturers_id=$2&manufacturers_name=$1&%{QUERY_STRING} [L]
+# Rewrite for login.php
+#RewriteRule ^login.html$ login.php?&%{QUERY_STRING} [L]
+# Rewrite for checkout.php
+#RewriteRule ^checkout.html$ checkout.php?&%{QUERY_STRING} [L]
+# Rewrite for message.php
+#RewriteRule ^message/([a-zA-Z_-]+)/([a-zA-Z_-]+)$ message.php?service=$1&status=$2%{QUERY_STRING} [L]
+RewriteRule ^message/msg-([a-zA-Z-\s-]+)-([a-zA-Z]+)-([a-zA-Z]+)(.*)$ message\.php?message=$1&status=$2&service=$3&%{QUERY_STRING} [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^.]+?)/?$ /$1.html [L,R=302]
+RewriteRule ^(.*)\.html$ $1.php [L]
+</IfModule>
