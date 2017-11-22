@@ -16,6 +16,42 @@ include(__DIR__.'/includes/header.php');
 ?>
 <script>
 $(document).ready(function(){
+	$("#forgetpwd").click(function(){
+		 $('#Forgetpasswordmodal	').modal('show');
+	});
+	//bof forgetpwd function
+	$('#ForgotEmailform').submit(function(e){
+		e.preventDefault();
+		var obj = $(this), action = obj.attr('name'); /*Define variables*/
+		Msgdiv = $('#forgetpwdmsg');
+		$.ajax({
+				type: "POST",
+				url: "./includes/login_process.php",
+				data:obj.serialize()+'&Token=<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>&process=forgetpwd',
+				cache: false,
+				success: function (data) {
+					var responseData = jQuery.parseJSON(data);
+					console.log(data);
+					switch(responseData.status){
+							case 'Error':
+							Msgdiv.show()
+												 .addClass('alert-danger fade in')
+												 .text(responseData.message)
+												 .fadeIn(2000);
+							break;
+							case 'success':
+							Msgdiv.show()
+												 .addClass('alert-success fade in')
+												 .text(responseData.message)
+												 .fadeIn(2000);
+							//$('#forgetpwdmodal').modal('toggle');
+							break;
+					}
+				}
+		});
+	});
+	//eof forgetpwd funtion
+
 	$("#loginform").submit(function (e) {
     e.preventDefault();
     var obj = $(this), action = obj.attr('name'); /*Define variables*/
@@ -35,7 +71,33 @@ $(document).ready(function(){
 });
 });
 </script>
+<!--BOF Forgetpassword Modal-->
+<div id="Forgetpasswordmodal" class="modal fade" role="dialog">
+<div class="modal-dialog">
 
+	<!-- Modal content-->
+	<div class="modal-content">
+		<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	<h5>Reset your Password</h5>
+			</div>
+
+ <div class="modal-body modalimg">
+<div id="forgetpwdmsg" style="display:none"class="alert fade in"></div>
+<div class="form">
+	<form action="/includes/login_process.php" method="post" name="ForgotEmail_form" id="ForgotEmailform" class="form-horizontal" autocomplete="off">
+		<input type="email" name="ForgotEmail" class="form-control" id="ForgotEmail" placeholder="Email address"  required autofocus><br>
+<button id="ForgotEmailbtn"  type="submit" class="btn btn-warning">Login</button>
+	</form>
+</div>
+
+ </div>
+ <div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+<!--EOF Forgetpassword Modal-->
 
 <!-- Page content starts -->
 <div class="content">
@@ -109,6 +171,7 @@ $(document).ready(function(){
                                       <hr />
                                       <h5>New Account</h5>
                                              Don't have an Account? <a href="../signup.html">Register</a>
+																						 <h6><a href="#" id="forgetpwd">Forget Password ?</a></h6>
                                     </div>
                                   </div>
 

@@ -4,38 +4,71 @@ if((empty($_SERVER['HTTP_X_REQUESTED_WITH']) or strtolower($_SERVER['HTTP_X_REQU
 }
 require_once (__DIR__.'/classes/global.inc.php');
 
-if(!empty($_REQUEST['Token']) && (hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/login.php', $_SESSION['csrf_token'])))){
-$Return = array('result'=>array(), 'error'=>'','camefrom'=>'');
-//$email =$_REQUEST['Email'];
-$email =filter_var(($_REQUEST['Email']), FILTER_SANITIZE_EMAIL, FILTER_FLAG_STRIP_HIGH);
-$password =$_REQUEST['Password'];
-$camefrom = filter_var($_REQUEST['camefrom'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
-$userTools = new UserTools();
-if(filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
-        $Return['error'] = "Please enter a valid Email address.";
+if(!empty($_REQUEST['Token']) && (hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/login.php', $_SESSION['csrf_token']))) && !empty($_REQUEST['process']) ){
+  $process=filter_var($_REQUEST['process'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+  switch ($process) {
+    case 'logging':
+    $Return = array('result'=>array(), 'error'=>'','camefrom'=>'');
+    //$email =$_REQUEST['Email'];
+    $email =filter_var(($_REQUEST['Email']), FILTER_SANITIZE_EMAIL, FILTER_FLAG_STRIP_HIGH);
+    $password =$_REQUEST['Password'];
+    $camefrom = filter_var($_REQUEST['camefrom'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+    $userTools = new UserTools();
+    if(filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+            $Return['error'] = "Please enter a valid Email address.";
 
-    }elseif($password===''){
-        $Return['error'] = "Please enter Password.";
-    }
-    if($Return['error']!=''){
-        output($Return);
-    }
-		if ($customer->checkcustomer($email)){
-					if($userTools->login($email, $password))
-					{
-					$Return['result'] ="ok";
-					$Return['camefrom']=$camefrom;
+        }elseif($password===''){
+            $Return['error'] = "Please enter Password.";
+        }
+        if($Return['error']!=''){
+            output($Return);
+        }
+    		if ($customer->checkcustomer($email)){
+    					if($userTools->login($email, $password))
+    					{
+    					$Return['result'] ="ok";
+    					$Return['camefrom']=$camefrom;
 
-					}
-					else{
+    					}
+    					else{
 
-						$Return['error'] = 'Invalid Login Credential.';
-					}
-		}
-		else{
-			$Return['error'] = 'You have not registered with us!';
-		}
-	output($Return);
+    						$Return['error'] = 'Invalid Login Credential.';
+    					}
+    		}
+    		else{
+    			$Return['error'] = 'You have not registered with us!';
+    		}
+    	output($Return);
+      break;
+
+    case 'forgetpwd':
+      $email =filter_var(($_REQUEST['ForgotEmail']), FILTER_SANITIZE_EMAIL, FILTER_FLAG_STRIP_HIGH);
+      if ($customer->checkcustomer($email)){
+        $newpwdstring=generateRandomString('6');
+        $newpwd= md5($newpwdstring);
+            if($customer->updatepassword("'".$newpwd."'","'".$email."'")){
+              $status = "success";
+              $message = "We have send an Email containing new password ".$newpwdstring." to ".hideEmail($email);
+            }
+            else{
+              $status = "Error";
+              $message = "Something Went Wrong !";
+            }
+
+      }
+      else{
+        $status = "Error";
+        $message = "You have not registered with us!";
+      }
+      $data = array(
+            'status' => $status,
+            'message' => $message
+        );
+
+        echo json_encode($data);
+      break;
+  }
+
 }
 else{
  $Return['error'] = "something went wrong.";
