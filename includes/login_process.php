@@ -45,10 +45,13 @@ if(!empty($_REQUEST['Token']) && (hash_equals($_REQUEST['Token'],hash_hmac('sha2
       $email =filter_var(($_REQUEST['ForgotEmail']), FILTER_SANITIZE_EMAIL, FILTER_FLAG_STRIP_HIGH);
       if ($customer->checkcustomer($email)){
         $newpwdstring=generateRandomString('6');
+        $message_html = file_get_contents('../email/email_forget_password.html');
+        $message_html = str_replace('%newpassword%', $newpwdstring, $message_html);
         $newpwd= md5($newpwdstring);
-            if($customer->updatepassword("'".$newpwd."'","'".$email."'")){
+            if($customer->updatepassword("'".$newpwd."'","'".$email."'") && SendMailSmtp($email,'Your New Password',$message_html)){
+              ;
               $status = "success";
-              $message = "We have send an Email containing new password ".$newpwdstring." to ".hideEmail($email);
+              $message = "We have send an Email containing new password to ".hideEmail($email);
             }
             else{
               $status = "Error";

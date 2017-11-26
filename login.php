@@ -30,21 +30,22 @@ $(document).ready(function(){
 				data:obj.serialize()+'&Token=<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>&process=forgetpwd',
 				cache: false,
 				success: function (data) {
+					$('#ForgotEmail').val('');
 					var responseData = jQuery.parseJSON(data);
-					console.log(data);
 					switch(responseData.status){
 							case 'Error':
 							Msgdiv.show()
 												 .addClass('alert-danger fade in')
 												 .text(responseData.message)
-												 .fadeIn(2000);
+												 .fadeOut(2600, "linear");
+									$('#forgetpwdmodal').modal('toggle');
 							break;
 							case 'success':
 							Msgdiv.show()
 												 .addClass('alert-success fade in')
 												 .text(responseData.message)
-												 .fadeIn(2000);
-							//$('#forgetpwdmodal').modal('toggle');
+												 .fadeOut(2600, "linear");
+									$('#forgetpwdmodal').modal('toggle');
 							break;
 					}
 				}
@@ -87,7 +88,7 @@ $(document).ready(function(){
 <div class="form">
 	<form action="/includes/login_process.php" method="post" name="ForgotEmail_form" id="ForgotEmailform" class="form-horizontal" autocomplete="off">
 		<input type="email" name="ForgotEmail" class="form-control" id="ForgotEmail" placeholder="Email address"  required autofocus><br>
-<button id="ForgotEmailbtn"  type="submit" class="btn btn-warning">Login</button>
+<button id="ForgotEmailbtn"  type="submit" class="btn btn-info">Reset Password</button>
 	</form>
 </div>
 
@@ -163,7 +164,7 @@ $(document).ready(function(){
                                           <div class="form-group">
                                              <!-- Buttons -->
 											 <div class="col-md-8 col-md-offset-3">
-												<button id="loginbtn"  type="submit" class="btn btn-warning">Login</button>
+												<button id="loginbtn"  type="submit" class="btn btn-info">Login</button>
 												<button type="reset" class="btn btn-default">Reset</button>
 											 </div>
                                           </div>
