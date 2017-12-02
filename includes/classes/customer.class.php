@@ -107,7 +107,26 @@ function updatepassword($newpwd,$custemail){
   $result=$DBC->updatedb($stmt);
   return $result;
 }
-
+function getMobNumber($custemail){
+  $DBC = new DB();
+  $stmt ="SELECT customers_telephone
+FROM customers
+WHERE customers_email_address=$custemail
+LIMIT 1";
+  $result=$DBC->select($stmt);
+	$value = mysqli_fetch_object($result);
+  return $value->customers_telephone;
+}
+function getCustName($custemail){
+  $DBC = new DB();
+  $stmt ="SELECT customers_firstname
+FROM customers
+WHERE customers_email_address=$custemail
+LIMIT 1";
+  $result=$DBC->select($stmt);
+	$value = mysqli_fetch_object($result);
+  return $value->customers_firstname;
+}
 
 }
 

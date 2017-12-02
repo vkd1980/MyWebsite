@@ -308,7 +308,6 @@ $('#OrderStaus').submit(function(){
 
 
 <?php
-echo hideEmail("vkd1980@gmail.com");
 echo phpinfo();
 //production
 //PHP Version 5.4.7

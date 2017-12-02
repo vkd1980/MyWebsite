@@ -48,10 +48,11 @@ if(!empty($_REQUEST['Token']) && (hash_equals($_REQUEST['Token'],hash_hmac('sha2
         $message_html = file_get_contents('../email/email_forget_password.html');
         $message_html = str_replace('%newpassword%', $newpwdstring, $message_html);
         $newpwd= md5($newpwdstring);
-            if($customer->updatepassword("'".$newpwd."'","'".$email."'") && SendMailSmtp($email,'Your New Password',$message_html)){
-              ;
+        $Mob_No=$customer->getMobNumber("'".$email."'");
+        $sms_text= 'Dear '.$customer->getCustName("'".$email."'").' , Your New Password is '.$newpwdstring.' ';
+            if($customer->updatepassword("'".$newpwd."'","'".$email."'") && SendMailSmtp($email,'Your New Password',$message_html) && sendsms($Mob_No,$sms_text)){
               $status = "success";
-              $message = "We have send an Email containing new password to ".hideEmail($email);
+              $message = "We have send an Email to ".hideEmail($email).' and SMS to '.str_pad(substr($Mob_No, -4), strlen($Mob_No), '*', STR_PAD_LEFT).' containing new password' ;
             }
             else{
               $status = "Error";
