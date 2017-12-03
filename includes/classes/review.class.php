@@ -4,43 +4,28 @@ class Review{
 public function showreview($prodid)
 {
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("SELECT reviews.*,reviews_description.*
+$stmt = "SELECT reviews.*,reviews_description.*
 FROM reviews
 LEFT JOIN reviews_description ON reviews.reviews_id = reviews_description.reviews_id
-WHERE reviews.products_id=? AND reviews.`status`= TRUE;");
-$stmt->bind_param('s', $prodid);
-$stmt->execute();
-$result = $stmt->get_result();
-$stmt->close();
-$con->close();
+WHERE reviews.products_id=$prodid AND reviews.`status`= TRUE;";
+$result= $DBC->select($stmt);
 return $result;
 }
 
 public function savereviewmaster($products_id,$customers_id,$customers_name,$reviews_rating,$date_added,$last_modified)
 {
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("INSERT INTO `reviews` (`products_id`, `customers_id`, `customers_name`, `reviews_rating`, `date_added`, `last_modified`) VALUES (?, ?, ?, ?, ?, ?);");
-$stmt->bind_param('ssssss', $products_id,$customers_id,$customers_name,$reviews_rating,$date_added,$last_modified);
-$stmt->execute();
-$id =$stmt->insert_id;
+$stmt = "INSERT INTO `reviews` (`products_id`, `customers_id`, `customers_name`, `reviews_rating`, `date_added`, `last_modified`) VALUES ($products_id, $customers_id, $customers_name, $reviews_rating, $date_added, $last_modified);";
+$id =$DBC->insertID($stmt);
 return $id;
-$stmt->close();
-$con->close();
 }
 
 Public function savereviewdetails($reviews_id,$languages_id,$reviews_text)
 {
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("INSERT INTO `reviews_description` (`reviews_id`, `languages_id`, `reviews_text`) VALUES (?, ?, ?);");
-$stmt->bind_param('sss', $reviews_id,$languages_id,$reviews_text);
-$stmt->execute();
-$result=mysqli_affected_rows($con);
-$stmt->close();
-$con->close();
-if ($result ==1)
+$stmt = "INSERT INTO `reviews_description` (`reviews_id`, `languages_id`, `reviews_text`) VALUES ($reviews_id, $languages_id, $reviews_text);";
+$result =$DBC->insertID($stmt);
+if ($result <>0)
 {
 return True;
 }
@@ -60,16 +45,11 @@ return $reviews_id;
 Public function checkreveiw($products_id,$customers_id)
 {
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("SELECT reviews.*,reviews_description.*
+$stmt = "SELECT reviews.*,reviews_description.*
 FROM reviews
 LEFT JOIN reviews_description ON reviews.reviews_id = reviews_description.reviews_id
-WHERE reviews.products_id=? AND reviews.`status`= TRUE AND customers_id=?;");
-$stmt->bind_param('ss', $products_id,$customers_id);
-$stmt->execute();
-$result = $stmt->get_result();
-$stmt->close();
-$con->close();
+WHERE reviews.products_id=$products_id AND reviews.`status`= TRUE AND customers_id=$customers_id;";
+$result= $DBC->select($stmt);
 if( mysqli_num_rows($result) == 1)
 		{
 		return true;

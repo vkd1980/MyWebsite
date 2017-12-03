@@ -1,12 +1,12 @@
 <?php
-$results = $product->getfeatured(FEATURED_SIDEBAR_NUM_ROWS,date("Y-m-d"));
+$results = $product->getfeatured(FEATURED_SIDEBAR_NUM_ROWS,"'".date("Y-m-d")."'");
 				$str='<!-- Sidebar items (featured items)-->
 
 				  <div class="sidebar-items">
 
 					<h5 class="title">'.FEATURED_NAME.'</h5>';
 $num_rows = mysqli_num_rows($results);
-if($num_rows > 0){	 
+if($num_rows > 0){
 while($rows =  mysqli_fetch_array($results)){
  $str = $str.'<!-- Item #1 -->
 					<div class="sitem">
@@ -18,7 +18,7 @@ while($rows =  mysqli_fetch_array($results)){
 					  <div class="onethree-right">
 						<!-- Title -->
 						<a href="../'.strtolower(preg_replace('#[ -]+#', '-',preg_replace("/[^a-zA-Z0-9\s]/", "",  $rows['categories_name']))).'-c-'.$rows['master_categories_id'].'/'.strtolower(preg_replace('#[ -]+#', '-',preg_replace("/[^a-zA-Z0-9\s]/", "",  $rows['products_name']))).'-pf-'.$rows['products_id'].'.html">'.strtoupper($rows['products_name']).'</a>
-						<!-- Para 
+						<!-- Para
 						<p>Aenean ullamcorper justo tincidunt justo aliquet.</p>-->
 						<!-- Price -->
 						<p class="bold"><span class="fa fa-inr"></span> '.$rows['products_price'].'

@@ -161,7 +161,6 @@ $('#Cust_id').val(<?php echo $_SESSION['UserData'][0]; ?>);
              success:function(data){
                 //setup variables
                 var responseData = jQuery.parseJSON(data);
-				console.log(data);
                 //response conditional
                 switch(responseData.status){
                     case 'error':
@@ -380,7 +379,7 @@ $("form[name='AddressForm']").validate({
                     });
                     return $.each(errorList, function(index, value) {
                         var _popover;
-                        console.log(value.message);
+
                         _popover = $(value.element).popover({
                                 trigger: "manual",
                                 placement: "top",
@@ -397,7 +396,6 @@ $("form[name='AddressForm']").validate({
     // in the "action" attribute of the form when valid
 	  submitHandler: function(form) {
       //form.submit();
-	  console.log($(form).serialize());
 	  $.ajax({
             url: "../includes/address_loader.php",
             type: "POST",
@@ -405,7 +403,6 @@ $("form[name='AddressForm']").validate({
             cache: false,
            success:function(data){
 		   var responseData = jQuery.parseJSON(data);
-		   console.log(data);
                 //response conditional
                 switch(responseData.status){
 					case 'error':
@@ -510,12 +507,8 @@ $("form[name='AddressForm']").validate({
                 <div class="col-md-5">
                   <?php
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("SELECT * FROM countries");
-$stmt->execute();
-$result = $stmt->get_result();
-$stmt->close();
-$con->close();
+$stmt = "SELECT * FROM countries";
+$result = $DBC->select($stmt);
 echo " <select class='form-control' name='Country' id='Country'  required >";
 ?>
                   <option value='0'>Select Country</option>
@@ -593,7 +586,6 @@ $('.shippingSel').click(function(){
 
 if($("input:radio[name='Shipping_mod']").is(":checked")) {
 
-    console.log($("input[name='Shipping_mod']:checked").val());
 	//check the form is not currently submitting
     if($('#ShippingForm'+$("input[name='Shipping_mod']:checked").val()).data('formstatus') !== 'submitting'){
 
@@ -605,7 +597,6 @@ if($("input:radio[name='Shipping_mod']").is(":checked")) {
 
          //add status data to form
          form.data('formstatus','submitting');
-		 console.log(formData);
 		 //$('#Addre').modal('show');
          //send data to server for validation
         $.ajax({
@@ -694,7 +685,7 @@ if($cart->total_items() > 0){
  if($num_rows > 0){
  while($rows =  mysqli_fetch_array($Cartresults)){
 
- if($product->CheckspecialsbyID($item['id'],date("Y-m-d"))){
+ if($product->CheckspecialsbyID($item['id'],"'".date("Y-m-d")."'")){
 //render specialLink
 echo '<tr>
                     <!-- Index -->
@@ -704,7 +695,7 @@ echo '<tr>
 					<td><h6><a href="../'.strtolower(preg_replace('#[ -]+#', '-',preg_replace("/[^a-zA-Z0-9\s]/", "",  $rows['categories_name']))).'-c-'.$rows['master_categories_id'].'/'.strtolower(preg_replace('#[ -]+#', '-',preg_replace("/[^a-zA-Z0-9\s]/", "",  $rows['products_name']))).'-ps-'.$rows['products_id'].'.html">'.strtoupper($rows['products_name']).'</a></h6></td>';
 
 }
-elseif($product->CheckfeaturedbyID($item['id'],date("Y-m-d"))){
+elseif($product->CheckfeaturedbyID($item['id'],"'".date("Y-m-d")."'")){
 // Render FeaturedLink
 echo '<tr>
                     <!-- Index -->
@@ -939,7 +930,6 @@ if($("input:radio[name='Payment_mod']").is(":checked") && $('#terms').is(":check
 
          //add status data to form
          form.data('formstatus','submitting');
-		 //console.log(formData);
 		 //$('#Addre').modal('show');
          //send data to server for validation
         $.ajax({
@@ -983,7 +973,6 @@ if($("input:radio[name='Payment_mod']").is(":checked") && $('#terms').is(":check
 	$("#paymentoptions td").toggleClass("highlight");
 	 }
 	 else{
-	  console.log($('#card_name option:selected').text());
 	//check the form is not currently submitting
     if($('#PaymentForm'+$("input[name='Payment_mod']:checked").val()).data('formstatus') !== 'submitting'){
 
@@ -995,7 +984,6 @@ if($("input:radio[name='Payment_mod']").is(":checked") && $('#terms').is(":check
 
          //add status data to form
          form.data('formstatus','submitting');
-		 //console.log(formData);
 		 //$('#Addre').modal('show');
          //send data to server for validation
         $.ajax({
@@ -1144,7 +1132,7 @@ if($cart->total_items() > 0){
  if($num_rows > 0){
  while($rows =  mysqli_fetch_array($Cartresults)){
 
- if($product->CheckspecialsbyID($item['id'],date("Y-m-d"))){
+ if($product->CheckspecialsbyID($item['id'],"'".date("Y-m-d")."'")){
 //render specialLink
 echo '<tr>
                     <!-- Index -->
@@ -1152,7 +1140,7 @@ echo '<tr>
 					<td><h6><a href="../'.strtolower(preg_replace('#[ -]+#', '-',preg_replace("/[^a-zA-Z0-9\s]/", "",  $rows['categories_name']))).'-c-'.$rows['master_categories_id'].'/'.strtolower(preg_replace('#[ -]+#', '-',preg_replace("/[^a-zA-Z0-9\s]/", "",  $rows['products_name']))).'-ps-'.$rows['products_id'].'.html">'.strtoupper($rows['products_name']).'</a></h6></td>';
 
 }
-elseif($product->CheckfeaturedbyID($item['id'],date("Y-m-d"))){
+elseif($product->CheckfeaturedbyID($item['id'],"'".date("Y-m-d")."'")){
 // Render FeaturedLink
 echo '<tr>
                     <!-- Index -->
@@ -1324,10 +1312,9 @@ $(document).ready(function()
 		 $.ajax({
              url: './includes/checkout_process.php',
              type: 'post',
-			data: '<?php echo 'Add_ID='.$_POST["OID"] ?>&Token=<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>&process=OrderSummary&notification=true',
+			data: '<?php echo 'Add_ID='.$_POST["OID"] ?>&Token=<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>&process=OrderSummary&notification=false',
 			 cache: false,
              success:function(data){
-			 console.log(data);
                $('#OrdSmmry').append('<div class ="alert alert-success" align="center"><h4>Your Order Successfully Placed. We will send a confirmation when your order ships. </h4></div>'+data);
                 }
 
@@ -1420,7 +1407,7 @@ $('#OrderStaus').submit(function(){
               <div class="col-md-9">
                 <textarea name="Msg" class="form-control" id="Msg"  placeholder="Please type your message" required="required" cols="80" rows="10" maxlength="10000"></textarea>
                 <input type="hidden" name="Token" value="<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>" >
-				<input type="hidden" name="Add_ID" value="1">
+				<input type="hidden" name="Add_ID" value="<?php echo $_POST["OID"]?>">
 				<input type="hidden" name="process" value="OrderStatus">
 
               </div>
@@ -1528,7 +1515,7 @@ if($cart->total_items() > 0){
  if($num_rows > 0){
  while($rows =  mysqli_fetch_array($Cartresults)){
 
- if($product->CheckspecialsbyID($item['id'],date("Y-m-d"))){
+ if($product->CheckspecialsbyID($item['id'],"'".date("Y-m-d")."'")){
 //render specialLink
 echo '<tr>
                     <!-- Index -->
@@ -1538,7 +1525,7 @@ echo '<tr>
 					<td><h5><a href="../'.strtolower(preg_replace('#[ -]+#', '-',preg_replace("/[^a-zA-Z0-9\s]/", "",  $rows['categories_name']))).'-c-'.$rows['master_categories_id'].'/'.strtolower(preg_replace('#[ -]+#', '-',preg_replace("/[^a-zA-Z0-9\s]/", "",  $rows['products_name']))).'-ps-'.$rows['products_id'].'.html">'.strtoupper($rows['products_name']).'</a></h5></td>';
 
 }
-elseif($product->CheckfeaturedbyID($item['id'],date("Y-m-d"))){
+elseif($product->CheckfeaturedbyID($item['id'],"'".date("Y-m-d")."'")){
 // Render FeaturedLink
 echo '<tr>
                     <!-- Index -->

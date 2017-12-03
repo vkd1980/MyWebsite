@@ -23,7 +23,7 @@ if(!empty($_REQUEST['Token']) && (hash_equals($_REQUEST['Token'],hash_hmac('sha2
         if($Return['error']!=''){
             output($Return);
         }
-    		if ($customer->checkcustomer($email)){
+    		if ($customer->checkcustomer("'".$email."'")){
     					if($userTools->login($email, $password))
     					{
     					$Return['result'] ="ok";
@@ -43,7 +43,7 @@ if(!empty($_REQUEST['Token']) && (hash_equals($_REQUEST['Token'],hash_hmac('sha2
 
     case 'forgetpwd':
       $email =filter_var(($_REQUEST['ForgotEmail']), FILTER_SANITIZE_EMAIL, FILTER_FLAG_STRIP_HIGH);
-      if ($customer->checkcustomer($email)){
+      if ($customer->checkcustomer("'".$email."'")){
         $newpwdstring=generateRandomString('6');
         $message_html = file_get_contents('../email/email_forget_password.html');
         $message_html = str_replace('%newpassword%', $newpwdstring, $message_html);

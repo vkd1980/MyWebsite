@@ -11,16 +11,16 @@ case "addToCart":
 	if ((isset($_REQUEST['Token']))&&(!empty($_REQUEST['action']))&&(!empty($_REQUEST['ProdName']))&&(!empty($_REQUEST['ProdId']))&&(!empty($_REQUEST['ProdPrice']))&&(!empty($_REQUEST['ProQty']))&&(!empty($_REQUEST['ProWeight']))&&(hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/products.php', $_SESSION['csrf_token'])))){
 	$ProdName= filter_var($_REQUEST["ProdName"], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 	$action = nl2br(htmlspecialchars($_REQUEST['action']));
-	
+
 	$ProductID = filter_var($_REQUEST['ProdId'], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH);
 	//$ProdPrice = filter_var($_REQUEST['ProdPrice'], FILTER_VALIDATE_FLOAT, FILTER_FLAG_STRIP_HIGH);
 	$ProdPrice = $_REQUEST['ProdPrice'];
 	$ProdQty = filter_var($_REQUEST['ProQty'], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH);
 	$ProWeight = filter_var($_REQUEST['ProWeight'], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH);
-	
-		if($product->CheckspecialsbyID($ProductID,date("Y-m-d"))){
-	
-		$res= $product->getspecialsbyID($ProductID,date("Y-m-d"));
+
+		if($product->CheckspecialsbyID($ProductID,"'".date("Y-m-d")."'")){
+
+		$res= $product->getspecialsbyID($ProductID,"'".date("Y-m-d")."'");
 			if(mysqli_num_rows($res) > 0){
 				while($rows =  mysqli_fetch_array($res)){
 				$itemData = array(
@@ -33,10 +33,10 @@ case "addToCart":
 			);
 				}
 			}
-	
+
 	}
-		elseif($product->CheckfeaturedbyID($ProductID,date("Y-m-d"))){
-			$res=$product->getfeaturedbyID($ProductID,date("Y-m-d"));
+		elseif($product->CheckfeaturedbyID($ProductID,"'".date("Y-m-d")."'")){
+			$res=$product->getfeaturedbyID($ProductID,"'".date("Y-m-d")."'");
 					if(mysqli_num_rows($res) > 0){
 						while($rows =  mysqli_fetch_array($res)){
 							$itemData = array(
@@ -66,10 +66,10 @@ case "addToCart":
 				}
 
 		}
-	
-	
-	
-			
+
+
+
+
 					if ($product->CheckQty($ProductID,$ProdQty))
 					{
 					$insertItem = $cart->insert($itemData);
@@ -82,8 +82,8 @@ case "addToCart":
 						echo json_encode($data);
 						exit;
 						}
-	
-	
+
+
 	}
 	else//check all Post values
 	{
@@ -91,7 +91,7 @@ case "addToCart":
 	echo json_encode($data);
 	exit;
 	}
-break;//Add to cart 
+break;//Add to cart
 case "ShowCart":
 echo ShowCartModal();
 break;
@@ -106,7 +106,7 @@ echo $deleteItem?'ok':'err';die;
 		{
 		echo'err';die;
 		}
-		
+
 break;
 
 case "updateCartItem":
@@ -125,14 +125,14 @@ $itemData = array(
 					{
 					echo 'Stkerr';die;
 					}
-        
+
 		}
 		else
 		{
 		echo'err';die;
 		}
-break;		
-		
+break;
+
 case "ShowCartTotal":
 $html='<span >';
 if($cart->total_items() > 0){
@@ -168,7 +168,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
             'price' => $row['price'],
             'qty' => 1
         );
-        
+
         $insertItem = $cart->insert($itemData);
         $redirectLoc = $insertItem?'viewCart.php':'index.php';
         header("Location: ".$redirectLoc);
@@ -185,7 +185,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
     }elseif($_REQUEST['action'] == 'placeOrder' && $cart->total_items() > 0 && !empty($_SESSION['sessCustomerID'])){
         // insert order details into database
         $insertOrder = $db->query("INSERT INTO orders (customer_id, total_price, created, modified) VALUES ('".$_SESSION['sessCustomerID']."', '".$cart->total()."', '".date("Y-m-d H:i:s")."', '".date("Y-m-d H:i:s")."')");
-        
+
         if($insertOrder){
             $orderID = $db->insert_id;
             $sql = '';
@@ -196,7 +196,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
             }
             // insert order items into database
             $insertOrderItems = $db->multi_query($sql);
-            
+
             if($insertOrderItems){
                 $cart->destroy();
                 header("Location: orderSuccess.php?id=$orderID");

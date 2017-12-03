@@ -6,7 +6,7 @@ Header($ExpStr);
 //start the session
 session_name('Shop');
 session_start();
- date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set('Asia/Kolkata');
 /*if(empty($_SESSION['token'])){
 $_SESSION['token'] = md5(session_id());
 }*/
@@ -23,8 +23,9 @@ Global $meta;
 //$Token = $_SESSION['token'];
 //ob_start("ob_gzhandler");
 
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+/*error_reporting(E_ALL);
+ini_set('display_errors', '1');*/
+include(__DIR__.'/error_handler.class.php');
 require_once (__DIR__.'/UserTools.class.php');
 require_once (__DIR__.'/DB.class.php');
 require_once (__DIR__.'/products.class.php');
@@ -42,6 +43,9 @@ require_once (__DIR__.'/review.class.php');
 require_once (__DIR__.'/class.phpmailer.php');
 require_once (__DIR__.'/shoppingcart.class.php');
 require_once (__DIR__.'/class.order.php');
+$path = $_SERVER['DOCUMENT_ROOT'];
+$handler = new error_handler("127.0.0.1",1,6,NULL,$path.'/error_logs/error.txt');
+set_error_handler(array(&$handler, "handler"));
 //require_once ( __DIR__.'/functions.php');
 //connect to the database
 $db = new DB();

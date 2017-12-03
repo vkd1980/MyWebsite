@@ -1,5 +1,5 @@
 <?php
-$results = $product->getfeatured(FEATURED_NUM_ROWS,date("Y-m-d"));
+$results = $product->getfeatured(FEATURED_NUM_ROWS,"'".date("Y-m-d")."'");
 $str='<html><div class="items">
   <div class="container">
     <div class="row">
@@ -7,7 +7,7 @@ $str='<html><div class="items">
         <h3 class="title">'.FEATURED_NAME.'</h3>
       </div>';
 $num_rows = mysqli_num_rows($results);
-if($num_rows > 0){	 
+if($num_rows > 0){
 while($rows =  mysqli_fetch_array($results)){
  $str = $str.'<div class="col-md-3 col-sm-4">
         <div class="item">
@@ -30,7 +30,7 @@ while($rows =  mysqli_fetch_array($results)){
           </div>
         </div>
       </div>';
- } 
+ }
  $str = $str.'    </div>
   </div>
 </div></html>';

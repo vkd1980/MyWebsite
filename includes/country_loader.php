@@ -14,95 +14,77 @@ if ((hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].
 		switch($type){
 			case "state":
 			$DBC = new DB();
-			$con =$DBC->connect();
-			$stmt = $con->prepare("SELECT * FROM states where country_id=?");
-			$stmt->bind_param('s', $id);
-			$stmt->execute();
-			$result = $stmt->get_result();
-			$stmt->close();
-			$con->close();
+			$stmt = "SELECT * FROM states where country_id=$id";
+		$result= $DBC->select($stmt);
 			$str=$str."<option value='0'>Select State</option>";
-			
-			
+
+
 				while ($row = mysqli_fetch_array($result)) {
 				$str=$str."<option value='" . $row['state_id'] . "'>" . $row['state_name'] . "</option>";
 				}
 		echo $str;
-			
-			
-			break;//State End 
+
+
+			break;//State End
 			case "city":
 			$DBC = new DB();
 			$con =$DBC->connect();
-			$stmt = $con->prepare("SELECT * FROM cities where state_id=?");
-			$stmt->bind_param('s', $id);
-			$stmt->execute();
-			$result = $stmt->get_result();
-			$stmt->close();
-			$con->close();
+			$stmt = "SELECT * FROM cities where state_id=$id";
+			$result = $DBC->select($stmt);
 			$str=$str."<option value='0'>Select City</option>";
 				while ($row = mysqli_fetch_array($result)) {
 				$str=$str."<option value='" . $row['city_id'] . "'>" . $row['city_name'] . "</option>";
 				}
 		echo $str;
 			break;//EOF city
-			
-			
+
+
 			}//EOF Switch Type
-}		
+}
 else//Hash Checking Failed
 {
 echo'Invalid Access';
 }
-break;//Singup.php end 
-	
+break;//Singup.php end
+
 /*checkoutnew*/
 case "checkout.php":
 if ((hash_equals($_POST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/checkout.php', $_SESSION['csrf_token'])))){
 		switch($type){
 			case "state":
 			$DBC = new DB();
-			$con =$DBC->connect();
-			$stmt = $con->prepare("SELECT * FROM zones where zone_country_id=?");
-			$stmt->bind_param('s', $id);
-			$stmt->execute();
-			$result = $stmt->get_result();
-			$stmt->close();
-			$con->close();
+			$stmt = "SELECT * FROM zones where zone_country_id=$id";
+			$result = $DBC->select($stmt);
 			$str=$str."<option value='0'>Select State</option>";
-			
-			
+
+
 				while ($row = mysqli_fetch_array($result)) {
 				$str=$str."<option value='" . $row['zone_id'] . "'>" . $row['zone_name'] . "</option>";
 				}
 		echo $str;
-			
-			
-			break;//State End 
+
+
+			break;//State End
 			case "city":
 			$DBC = new DB();
 			$con =$DBC->connect();
-			$stmt = $con->prepare("SELECT * FROM cities where state_id=?");
-			$stmt->bind_param('s', $id);
-			$stmt->execute();
-			$result = $stmt->get_result();
-			$stmt->close();
-			$con->close();
+			$stmt = "SELECT * FROM cities where state_id=$id";
+			$result = $DBC->select($stmt);
 			$str=$str."<option value='0'>Select City</option>";
 				while ($row = mysqli_fetch_array($result)) {
 				$str=$str."<option value='" . $row['city_id'] . "'>" . $row['city_name'] . "</option>";
 				}
 		echo $str;
 			break;//EOF city
-			
-			
+
+
 			}//EOF Switch Type
-}		
+}
 else//Hash Checking Failed
 {
 echo'Invalid Access';
 }
-break;//checkoutnew.php end 
+break;//checkoutnew.php end
 
 }//EOF Switch
 

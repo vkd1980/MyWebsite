@@ -2,7 +2,7 @@
 $menu_category = array();
 $menu_manufacture=array();
 $menuresult_category =$db->select("Select * from categories order by categories_name " );
-$menuresult_manufacture =$db->select("Select * from manufacturers order by manufacturers_name " );
+$menuresult_manufacture =$db->select("Select manufacturers_id,manufacturers_name from manufacturers order by manufacturers_name " );
 while($row = mysqli_fetch_assoc($menuresult_manufacture))
 {
 $menu_manufacture[] = $row;
@@ -85,6 +85,7 @@ echo buildManufactureMenu($menu_manufacture);
         <!------------------->
         <li><a href="../support.html">Support</a></li>
         <li><a href="../contact.html">Contact</a></li>
+        <a href="../sitemap.html"style="color:#5eb2d9">sitemap</a>
 		  <li><a href="../search.html">Search</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

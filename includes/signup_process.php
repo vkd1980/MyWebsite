@@ -7,7 +7,7 @@ $FirstName= filter_var($_REQUEST['FirstName'],  FILTER_SANITIZE_STRING, FILTER_F
 $LastName=filter_var($_REQUEST['LastName'],  FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 if (!empty($_REQUEST['company'])){
 $company=filter_var($_REQUEST['company'],  FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
-} 
+}
 else{
 $company='';
 }
@@ -25,28 +25,28 @@ $terms=filter_var($_REQUEST['terms'],  FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP
 //if (){
 if (isset($_REQUEST['newsletter']) && !empty ($_REQUEST['newsletter']) && filter_var($_REQUEST['newsletter'],  FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH)=="on"){
 	$newsl=true;
-} 
+}
 else
 {
 $newsl=false;
 }
 
 //check whether User Name exists
-if (!$customer->checkcustomer($Emaill)){
+if (!$customer->checkcustomer("'".$Emaill."'")){
 //Insert to Customer Table
-$lastid=$customer->Insertcustomer($gender,$FirstName,$LastName,$dob,$Emaill,$telephone,$passwordnew,$newsl,false);
+$lastid=$customer->Insertcustomer("'".$gender."'","'".$FirstName."'","'".$LastName."'","'".$dob."'","'".$Emaill."'",$telephone,"'".$passwordnew."'",$newsl,'0');
 if ($lastid>0){
-$CustAddress->InsertCustAddress($lastid,$gender,$company,$FirstName,$LastName,$street_address,$suburb,$pin,$City,$State,$Country,$State,'0');
+$CustAddress->InsertCustAddress($lastid,"'".$gender."'","'".$company."'","'".$FirstName."'","'".$LastName."'","'".$street_address."'","'".$suburb."'",$pin,$City,$State,$Country,$State,'1');
 
-//check whether Newsletter is subscribed 
+//check whether Newsletter is subscribed
 			if($newsletter==true){
 			//insert  and Send Mail for both
-			//Insert 
+			//Insert
 			$newsletter = new Newsletter();
 			$date = date('Y-m-d');
 			$time = date('H:i:s');
-			if(!$newsletter->checksubscription($Emaill)){
-			$insertSignup= $newsletter->Inssubscription($Emaill,$date,$time);
+			if(!$newsletter->checksubscription("'".$Emaill."'")){
+			$insertSignup= $newsletter->Inssubscription("'".$Emaill."'","'".$date."'","'".$time."'");
 			if($insertSignup){
 				$message_html = file_get_contents('../email/Newsletter_sub_Verification.html');
 				$message_html = str_replace('%username%', $Emaill, $message_html);
@@ -54,29 +54,29 @@ $CustAddress->InsertCustAddress($lastid,$gender,$company,$FirstName,$LastName,$s
 				$message_html = str_replace('%hash%', md5(md5($Emaill)), $message_html);
 				$message_html = str_replace('%type%', 'Both', $message_html);
 				$message_html = str_replace('%EMAIL_CONTACT_OWNER%', 'Regds, <br>PRABHUS BOOKS', $message_html);
-					if(SendMailSmtp('admin@prabhusbooks.com','Admin-Prabhus Books',$Emaill,'Verify Your Email',$message_html,'','')){
+					if(SendMailSmtp($Emaill,'Verify Your Email',$message_html)){
 						$Service="Signup";
 						$status = "success";
 						$message = "Almost Finished ! To Complete the Signing Process and subscription process Please click the Link in the Email we just sent you";
-						   
+
 					}
 					else{
 						$Service="Signup";
 						$status = "error";
-						$message = "Ooops, Theres been a technical error!"; 
+						$message = "Ooops, Theres been a technical error!";
 						}
 			}
 			else {
 			$Service="Signup";
             $status = "error";
-            $message = "Ooops, Theres been a technical error!";  
+            $message = "Ooops, Theres been a technical error!";
            }
-			////EOF 
+			////EOF
 			}
-			
+
 			else{
 
-						
+
 			//Send mail for Email Verification for Account Only
 				$message_html = file_get_contents('../email/Newsletter_sub_Verification.html');
 				$message_html = str_replace('%username%', $Emaill, $message_html);
@@ -84,17 +84,17 @@ $CustAddress->InsertCustAddress($lastid,$gender,$company,$FirstName,$LastName,$s
 				$message_html = str_replace('%hash%', md5(md5($Emaill)), $message_html);
 				$message_html = str_replace('%type%', 'Account', $message_html);
 				$message_html = str_replace('%EMAIL_CONTACT_OWNER%', 'Regds, <br>PRABHUS BOOKS', $message_html);
-				
-						if(SendMailSmtp('admin@prabhusbooks.com','Admin-Prabhus Books',$Emaill,'Verify Your Email',$message_html,'','')){
+
+						if(SendMailSmtp($Emaill,'Verify Your Email',$message_html)){
 							$Service="Signup";
 							$status = "success";
 							$message = "Almost Finished ! To Complete the Signing process Please click the Link in the Email we just sent you";
-							   
+
 						}
 						else{
 							$Service="Signup";
 							$status = "error";
-							$message = "Ooops, Theres been a technical error!"; 
+							$message = "Ooops, Theres been a technical error!";
 							}
 			////
 			}
@@ -104,20 +104,20 @@ else{
 		$Service="Signup";
 		$status = "info";
         $message = "Ooops, Theres been a technical error!";
-		
+
 }
 }
 else{
 		$Service="Signup";
 		$status = "error";
         $message = "This email address has already been registered!";
-		
+
 }
-		
+
 	//header("Location: ../message.php?service=".$Service."&status=".$status."&message=".$message);
 	header("Location: ../message/msg-".preg_replace('#[ -]+#', '-',preg_replace("/[^a-zA-Z0-9\s]/", "",  $message))."-".$status."-".$Service.".html");
 	  }
- 
+
  else{//checkiing all post values
 		$Service="Signup";
 		$status = "error";
@@ -125,7 +125,7 @@ else{
 		header("Location: ../message/msg-".preg_replace('#[ -]+#', '-',preg_replace("/[^a-zA-Z0-9\s]/", "",  $message))."-".$status."-".$Service.".html");
 		//header("Location: ../message.php?service=".$Service."&status=".$status."&message=".$message);
   		exit;
-		
+
 }
 
-?>	
+?>

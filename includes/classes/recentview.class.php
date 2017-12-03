@@ -11,9 +11,9 @@ if((isset($_SESSION['items'])) &&(!in_array($prodID,$_SESSION['items'],TRUE)))
 $_SESSION['items'][] = $prodID ;
 }
  }
-  
-  
-  
+
+
+
 function getRecentlyViewed () {
 $product = new products();
 $str=	'<!-- Owl Carousel Starts -->
@@ -38,7 +38,7 @@ if(count($_SESSION['items']) >= 8 )
 array_shift($_SESSION['items']);
 }
 foreach ($_SESSION['items'] as $value) {
-   //connect to db and get detals	
+   //connect to db and get detals
    $results = $product->getprodbyid($value);
    $num_rows = mysqli_num_rows($results);
 if($num_rows > 0){
@@ -49,11 +49,11 @@ while($rows =  mysqli_fetch_array($results)){
 	<!-- Heading -->
 	<h4><a href="#">'.strtoupper($rows['products_name']).'<span class="pull-right"><br><span class="fa fa-inr"></span>'.$rows['products_price'].'</span></a></h4>
 	<div class="clearfix"></div>
-	<!-- Paragraph 
+	<!-- Paragraph
 	<p>Nunc adipiscing, metus sollic itun molestie, urna augue dap ibus dui.</p>-->
 	</div>';*/
-	
-	if($product->CheckspecialsbyID($rows['products_id'],date("Y-m-d"))){
+
+	if($product->CheckspecialsbyID($rows['products_id'],"'".date("Y-m-d")."'")){
 	$str = $str.'<div class="item">
 							  <!-- Item image -->
 							  <div class="item-image"><a href="#responsive"><img src="../img/photos/'.$rows['products_image'].'" alt=""  /></a></div>
@@ -74,7 +74,7 @@ while($rows =  mysqli_fetch_array($results)){
 								</div>
 								</div>';
 	}
-	elseif($product->CheckfeaturedbyID($rows['products_id'],date("Y-m-d"))){
+	elseif($product->CheckfeaturedbyID($rows['products_id'],"'".date("Y-m-d")."'")){
 	$str = $str.'<div class="item">
 							  <!-- Item image -->
 							  <div class="item-image"><a href="#responsive"><img src="../img/photos/'.$rows['products_image'].'" alt=""  /></a></div>
@@ -96,7 +96,7 @@ while($rows =  mysqli_fetch_array($results)){
 								</div>';
 	}
 	else{
-	
+
 							$str = $str.'<div class="item">
 							  <!-- Item image -->
 							  <div class="item-image"><a href="#responsive"><img src="../img/photos/'.$rows['products_image'].'" alt=""  /></a></div>
@@ -119,7 +119,7 @@ while($rows =  mysqli_fetch_array($results)){
 }//else product check
 	}
   }
-  
+
 }
 
 $str=$str.'</div>

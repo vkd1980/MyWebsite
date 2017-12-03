@@ -23,7 +23,7 @@ $html='<!-- Main content -->
 			  $title='';
 	  switch($Type){
 case "Featured":
-$results = $product->getfeaturedbyID($pid,date("Y-m-d"));
+$results = $product->getfeaturedbyID($pid,"'".date("Y-m-d")."'");
 $num_rows = mysqli_num_rows($results);
 if($num_rows > 0){
 while($rows =  mysqli_fetch_array($results)){
@@ -273,7 +273,7 @@ $html.='<hr />
 
 break;
 case "Specials":
-$results = $product->getspecialsbyID($pid,date("Y-m-d"));
+$results = $product->getspecialsbyID($pid,"'".date("Y-m-d")."'");
 $num_rows = mysqli_num_rows($results);
 if($num_rows > 0){
 while($rows =  mysqli_fetch_array($results)){

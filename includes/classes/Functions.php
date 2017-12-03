@@ -106,6 +106,50 @@ return true;
 }
 
 }
+function SendMailSmtpCC($To,$Subject,$Bcc='',$message){
+
+$mail = new PHPMailer();
+//$mail->SMTPDebug = 2;
+//$mail->Debugoutput = 'html';
+$mail->SMTPOptions = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+    )
+);
+$mail->IsSMTP();
+$mail->Host = SMTP_SERVER;
+// Remove these next 3 lines if you dont need SMTP authentication
+$mail->SMTPAuth = true;
+$mail->Username = SMTP_USER_NAME;
+$mail->Password = SMTP_PASSWORD;
+// Set who the email is coming from
+$mail->SetFrom('admin@prabhusbooks.com', 'Prabhus Books Online');
+$mail->addReplyTo('admin@prabhusbooks.com', 'Prabhus Books Online');
+// Set who the email is sending to
+$mail->AddAddress($To);
+// Set the subject
+$mail->Subject = $Subject;
+//Set Cc
+//$mail->AddCC($Cc);
+//Set Bcc
+$mail->AddBCC($Bcc);
+//Set the message
+$mail->MsgHTML($message);
+//$mail->AltBody =(strip_tags($message));
+//$mail->AltBody = strip_tags($message);
+// Send the email
+if(!$mail->Send()) {
+ return "Mailer Error: " . $mail->ErrorInfo;
+}
+else
+{
+return true;
+}
+
+}
+
 
 function curPageURL() {
  $pageURL = 'http';
@@ -237,14 +281,8 @@ Function ShowPostage()
 {
 $cart= new ShoppingCart();
 $DBC = new DB();
-/*show Postate*/
-$con =$DBC->connect();
 $qry="SELECT * FROM shipping_modules WHERE STATUS= TRUE;";
-$stmt = $con->prepare($qry);
-$stmt->execute();
-$result = $stmt->get_result();
-$stmt->close();
-$con->close();
+$result= $DBC->select($qry);
 
 	if(mysqli_num_rows($result) > 0)
 	{
@@ -305,14 +343,8 @@ for($b = $weight; $b>=0; $b-=1) {
 function CheckZoneStatus($stateid,$Zone){
 $DBC = new DB();
 /*show Postate*/
-$con =$DBC->connect();
 $qry="select State_id from zones_to_geo_zones where geo_zone_id = '".$Zone."' and zone_country_id = '".$_SESSION['Address']['Cust_country_id']."' order by State_id";
-$stmt = $con->prepare($qry);
-$stmt->execute();
-$result = $stmt->get_result();
-$stmt->close();
-$con->close();
-
+$result= $DBC->select($qry);
 while($rows =  mysqli_fetch_array($result)){
 				if ($rows['State_id'] < 1) {
 				  return true;
@@ -328,14 +360,8 @@ while($rows =  mysqli_fetch_array($result)){
 function ShowPayments()
 {
 $DBC = new DB();
-$con =$DBC->connect();
 $qry="SELECT * FROM payment_modules WHERE STATUS= TRUE;";
-$stmt = $con->prepare($qry);
-$stmt->execute();
-$result = $stmt->get_result();
-$stmt->close();
-$con->close();
-
+$result= $DBC->select($qry);
 	if(mysqli_num_rows($result) > 0)
 	{
 	while($rows =  mysqli_fetch_array($result))

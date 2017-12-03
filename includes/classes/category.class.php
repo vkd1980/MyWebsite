@@ -4,14 +4,9 @@ class category{
 public function getcatnamebyid($id)
 {
 $DBC = new DB();
-$con =$DBC->connect();
-$qry ="select * from categories where categories_id=? LIMIT 1;";
-//$DBC = new DB();
-//$result= $DBC->select($qry);
-$stmt = $con->prepare($qry);
-$stmt->bind_param('s', $id);
-$stmt->execute();
-$result = $stmt->get_result();
+//$con =$DBC->connect();
+$qry ="SELECT * FROM categories WHERE categories_id=$id LIMIT 1;";
+$result= $DBC->select($qry);
 $value = mysqli_fetch_object($result);
 return $value->categories_name;
 }

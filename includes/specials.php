@@ -1,5 +1,5 @@
 <?php
-$results = $product->getspecials(FEATURED_NUM_ROWS,date("Y-m-d"));
+$results = $product->getspecials(FEATURED_NUM_ROWS,"'".date("Y-m-d")."'");
 $str='<html><div class="items">
   <div class="container">
     <div class="row">

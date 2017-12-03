@@ -337,12 +337,8 @@ $("form[name='create_account']").validate({
                 <div class="col-md-5">
                   <?php
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("SELECT * FROM countries");
-$stmt->execute();
-$result = $stmt->get_result();
-$stmt->close();
-$con->close();
+$stmt = "SELECT countries_id ,countries_name FROM countries";
+$result = $DBC->select($stmt);
 echo " <select class='form-control' name='Country' id='Country'  required >";
 ?>
                   <option value='0'>Select Country</option>

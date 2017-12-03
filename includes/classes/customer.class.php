@@ -8,27 +8,18 @@ class customer{
 
 public function Insertcustomer($customers_gender,$customers_firstname,$customers_lastname,$customers_dob,$customers_email_address,$customers_telephone,$customers_password,$customers_newsletter,$customers_authorization){
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("INSERT INTO `customers` (`customers_gender`, `customers_firstname`, `customers_lastname`, `customers_dob`, `customers_email_address`, `customers_telephone`, `customers_password`, `customers_newsletter`, `customers_authorization`) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param('sssssssss', $customers_gender,$customers_firstname,$customers_lastname,$customers_dob,$customers_email_address,$customers_telephone,$customers_password,$customers_newsletter,$customers_authorization);
-$stmt->execute();
-$result = $stmt->insert_id;
+$stmt = "INSERT INTO `customers` (`customers_gender`, `customers_firstname`, `customers_lastname`, `customers_dob`, `customers_email_address`, `customers_telephone`, `customers_password`, `customers_newsletter`, `customers_authorization`) VALUES ( $customers_gender, $customers_firstname, $customers_lastname, $customers_dob, $customers_email_address, $customers_telephone, $customers_password, $customers_newsletter, $customers_authorization)";
+$result = $DBC->insertID($stmt);
 return $result;
-$stmt->close();
-$con->close();
 }
 
 //Update
 public function Updatecustomer($customers_id,$customers_gender,$customers_firstname,$customers_lastname,$customers_telephone,$customers_password)
 {
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("UPDATE `customers` SET customers_gender=?,customers_firstname=?,customers_lastname=?,customers_telephone=?,customers_password=? WHERE  `customers_id`=?;");
-$stmt->bind_param('ssssss',$customers_gender,$customers_firstname,$customers_lastname,$customers_telephone,$customers_password,$customers_id);
-$stmt->execute();
-$result=mysqli_affected_rows($con);
-$stmt->close();
-$con->close();
+
+$stmt = "UPDATE `customers` SET customers_gender=$customers_gender,customers_firstname=$customers_firstname,customers_lastname=$customers_lastname,customers_telephone=$customers_telephone,customers_password=$customers_password WHERE  `customers_id`=$customers_id;";
+$result = $DBC->updatedb($stmt);
 if ($result ==1)
 {
 return true;
@@ -42,55 +33,37 @@ return false;
 
 public function checkcustomer($customers_email_address){
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("SELECT customers_id
+$stmt = "SELECT customers_id
 FROM 	customers
-WHERE customers_email_address=?;");
-$stmt->bind_param('s', $customers_email_address);
-$stmt->execute();
-$result = $stmt->get_result();
-$stmt->close();
+WHERE customers_email_address=$customers_email_address LIMIT 1;";
+$result = $DBC->select($stmt);
 if( mysqli_num_rows($result) == 1)
 		{
-		$con->close();
 		return true;
 		}
 		else{
-		$con->close();
 		return false;
 		}
 }
 public function checkcustauthorisation($customers_email_address){
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("SELECT customers_authorization
+$stmt = "SELECT customers_authorization
 FROM 	customers
-WHERE customers_email_address=? AND customers_authorization=true;");
-$stmt->bind_param('s', $customers_email_address);
-$stmt->execute();
-$result = $stmt->get_result();
-$stmt->close();
-
+WHERE customers_email_address=$customers_email_address AND customers_authorization=true;";
+$result = $DBC->select($stmt);
 if( mysqli_num_rows($result) == 1)
 		{
-		$con->close();
 		return true;
 		}
 		else{
-		$con->close();
 		return false;
 		}
 }
 public function verifyaccount($email){
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("UPDATE customers SET customers_authorization=TRUE
-WHERE customers_email_address=?;");
-$stmt->bind_param('s', $email);
-$stmt->execute();
-$result=mysqli_affected_rows($con);
-$stmt->close();
-$con->close();
+$stmt = "UPDATE customers SET customers_authorization=TRUE
+WHERE customers_email_address=$email;";
+$result = $DBC->select($stmt);
 if ($result ==1)
 {
 return true;

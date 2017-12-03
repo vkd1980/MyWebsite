@@ -12,16 +12,16 @@ $reviews_rating = filter_var($_REQUEST['rating'], FILTER_SANITIZE_NUMBER_INT, FI
 $prod_id = filter_var($_REQUEST['prodid'], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH);
 
  if($review->checkreveiw($prod_id,$customers_id)){
-	 
+
 $data = array('status' => "error",'message' => "You have Already Reviewed this Book!! ");
 echo json_encode($data);
 exit;
 	 }
 	 else{
-	 	$insertreview= $review->savereveiw($prod_id,$customers_id,$customers_name,$reviews_rating,date('Y/m/d H:i:s'),date('Y/m/d H:i:s'),1,$reviews_text);
-		
+	 	$insertreview= $review->savereveiw($prod_id,$customers_id,"'".$customers_name."'",$reviews_rating,"'".date('Y/m/d H:i:s')."'","'".date('Y/m/d H:i:s')."'",1,"'".$reviews_text."'");
+
 		 if($insertreview){
-		 
+
 	 $data = array('status' => "success",'message' => "THANK YOU for your Review on this Book!! ");
 echo json_encode($data);
 exit;
@@ -40,15 +40,15 @@ exit;*/
 }
 
  else{
-	 
+
   $data = array('status' => "error",'message' => "Ooops, An Error Occurred!");
- 
+
     echo json_encode($data);
- 
+
     exit;
- 
+
   }
 
 
-	
+
 ?>

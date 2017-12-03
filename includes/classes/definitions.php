@@ -1,18 +1,14 @@
 <?php
 require_once (__DIR__.'/DB.class.php');
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("SELECT * FROM configuration");
-$stmt->execute();
-$result = $stmt->get_result();
+$stmt = "SELECT * FROM configuration";
+$result = $DBC->select($stmt);
 $num_rows = mysqli_num_rows($result);
 if($num_rows > 0){
 while($rows =  mysqli_fetch_array($result)){
 define($rows["configuration_key"],$rows["configuration_value"]);
 }
 }
-$stmt->close();
-$con->close();
 
 define('RECENT_ITEMS','Recently Viewed Items');
 define('NEW_ARRIVALS','New Arrivals');

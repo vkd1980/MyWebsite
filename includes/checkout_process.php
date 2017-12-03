@@ -82,14 +82,9 @@ switch($Process){
 
 	case "SelectedShipping":
 	$Shipping_Cost= $_REQUEST['ShippingCost'];
-	$con =$DBC->connect();
-	$qry="SELECT * FROM shipping_modules WHERE Shipping_Id=?";
-	$stmt = $con->prepare($qry);
-	$stmt->bind_param('s',$Add_id);
-	$stmt->execute();
-	$result = $stmt->get_result();
-	$stmt->close();
-	$con->close();
+	$qry="SELECT * FROM shipping_modules WHERE Shipping_Id=$Add_id";
+	$result = $DBC->select($qry);
+
 	$num_rows = mysqli_num_rows($result);
 	if($num_rows > 0){
 		while($rows =  mysqli_fetch_array($result)){
@@ -135,14 +130,8 @@ switch($Process){
 	case "SelectedPayment":
 	$Action= filter_var($_REQUEST['PymntName'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 	$Ordertotal=$_REQUEST['Ordertotal'];
-	$con =$DBC->connect();
-	$qry="SELECT * FROM payment_modules WHERE Payment_id=?";
-	$stmt = $con->prepare($qry);
-	$stmt->bind_param('s',$Add_id);
-	$stmt->execute();
-	$result = $stmt->get_result();
-	$stmt->close();
-	$con->close();
+	$qry="SELECT * FROM payment_modules WHERE Payment_id=$Add_id";
+	$result = $DBC->select($qry);
 	$num_rows = mysqli_num_rows($result);
 	if($num_rows > 0){
 		while($rows =  mysqli_fetch_array($result)){
@@ -440,14 +429,18 @@ elseif(!sendsms($rows['customers_telephone'],"Dear ".$rows['customers_name']." ,
 
 			if (!empty($err))
 			{
+				//destroy Sessions
+
 			echo $err .$summary;
 			}
 			else{
+				//destroy Sessions
 			echo $summary;
 			}
 }
 else
 {
+	//destroy Sessions
 echo $summary;
 }
 	break;//EOF OrderSummary

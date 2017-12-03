@@ -1,7 +1,7 @@
 <?php
-/*if((empty($_SERVER['HTTP_X_REQUESTED_WITH']) or strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') or empty($_POST)){/*Detect AJAX and POST request*/
-//exit("Unauthorized Access");
-//}
+if((empty($_SERVER['HTTP_X_REQUESTED_WITH']) or strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') or empty($_POST)){/*Detect AJAX and POST request*/
+exit("Unauthorized Access");
+}
 require_once (__DIR__.'/classes/global.inc.php');
 if((isset($_REQUEST['Token']))&&(!empty($_REQUEST['page']))&&(!empty($_REQUEST['id']))){
 

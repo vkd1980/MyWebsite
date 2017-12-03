@@ -336,10 +336,10 @@ $("form[name='AddressFormMy']").validate({
         <!-- Sidebar navigation -->
           <nav>
             <ul id="navi">
-              <li><a href="myaccount.php"><h7>My Account</h7></a></li>
+              <li><a href="myaccount.html"><h7>My Account</h7></a></li>
               <!-- <li><a href="wish-list.php">Wish List</a></li>
               <li><a href="order-history.php">Order History</a></li>-->
-              <li><a href="edit-profile.php"><h7>Edit Profile</h7></a></li>
+              <li><a href="myprofile.html"><h7>Edit Profile</h7></a></li>
             </ul>
           </nav>
 
@@ -427,12 +427,8 @@ $("form[name='AddressFormMy']").validate({
                 <div class="col-md-5">
                   <?php
 $DBC = new DB();
-$con =$DBC->connect();
-$stmt = $con->prepare("SELECT * FROM countries");
-$stmt->execute();
-$result = $stmt->get_result();
-$stmt->close();
-$con->close();
+$stmt = "SELECT countries_id,countries_name FROM countries";
+$result = $DBC->select($stmt);
 echo " <select class='form-control' name='Country' id='Country'  required >";
 ?>
                   <option value='0'>Select Country</option>

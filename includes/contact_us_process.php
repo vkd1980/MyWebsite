@@ -35,32 +35,33 @@ else{
 			}
 			$message_html = str_replace('%IPADDRESS%', get_ip_address(), $message_html);
 			$message_html = str_replace('%DATE%',  date('Y-m-d H:i:s') , $message_html);
-			if(SendMailSmtp('admin@prabhusbooks.com','Admin-Prabhus Books','admin@prabhusbooks.com','Website Inquiry from Prabhus Books',$message_html,$senderEmail,$senderName)){
+
+			if(SendMailSmtpCC('admin@prabhusbooks.com','Website Inquiry from Prabhus Books',$senderEmail,$message_html)){
 			$status = "success";
             $message = "Thanks for sending your message! We'll get back to you shortly.";
-			   		   
+
 			}
 			else
 			{
 			$status = "error";
-            $message = "There was a problem sending your message. Please try again!"; 
+            $message = "There was a problem sending your message. Please try again!";
 			}
 }
-//return json response 
+//return json response
     $data = array(
         'status' => $status,
         'message' => $message
     );
- 
+
     echo json_encode($data);
- 
+
     exit;
 }
 
 else{//checkiing all post values
 
   			$status = "error";
-            $message = "Ooops, Theres been a technical error!";  
+            $message = "Ooops, Theres been a technical error!";
 			$data = array(
         'status' => $status,
         'message' => $message
@@ -69,5 +70,3 @@ else{//checkiing all post values
   exit;
 }
 ?>
-
-

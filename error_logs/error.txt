@@ -1,0 +1,112 @@
+time: 3 Dec 17 - 7:56:11 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 13
+
+code: E_NOTICE
+message: Use of undefined constant T_Test_test - assumed 'T_Test_test'
+##################################################
+
+time: 3 Dec 17 - 7:56:59 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 13
+
+code: E_NOTICE
+message: Use of undefined constant T_Test_test - assumed 'T_Test_test'
+##################################################
+
+time: 3 Dec 17 - 7:59:21 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 13
+
+code: E_NOTICE
+message: Use of undefined constant T_Test_test - assumed 'T_Test_test'
+##################################################
+
+time: 3 Dec 17 - 8:02:06 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 13
+
+code: E_NOTICE
+message: Use of undefined constant T_Test_test - assumed 'T_Test_test'
+##################################################
+
+time: 3 Dec 17 - 8:20:52 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\classes\products.class.php
+line: 183
+
+code: E_NOTICE
+message: Undefined variable: stmt
+##################################################
+
+time: 3 Dec 17 - 9:28:22 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\classes\review.class.php
+line: 53
+
+code: E_NOTICE
+message: Undefined variable: result
+##################################################
+
+time: 3 Dec 17 - 10:13:47 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\classes\products.class.php
+line: 23
+
+code: E_NOTICE
+message: Undefined variable: qry
+##################################################
+
+time: 3 Dec 17 - 10:13:47 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\classes\DB.class.php
+line: 41
+
+code: E_WARNING
+message: mysqli_query(): Empty query
+##################################################
+
+time: 3 Dec 17 - 10:13:47 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\shoppingcart_process.php
+line: 55
+
+code: E_WARNING
+message: mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given
+##################################################
+
+time: 3 Dec 17 - 10:13:47 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\shoppingcart_process.php
+line: 75
+
+code: E_NOTICE
+message: Undefined variable: itemData
+##################################################
+
+time: 3 Dec 17 - 10:14:09 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\classes\products.class.php
+line: 23
+
+code: E_NOTICE
+message: Undefined variable: qry
+##################################################
+
+time: 3 Dec 17 - 10:14:09 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\classes\DB.class.php
+line: 41
+
+code: E_WARNING
+message: mysqli_query(): Empty query
+##################################################
+
+time: 3 Dec 17 - 10:14:09 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\shoppingcart_process.php
+line: 55
+
+code: E_WARNING
+message: mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given
+##################################################
+
+time: 3 Dec 17 - 10:14:09 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\shoppingcart_process.php
+line: 75
+
+code: E_NOTICE
+message: Undefined variable: itemData
+##################################################
+
