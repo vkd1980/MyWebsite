@@ -6,7 +6,7 @@ if(isset($_SESSION['logged_in'])) {
 	else
 	{
 	header("Location: login.php");
-	
+
 	}
 $lnk="";?>
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
@@ -61,7 +61,7 @@ $(window).scroll(function() {
             $('.back-to-top').fadeOut(500);
         }
     });
-    
+
     $('.back-to-top').click(function(event) {
         event.preventDefault();
         jQuery('html, body').animate({scrollTop: 0}, 500);
@@ -87,7 +87,7 @@ $(window).scroll(function() {
 	<div class="col-md-4"><a href="#"><img src="Includes/images/logo.png" alt="Shop @ Prabhus Books Online" title=" Shop @ Prabhus Books Online " width="400" height="100"  class="img-responsive"/></a>    </div>
         <div class="col-md-8 pull-right">
 <?php		if(isset($_SESSION['logged_in'])) {
-$lnk="<li class=' btn-info'><a href='#'>Session ID: ".session_id()  ."</a></li><li class='btn-warning'><a href='#'>Finyear ID: ".$_SESSION['FinYearID']."</a></li><li class='btn-info'><a href='#'> Token: ".$_SESSION['token'] ."</a></li>	";
+$lnk="<li class=' btn-info'><a href='#'>Session ID: ".session_id()  ."</a></li><li class='btn-info'><a href='#'> Token: ".$_SESSION['token'] ."</a></li>	";
 
 }echo $lnk;?>
 		</div>
@@ -105,7 +105,7 @@ $lnk="<li class=' btn-info'><a href='#'>Session ID: ".session_id()  ."</a></li><
             </button>
             </div>
           <div class="navbar-collapse collapse">
-          
+
             <!-- Left nav -->
             <ul class="nav navbar-nav">
               <li><a href="index.php">Home</a></li>
@@ -172,15 +172,15 @@ $lnk="<li class=' btn-info'><a href='#'>Session ID: ".session_id()  ."</a></li><
                   </li>
                 </ul>
               </li>
-			  
+
             			</ul>
-          
+
             <!-- Right nav -->
             <ul class="nav navbar-nav navbar-right">
-			<li><a href="#">Login time : <?php echo $_SESSION["login_time"];?></a></li> 
+			<li><a href="#">Login time : <?php echo $_SESSION["login_time"];?></a></li>
                  <li><a href="#" style="text-transform:uppercase"> Welcome <?php echo $_SESSION['username']; ?></a>
                 <ul class="dropdown-menu">
-                  <li><a href="logout.php">Logout</a></li> 
+                  <li><a href="logout.php">Logout</a></li>
                   <li><a href="#">Another action</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li class="divider"></li>
@@ -193,8 +193,8 @@ $lnk="<li class=' btn-info'><a href='#'>Session ID: ".session_id()  ."</a></li><
                       <li class="disabled"><a class="disabled" href="#">Disabled item</a></li>
                       <li><a href="#">One more link</a></li>
                     </ul>
-                  </li>    
-				   
+                  </li>
+
               <!--<li><a href="#">Dropdown</a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>

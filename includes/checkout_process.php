@@ -430,17 +430,24 @@ elseif(!sendsms($rows['customers_telephone'],"Dear ".$rows['customers_name']." ,
 			if (!empty($err))
 			{
 				//destroy Sessions
-
+				unset($_SESSION['Address']);
+				unset($_SESSION['Shipping']);
+				unset($_SESSION['Payment']);
+				$cart->destroy();
 			echo $err .$summary;
 			}
 			else{
 				//destroy Sessions
+				unset($_SESSION['Address']);
+				unset($_SESSION['Shipping']);
+				unset($_SESSION['Payment']);
+				$cart->destroy();
 			echo $summary;
 			}
 }
 else
 {
-	//destroy Sessions
+
 echo $summary;
 }
 	break;//EOF OrderSummary

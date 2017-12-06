@@ -1,18 +1,13 @@
 <?php
 require_once 'global.inc.php';
 if (isset($_REQUEST['token']) && $_REQUEST['token'] != "") {
-if($_REQUEST['token'] == $_SESSION['token']) { 
+if($_REQUEST['token'] == $_SESSION['token']) {
 $action = isset($_REQUEST['action']) ? mysql_real_escape_string($_REQUEST['action']) : '';
 switch($action) {
 	case "load":
-	$query 	= $db->select('SELECT categories.categories_id AS catid, categories.categories_name AS catname, categories.parent_id AS parentcategory
+	$query 	= $db->select('SELECT *
 FROM categories
-WHERE categories.parent_id=0 UNION
-SELECT ALL categories_1.categories_id AS catid, categories_1.categories_name AS catname, categories.categories_name AS parentcategory
-FROM categories
-RIGHT JOIN categories AS categories_1 ON categories.categories_id = categories_1.parent_id
-WHERE categories.parent_id =0 order by catname ;
-') ;
+ORDER BY categories_name') ;
 $count  = mysql_num_rows($query);
 if($count > 0) {
 			while($fetch = mysql_fetch_array($query)) {
@@ -34,7 +29,7 @@ if($count > 0) {
 			echo "<tr id='norecords'>
                 <td colspan='12' align='center'>No records found <a href='addnew' id='gridder_insert' class='gridder_insert'><img src='includes/images/insert.png' alt='Add New' title='Add New' /></a></td>
             </tr>";
-			 } 
+			 }
 			 else {
             $i = 0;
 			foreach($record as $records) {
@@ -43,17 +38,17 @@ if($count > 0) {
 			if ($records['parentcategory']=="0")
 				{
 				 $responsetext .= "<td> - </td>";
-						
+
 					}
 					else{
-					
+
 					 $responsetext .="<td>" . $records['parentcategory']  . "</td>";
 						}
 						$responsetext .="<td>
 				<a href='javascript:getvalues(" . $records['catid'] . ")' <button type='submit'  name='submit-login' id='gridder_addnew'class='btn btn-info'>Edit</button></a></td>
             </tr>
 			 </tbody>";
-			
+
 			}
 			}
 			 $responsetext .="</table></div>";
@@ -80,8 +75,8 @@ if($count > 0) {
 	case "addnew":
 	$categories_name = isset($_REQUEST['categories_name']) ? mysql_real_escape_string($_REQUEST['categories_name']) : '';
 	$parent_id = isset($_REQUEST['parent_id']) ? mysql_real_escape_string($_REQUEST['parent_id']) : '';
-	
-	
+
+
 		$query = "INSERT INTO `categories` (`parent_id`,`categories_name`) VALUES ('" .$parent_id. "','" .$categories_name. "')";
 		/*mysql_query($query_customers);
 	if(mysql_affected_rows() > 0){
@@ -98,9 +93,9 @@ if($count > 0) {
 	$categories_id = isset($_REQUEST['categories_id']) ? mysql_real_escape_string($_REQUEST['categories_id']) : '';
 	$categories_name = isset($_REQUEST['categories_name']) ? mysql_real_escape_string($_REQUEST['categories_name']) : '';
 	$parent_id = isset($_REQUEST['parent_id']) ? mysql_real_escape_string($_REQUEST['parent_id']) : '';
-	
+
 	$query = "Update `categories` set `categories_name` = '" .$categories_name. "',`parent_id` = '" .$parent_id. "'Where `categories_id`='".$categories_id."' ";
-	
+
 	/*if(mysql_affected_rows() > 0){
 	$response=array("OK", $categories_name." Edited Successfully");
 	echo json_encode($response);
@@ -111,7 +106,7 @@ if($count > 0) {
 echo json_encode($db->updatedb($query));
 	break;
 	}
-	
+
 }
 	else
 	{$response= array("ERROR","Hacking attempt");
@@ -120,6 +115,6 @@ echo json_encode($db->updatedb($query));
 	else{
 	$response= array("ERROR","Invalid Access");
 	echo json_encode($response);}
-	
-	
+
+
 ?>

@@ -6,16 +6,16 @@ header("Location: index.php");
 
 $error = "";
 //check to see if they've submitted the login form
-if(isset($_POST['submit-login'])) { 
+if(isset($_POST['submit-login'])) {
 	$empcode = $_POST['empcode'];
 	$password = $_POST['password'];
-	$FYid= $_POST['cmbfinyear'];
+	//$FYid= $_POST['cmbfinyear'];
 	$userTools = new UserTools();
-	if($userTools->login($empcode, $password,$FYid)){
+	if($userTools->login($empcode, $password)){
 		//successful login, redirect them to a page
 		header("Location:index.php");
 	}else{
-	
+
 		$error = "<div class='alert alert-danger' role='alert'> <span class='glyphicon glyphicon-warning-sign'>   </span>  Incorrect username or password. Please try again.</div>";
 	}
 }
@@ -83,7 +83,7 @@ if ($handle = opendir('Includes/js')) {
                     },
                     cmbfinyear: {
                         selectfinyear: "0"
-                       
+
                     }
 
                 },
@@ -122,7 +122,7 @@ if ($handle = opendir('Includes/js')) {
                     alert("Submit");
                 }*/
             });
-	});	</script>	
+	});	</script>
 
 <style>
 .panel-default {
@@ -148,15 +148,15 @@ $lnk="<li class=' btn-info'><a href='#'>Session ID: ".session_id()  ."</a></li><
     </div>
 	</div><!--<div class="container">-->.
 	<br class="clearBoth" />
-	
+
 	<!-- BOF Contents-->
-	
-		
+
+
 		<div class="container">
-		
+
 		<?php
 		echo $error;?>	<div class="col-md-6 col-md-offset-3" >
-	
+
 	<div class="row">
 <div class="panel panel-primary well">
 <div class="panel-heading">Login to Continue</div>
@@ -170,29 +170,14 @@ $lnk="<li class=' btn-info'><a href='#'>Session ID: ".session_id()  ."</a></li><
             <label for="password">Password</label>
 			 <input type="password" id="password" name="password"  autocomplete="off" class="form-control"  />
                 </div>
-		<div class="form-group">
-		<label for="cmbfinyear">Fin Year</label>
-		<?php		$sql = "SELECT Finyear_ID,Finyear FROM tbl_finyear_master 	";
-		
-$result = mysql_query($sql);
 
-echo "<select name='cmbfinyear' class='form-control'>";
-?><option value='0'>Select Financial Year</option><?php
-while ($row = mysql_fetch_array($result)) {
-    echo "<option value='" . $row['Finyear_ID'] . "'>" . $row['Finyear'] . "</option>";
-}
-echo "</select>";
-?></div>
-                <button type="submit"  name="submit-login" id="btn_submit" class="btn btn-primary">Login</button> 
-				
+                <button type="submit"  name="submit-login" id="btn_submit" class="btn btn-primary">Login</button>
+
     </form>
 		</div>
 		</div>
 	</div>
-	
+
 </div>
 
 <!-- EOF Contents-->
-
-	     
-

@@ -64,7 +64,7 @@ $()
     });
 
 function getvalues(catid) {
-    //var empcode = $("input[name='Emp_Code']:text").val(); 
+    //var empcode = $("input[name='Emp_Code']:text").val();
     if (catid == null || catid == undefined || catid == '') {
 
     } else {
@@ -168,19 +168,14 @@ function clear() {
             <br>
             <input autocomplete='off' id='filter' class='filter form-control ' name="subjectfilter" placeholder="Enter Subject to Filter" data-col="Category" />
             <br>
-			
+
 			<?php
-			$query 	= $db->select('SELECT categories.categories_id AS catid, categories.categories_name AS catname, categories.parent_id AS parentcategory
+			$query 	= $db->select('SELECT *
 FROM categories
-WHERE categories.parent_id=0 UNION
-SELECT ALL categories_1.categories_id AS catid, categories_1.categories_name AS catname, categories.categories_name AS parentcategory
-FROM categories
-RIGHT JOIN categories AS categories_1 ON categories.categories_id = categories_1.parent_id
-WHERE categories.parent_id =0 order by catname ;
-') ;
-$count  = mysql_num_rows($query);
+ORDER BY categories_name') ;
+$count  = mysqli_num_rows($query);
 if($count > 0) {
-			while($fetch = mysql_fetch_array($query)) {
+			while($fetch = mysqli_fetch_array($query)) {
 				$record[] = $fetch;
 			}
 		}
@@ -199,26 +194,26 @@ if($count > 0) {
 			echo "<tr id='norecords'>
                 <td colspan='12' align='center'>No records found <a href='addnew' id='gridder_insert' class='gridder_insert'><img src='includes/images/insert.png' alt='Add New' title='Add New' /></a></td>
             </tr>";
-			 } 
+			 }
 			 else {
             $i = 0;
 			foreach($record as $records) {
             $i = $i + 1;
-			 $responsetext .= "<tr><td>". $i." </td><td>". $records['catname']."</td>";
-			if ($records['parentcategory']=="0")
+			 $responsetext .= "<tr><td>". $i." </td><td>". $records['categories_name']."</td>";
+			if ($records['parent_id']=="0")
 				{
 				 $responsetext .= "<td> - </td>";
-						
+
 					}
 					else{
-					
-					 $responsetext .="<td>" . $records['parentcategory']  . "</td>";
+
+					 $responsetext .="<td>" . $records['parent_id']  . "</td>";
 						}
 						$responsetext .="<td>
-				<a href='javascript:getvalues(" . $records['catid'] . ")' <button type='submit'  name='submit-login' id='gridder_addnew'class='btn btn-info'>Edit</button></a></td>
+				<a href='javascript:getvalues(" . $records['categories_id'] . ")' <button type='submit'  name='submit-login' id='gridder_addnew'class='btn btn-info'>Edit</button></a></td>
             </tr>
 			 ";
-			
+
 			}
 			}
 			 $responsetext .="</tbody></table></div>";
@@ -240,7 +235,7 @@ if($count > 0) {
 
 <div class="alert alert-warning" id="addnew" align="center">
     <h4><span>Add new</span></h4> </div>
-                
+
             </div>
             <div class="modal-body">
 			<div class="alert alert-success" id="message" align="center"></div>
@@ -261,9 +256,9 @@ if($count > 0) {
 							<td><select name="parent_id" id="parent_id"  class="form-control"  >
 			 <option value="-1">Select </option>
 			  <option value="0">Parent Category </option>
-               <?php $sql = "SELECT categories_id,categories_name FROM categories WHERE parent_id='0' ORDER BY categories_name";		
+               <?php $sql = "SELECT categories_id,categories_name FROM categories WHERE parent_id='0' ORDER BY categories_name";
 					$result = mysql_query($sql);
-					while ($row = mysql_fetch_array($result)) 
+					while ($row = mysql_fetch_array($result))
 					{
 					echo "<option value='" . $row['categories_id'] . "'>" . $row['categories_name'] . "</option>";
 					}

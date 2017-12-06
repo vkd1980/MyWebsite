@@ -1312,7 +1312,7 @@ $(document).ready(function()
 		 $.ajax({
              url: './includes/checkout_process.php',
              type: 'post',
-			data: '<?php echo 'Add_ID='.$_POST["OID"] ?>&Token=<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>&process=OrderSummary&notification=false',
+			data: '<?php echo 'Add_ID='.$_POST["OID"] ?>&Token=<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>&process=OrderSummary&notification=true',
 			 cache: false,
              success:function(data){
                $('#OrdSmmry').append('<div class ="alert alert-success" align="center"><h4>Your Order Successfully Placed. We will send a confirmation when your order ships. </h4></div>'+data);
