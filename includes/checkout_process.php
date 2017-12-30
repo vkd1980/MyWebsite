@@ -191,13 +191,14 @@ switch($Process){
 
 			$working_key=MODULE_PAYMENT_CCAVENUE_WORKING_KEY;//Shared by CCAVENUES
 			$access_code=MODULE_PAYMENT_CCAVENUE_ACCESS_CODE;//Shared by CCAVENUES
-			$merchant_data='tid='.date('YmdHis').'&merchant_id='.MODULE_PAYMENT_CCAVENUR_MERCHANT_ID.'&order_id='.$_SESSION['Address']['Cust_id'].'-'.date('YmdHis').'&amount='.($_SESSION['Shipping']['Shipping_Cost']+$cart->total()).'&currency=INR&redirect_url='.(isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]".'/PaymentHandler.html&cancel_url='.(isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]".'/PaymentHandler.html&language=EN&billing_name='.$_SESSION['Address']['Cust_entry_firstname'].' '.$_SESSION['Address']['Cust_entry_lastname'].'&billing_address= '.$_SESSION['Address']['Cust_entry_street_address'].'&billing_city='.$_SESSION['Address']['Cust_city_name'].'&billing_state='.$_SESSION['Address']['Cust_state_name'].'&billing_zip='.$_SESSION['Address']['Cust_entry_postcode'].'&billing_country=India&billing_tel='.$_SESSION['Address']['Cust_Telephone'].'&billing_email='.$_SESSION['UserData'][1].'&delivery_name='.$_SESSION['Address']['Cust_entry_firstname'].''.$_SESSION['Address']['Cust_entry_lastname'].'&delivery_address='.$_SESSION['Address']['Cust_entry_street_address'].'&delivery_city='.$_SESSION['Address']['Cust_city_name'].'&delivery_state='.$_SESSION['Address']['Cust_state_name'].'&delivery_zip='.$_SESSION['Address']['Cust_entry_postcode'].'&delivery_country=India&delivery_tel='.$_SESSION['Address']['Cust_Telephone'].'&integration_type=iframe_normal&';
+			$merchant_data='tid='.date('YmdHis').'&merchant_id='.MODULE_PAYMENT_CCAVENUE_MERCHANT_ID.'&order_id='.$_SESSION['Address']['Cust_id'].'-'.date('YmdHis').'&amount='.($_SESSION['Shipping']['Shipping_Cost']+$cart->total()).'&currency=INR&redirect_url='.(isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]".'/checkout.php&cancel_url='.(isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]".'/checkout.php&language=EN&billing_name='.$_SESSION['Address']['Cust_entry_firstname'].' '.$_SESSION['Address']['Cust_entry_lastname'].'&billing_address= '.$_SESSION['Address']['Cust_entry_street_address'].'&billing_city='.$_SESSION['Address']['Cust_city_name'].'&billing_state='.$_SESSION['Address']['Cust_state_name'].'&billing_zip='.$_SESSION['Address']['Cust_entry_postcode'].'&billing_country=India&billing_tel='.$_SESSION['Address']['Cust_Telephone'].'&billing_email='.$_SESSION['UserData'][1].'&delivery_name='.$_SESSION['Address']['Cust_entry_firstname'].''.$_SESSION['Address']['Cust_entry_lastname'].'&delivery_address='.$_SESSION['Address']['Cust_entry_street_address'].'&delivery_city='.$_SESSION['Address']['Cust_city_name'].'&delivery_state='.$_SESSION['Address']['Cust_state_name'].'&delivery_zip='.$_SESSION['Address']['Cust_entry_postcode'].'&delivery_country=India&delivery_tel='.$_SESSION['Address']['Cust_Telephone'].'&integration_type=iframe_normal&';
 
 			//foreach ($_POST as $key => $value){
 			//$merchant_data.=$key.'='.$value.'&';
 			//}
 			$encrypted_data=encrypt($merchant_data,$working_key); // Method for encrypting the data.
-			$production_url='https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction&encRequest='.$encrypted_data.'&access_code='.$access_code;
+			//$production_url='https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction&encRequest='.$encrypted_data.'&access_code='.$access_code;
+			$production_url='https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction&encRequest='.$encrypted_data.'&access_code='.$access_code;
 
 			$data = array(
 						'status' => "success",
@@ -429,20 +430,22 @@ elseif(!sendsms($rows['customers_telephone'],"Dear ".$rows['customers_name']." ,
 
 			if (!empty($err))
 			{
+				echo $err .$summary;
 				//destroy Sessions
 				unset($_SESSION['Address']);
 				unset($_SESSION['Shipping']);
 				unset($_SESSION['Payment']);
 				$cart->destroy();
-			echo $err .$summary;
+			
 			}
 			else{
+				echo $summary;
 				//destroy Sessions
 				unset($_SESSION['Address']);
 				unset($_SESSION['Shipping']);
 				unset($_SESSION['Payment']);
 				$cart->destroy();
-			echo $summary;
+			
 			}
 }
 else
@@ -477,7 +480,7 @@ echo $summary;
 
 	elseif(isset($_REQUEST["encResp"]) && !empty($_REQUEST["encResp"])&&  (hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/checkout.php', $_SESSION['csrf_token'])))){//Else of If Post
 	$Ordertotal=filter_var($_REQUEST['Ordertotal'],FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_STRIP_HIGH);
-	$workingKey='5EBC8B54D96000004502FDFF5CBEA7EA';		//Working Key should be provided here.
+	$workingKey= MODULE_PAYMENT_CCAVENUE_WORKING_KEY;		//Working Key should be provided here.
 	$order=new Order();
 	//$workingKey='73A292936FE7E433D671007B35DF410F';//Sandbox
 	$encResponse=$_REQUEST["encResp"];			//This is the response sent by the CCAvenue Server
@@ -492,7 +495,7 @@ echo $summary;
 	}
 
 	parse_str($rcvdString, $outputArray);
-	print_r($outputArray);
+	//print_r($outputArray);
 
 	if($order_status==="Success")
 	{
@@ -505,7 +508,7 @@ echo $summary;
 
 
 					if (!$Order_ID ==0){
-						$cart->destroy();
+						//$cart->destroy();
 						$status = "success";
 						$message = "Payment Confirmed";
 						}

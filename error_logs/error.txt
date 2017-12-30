@@ -110,3 +110,739 @@ code: E_NOTICE
 message: Undefined variable: itemData
 ##################################################
 
+time: 28 Dec 17 - 11:23:24 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\checkout_process.php
+line: 194
+
+code: E_NOTICE
+message: Use of undefined constant MODULE_PAYMENT_CCAVENUR_MERCHANT_ID - assumed 'MODULE_PAYMENT_CCAVENUR_MERCHANT_ID'
+##################################################
+
+time: 28 Dec 17 - 11:55:50 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 15
+
+code: E_NOTICE
+message: Undefined variable: merchant_data
+##################################################
+
+time: 28 Dec 17 - 11:57:51 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 22
+
+code: E_NOTICE
+message: Undefined variable: encrypted_data
+##################################################
+
+time: 28 Dec 17 - 11:58:05 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 22
+
+code: E_NOTICE
+message: Undefined variable: encrypted_data
+##################################################
+
+time: 29 Dec 17 - 11:40:03 AM (IST)
+file: E:\prabhusbooks\htdocs\checkout.php
+line: 1449
+
+code: E_NOTICE
+message: Undefined index: encResp
+##################################################
+
+time: 29 Dec 17 - 11:40:18 AM (IST)
+file: E:\prabhusbooks\htdocs\checkout.php
+line: 1449
+
+code: E_NOTICE
+message: Undefined index: encResp
+##################################################
+
+time: 29 Dec 17 - 3:24:37 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 15
+
+code: E_NOTICE
+message: Undefined variable: remote_file
+##################################################
+
+time: 29 Dec 17 - 3:24:37 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 15
+
+code: E_NOTICE
+message: Array to string conversion
+##################################################
+
+time: 29 Dec 17 - 3:24:37 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 31
+
+code: E_NOTICE
+message: Undefined variable: production_url
+##################################################
+
+time: 29 Dec 17 - 3:24:48 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 15
+
+code: E_NOTICE
+message: Array to string conversion
+##################################################
+
+time: 29 Dec 17 - 3:24:48 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 31
+
+code: E_NOTICE
+message: Undefined variable: production_url
+##################################################
+
+time: 29 Dec 17 - 3:25:03 PM (IST)
+file: E:\prabhusbooks\htdocs\test.php
+line: 31
+
+code: E_NOTICE
+message: Undefined variable: production_url
+##################################################
+
+time: 29 Dec 17 - 5:30:21 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\headermenu.php
+line: 93
+
+code: E_NOTICE
+message: Undefined index: Adm_UserData
+##################################################
+
+time: 29 Dec 17 - 8:21:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: imagejpeg(img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:21:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_NOTICE
+message: Undefined variable: remote_file0644
+##################################################
+
+time: 29 Dec 17 - 8:21:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_WARNING
+message: chmod() expects exactly 2 parameters, 1 given
+##################################################
+
+time: 29 Dec 17 - 8:21:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:22:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: imagejpeg(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:22:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_NOTICE
+message: Undefined variable: remote_file0644
+##################################################
+
+time: 29 Dec 17 - 8:22:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_WARNING
+message: chmod() expects exactly 2 parameters, 1 given
+##################################################
+
+time: 29 Dec 17 - 8:22:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:23:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: imagejpeg(./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:23:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_NOTICE
+message: Undefined variable: remote_file0644
+##################################################
+
+time: 29 Dec 17 - 8:23:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_WARNING
+message: chmod() expects exactly 2 parameters, 1 given
+##################################################
+
+time: 29 Dec 17 - 8:23:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:23:06 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: imagejpeg(./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:23:06 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_NOTICE
+message: Undefined variable: remote_file0644
+##################################################
+
+time: 29 Dec 17 - 8:23:06 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_WARNING
+message: chmod() expects exactly 2 parameters, 1 given
+##################################################
+
+time: 29 Dec 17 - 8:23:06 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:23:46 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: imagejpeg(./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:23:46 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_NOTICE
+message: Undefined variable: remote_file0644
+##################################################
+
+time: 29 Dec 17 - 8:23:46 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_WARNING
+message: chmod() expects exactly 2 parameters, 1 given
+##################################################
+
+time: 29 Dec 17 - 8:23:46 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:24:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_NOTICE
+message: Undefined variable: remote_file0644
+##################################################
+
+time: 29 Dec 17 - 8:24:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_WARNING
+message: chmod() expects exactly 2 parameters, 1 given
+##################################################
+
+time: 29 Dec 17 - 8:24:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:25:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_NOTICE
+message: Undefined variable: remote_file0644
+##################################################
+
+time: 29 Dec 17 - 8:25:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 52
+
+code: E_WARNING
+message: chmod() expects exactly 2 parameters, 1 given
+##################################################
+
+time: 29 Dec 17 - 8:28:52 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(img/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:28:52 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_NOTICE
+message: Undefined variable: remote_file0644
+##################################################
+
+time: 29 Dec 17 - 8:28:52 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod() expects exactly 2 parameters, 1 given
+##################################################
+
+time: 29 Dec 17 - 8:28:52 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(img/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:29:59 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:55:35 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 88
+
+code: E_WARNING
+message: imagedestroy() expects parameter 1 to be resource, string given
+##################################################
+
+time: 29 Dec 17 - 8:58:48 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:58:48 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:59:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:59:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 8:59:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:01:08 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:01:08 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:01:08 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:14:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:14:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:14:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:17:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(/./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:17:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:17:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:18:41 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(/./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:18:41 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:18:41 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(/./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:19:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(/./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:19:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:19:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:19:36 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(/./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:19:36 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:19:36 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:19:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:19:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:19:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(./img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:20:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:20:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:20:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:34:01 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: imagejpeg(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:34:01 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\image_up_loader.php
+line: 52
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:34:01 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\image_up_loader.php
+line: 55
+
+code: E_WARNING
+message: getimagesize(/img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:43:26 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(./../img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:43:26 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:43:26 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(./../img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:44:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(/../img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:44:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:44:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(/../img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:44:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(../img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:44:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:44:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(../img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:45:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 50
+
+code: E_WARNING
+message: imagejpeg(../img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:45:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 51
+
+code: E_WARNING
+message: chmod(): No such file or directory
+##################################################
+
+time: 29 Dec 17 - 9:45:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\image_up_loader.php
+line: 54
+
+code: E_WARNING
+message: getimagesize(../img/photos/Mytest.jpg): failed to open stream: No such file or directory
+##################################################
+
+time: 29 Dec 17 - 10:13:21 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\image_up_loader.php
+line: 91
+
+code: E_NOTICE
+message: Undefined variable: data
+##################################################
+
+time: 29 Dec 17 - 10:13:21 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\DB.class.php
+line: 69
+
+code: E_WARNING
+message: Invalid argument supplied for foreach()
+##################################################
+
+time: 30 Dec 17 - 6:33:54 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\headermenu.php
+line: 93
+
+code: E_NOTICE
+message: Undefined index: Adm_UserData
+##################################################
+
+time: 30 Dec 17 - 6:50:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\image_up_loader.php
+line: 84
+
+code: E_WARNING
+message: imagedestroy() expects parameter 1 to be resource, string given
+##################################################
+

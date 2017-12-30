@@ -66,6 +66,8 @@ $('#previewing').attr('height', '230px');
 <div id="selectImage">
 <label>Select Your Image</label><br/>
 <input type="file" name="file" id="file" required />
+<input name="max_width_box" type="text" id="max_width_box" value="236" size="4">
+<input name="max_height_box" type="text" id="max_height_box" value="409" size="4">
 <input type="submit" value="Upload" class="submit" />
 </div>
 </form>

@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 //Maha ganapathaye Namah!
 //Bookstore FrontEnd V 1.0
 //� I biz Info Solutions
@@ -17,8 +19,10 @@ require_once(__DIR__.'/includes/header.php');
 			   </noscript>'; exit;
 			}
 	 }else{
+		 
 		 $email="'".$_SESSION['UserData'][1]."'";
-		 $results=$CustAddress->GetCustDAddress($email);
+		 //echo $email;
+		 $results=$CustAddress->GetCustDAddress("'".$_SESSION['UserData'][1]."'");
 		 $num_rows = mysqli_num_rows($results);
 	 if($num_rows > 0)
 	 {$rows =  mysqli_fetch_array($results);

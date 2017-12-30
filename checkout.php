@@ -816,7 +816,7 @@ if (!headers_sent())
        </noscript>'; exit;
     }
 }
-elseif(isset($_POST["encResp"]) && !empty($_POST["encResp"]))
+/*elseif(isset($_POST["encResp"]) && !empty($_POST["encResp"]))
 {
 ?>
 <script>
@@ -875,7 +875,7 @@ $(document).ready(function()
 	 </div>
 	  </div>
 <?php
-}
+}*/
 else{
 
 /*******************/
@@ -1436,6 +1436,65 @@ $('#OrderStaus').submit(function(){
 break;
 }
 /* End Switch */
+}
+elseif((isset($_REQUEST['encResp']))&&(!empty($_REQUEST['encResp']))){
+?><script>
+$(document).ready(function()
+{
+ 		//$('#Addre').modal('show');
+		 $.ajax({
+             url: './includes/checkout_process.php',
+             type: 'post',
+             data: '<?php echo 'encResp='.$_POST["encResp"] ?>'+'&Token=<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>'+'&Ordertotal=<?php echo ($_SESSION['Shipping']['Shipping_Cost']+$cart->total())?>',
+
+             success:function(data){
+                //setup variables
+                var responseData = jQuery.parseJSON(data);
+                //response conditional
+                switch(responseData.status){
+                    case 'error':
+					//$('#Addre').modal('hide');
+                    break;
+                    case 'success':
+					var url = responseData.Location;
+					var form = $('<form action="' + url + '" method="post">' +
+					  '<input type="text" name="OID" value="' + responseData.order_ID + '" />' +
+					  '</form>');
+					//$('#Addre').modal('hide');
+					 form.data('formstatus','idle');
+                    $('body').append(form);
+					form.submit();
+                    break;
+					case 'Aborted':
+					//$('#Addre').modal('hide');
+					$('#Pymnt').remove();
+					$('#Msg').append('<div class ="alert alert-danger" align="center"><h4>Your Payment was not Successful, '+responseData.message+'<br><a href="./checkout.php?process=Select_Payment">Click Here Pay Again </a></h4></div>');
+					break;
+					case 'Failure':
+					//$('#Addre').modal('hide');
+					$('#Pymnt').remove();
+					$('#Msg').append('<div class ="alert alert-danger" align="center"><h4>Your Payment was not Successful, '+responseData.message+'<br><a href="./checkout.php?process=Select_Payment">Click Here Pay Again </a></h4></div>');
+					break;
+                }
+
+
+           }
+      });
+});
+</script>
+<div class="clearfix"></div>
+	  <div class="clearfix"></div>
+	  <br><br>
+	<div class="container">
+	<div class="col-md-12">
+	<div class="row"id="Msg"></div>
+	<div id="Pymnt" class="modal fade in" data-backdrop="static" data-keyboard="false" >
+  <div class="loader" align="center" ><img src="../img/loader.gif" style="width: 100px;height: 100px;"/><p ><h2 >We are processing your Payment and will redirect to Payment Gateway <br>Do not Close or refresh the Page</p></h2></div>
+
+	 </div>
+	  </div><?php
+	
+
 }
  else/*Default View of Shopping cart*/
  {

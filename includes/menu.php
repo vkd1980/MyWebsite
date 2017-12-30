@@ -74,14 +74,14 @@ echo bootstrap_menu($menu_category);
 ?>
           </ul>
         </li>
-        <li class="dropdown"><a href="/manufacturers.html" class="dropdown-toggle" data-toggle="dropdown" > Publishers <b class="caret"></b></a>
+       <!--<li class="dropdown"><a href="/manufacturers.html" class="dropdown-toggle" data-toggle="dropdown" > Publishers <b class="caret"></b></a>
           <ul class='dropdown-menu'>
             <?php
 //$top_menu = bootstrap_menu($menu);
-echo buildManufactureMenu($menu_manufacture);
+//echo buildManufactureMenu($menu_manufacture);
 ?>
           </ul>
-        </li>
+        </li>-->
         <!------------------->
         <li><a href="../support.html">Support</a></li>
         <li><a href="../contact.html">Contact</a></li>

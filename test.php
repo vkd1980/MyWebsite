@@ -1,16 +1,20 @@
 <?php
-ini_set('max_execution_time', 300);
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
 //Maha ganapathaye Namah!
 //Bookstore FrontEnd V 1.0
 //© I biz Info Solutions
 require_once (__DIR__.'/includes/classes/global.inc.php');
 include(__DIR__.'/includes/header.php');
+include(__DIR__.'/includes/classes/Crypto.php');
 ?>
 <body>
 
 </body>
 <?php
-$cart->destroy();
+		print_r( getimagesize("img/photos/test.jpg"));
+
+//$cart->destroy();
 
 //echo phpinfo();
 //production
@@ -23,5 +27,8 @@ $cart->destroy();
 //MysqlServer version: 5.6.21 tested
 //Apache/2.4.10
 //PHP/5.6.3
-// include(__DIR__.'/includes/footer.php');*/
+?>
+<iframe src="<?php echo $production_url?>" id="paymentFrame" width="482" height="450" frameborder="0" scrolling="No" ></iframe>
+<?php
+include(__DIR__.'/includes/footer.php');
 ?>

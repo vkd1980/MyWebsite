@@ -161,9 +161,9 @@ function clear() {
             <br>
             <?php
 $query 	= $db->select("SELECT * FROM manufacturers ORDER BY manufacturers_name");
-	$count  = mysql_num_rows($query);
+	$count  = mysqli_num_rows($query);
 		if($count > 0) {
-			while($fetch = mysql_fetch_array($query)) {
+			while($fetch = mysqli_fetch_array($query)) {
 				$record[] = $fetch;
 			}
 		}

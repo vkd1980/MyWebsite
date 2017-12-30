@@ -290,9 +290,9 @@ function clear(){
             <br>
             <?php
 			$query 	= $db->select("SELECT tbl_emp_master.*, tblsecurityaccess.AccessTitle FROM tblsecurityaccess RIGHT JOIN tbl_emp_master ON tblsecurityaccess.AccessID = tbl_emp_master.Emp_Role Order by Emp_Code Asc");
-		$count  = mysql_num_rows($query);
+		$count  = mysqli_num_rows($query);
 if($count > 0) {
-			while($fetch = mysql_fetch_array($query)) {
+			while($fetch = mysqli_fetch_array($query)) {
 				$record[] = $fetch;
 			}
 		}
@@ -379,8 +379,8 @@ if($count > 0) {
         <td><select name="Emp_Role" id="Emp_Role"  class="form-control"  >
 			  <option value="0">Select </option>
                <?php $sql = "SELECT AccessID,AccessTitle FROM tblsecurityaccess";		
-					$result = mysql_query($sql);
-					while ($row = mysql_fetch_array($result)) 
+					$result = mysqli_query($sql);
+					while ($row = mysqli_fetch_array($result)) 
 					{
 					echo "<option value='" . $row['AccessID'] . "'>" . $row['AccessTitle'] . "</option>";
 					}

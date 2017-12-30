@@ -28,14 +28,17 @@ var flag = true;//stop checking
    $('#results').html('');
    $('.loading-info').show(); //show loading animation
    load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id"));
+   //setTimeout(function () { load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")) }, 1000);
 
     });
  //alert(srt);
 load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")); //initial content load
 $(window).scroll(function() { //detect page scroll
   if (flag==true){
-   if($(window).scrollTop() >550) {
+  if ($(window).scrollTop() >= ($(document).height() - $(window).height())*0.5){
+   //if($(window).scrollTop() >550) {
       track_page++; //page number increment
+	  //setTimeout(function () { load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")) }, 1000);
       load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")); //load content
     }
 	}
@@ -123,3 +126,8 @@ function load_contents(track_page,sor){
 include(__DIR__.'/includes/recent.php');
 include(__DIR__.'/includes/footer.php');
 ?>
+<script type="text/javascript">
+$(document).on({
+   	 ajaxStart: function() { $body.removeClass("loading");    }, 
+});
+</script>

@@ -103,6 +103,7 @@ if($count > 0) {
 	$response=array("ERROR","No Action Taken");
 	echo json_encode($response);
 	}*/
+	
 echo json_encode($db->updatedb($query));
 	break;
 	}

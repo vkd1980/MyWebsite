@@ -6,9 +6,9 @@ $action = isset($_REQUEST['action']) ? mysql_real_escape_string($_REQUEST['actio
 switch($action) {
 	case "load":
 	$query 	= $db->select("SELECT * FROM manufacturers ORDER BY manufacturers_name");
-	$count  = mysql_num_rows($query);
+	$count  = mysqli_num_rows($query);
 		if($count > 0) {
-			while($fetch = mysql_fetch_array($query)) {
+			while($fetch = mysqli_fetch_array($query)) {
 				$record[] = $fetch;
 			}
 		}
@@ -43,9 +43,9 @@ switch($action) {
 	$query = "SELECT * FROM manufacturers WHERE manufacturers_id='$catid'";
 	//$result = mysql_query($query) or die(mysql_error());
 	$result = $db->selectwhere('manufacturers',"manufacturers_id=$catid");
-	$num_rows = mysql_num_rows($result);
+	$num_rows = mysqli_num_rows($result);
 	if($num_rows > 0){
-    while($rows = mysql_fetch_array($result)){
+    while($rows = mysqli_fetch_array($result)){
         $response = array( $rows['manufacturers_id'], $rows['manufacturers_name']); // add return data to an array
         echo json_encode($response); // json encode that array
     }

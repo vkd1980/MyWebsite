@@ -5,6 +5,19 @@
 require_once (__DIR__.'/includes/classes/global.inc.php');
 include(__DIR__.'/includes/header.php');
 $Ptoken= hash_hmac('sha256', $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'], $_SESSION['csrf_token']);
+if(isset($_REQUEST["manufacturers_id"]) && (!empty($_REQUEST["manufacturers_id"])))
+//isset($_GET["categories_id"]) && (!empty(trim($_GET["categories_id"])))
+{
+ $Mid=filter_var($_REQUEST["manufacturers_id"], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH);
+ 
+ //filter_var($_REQUEST["categories_id"], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH)".'";
+ $PgHeading= $manufacturers-> getmannamebyid($_REQUEST["manufacturers_id"]);
+}
+else
+{
+$Mid='all';
+$PgHeading= 'All Publishers';
+}
 ?>
 <script>
 $(document).ready(function () {
@@ -17,7 +30,8 @@ var flag = true;//stop checking
     track_page=1;
    $('#results').html('');
    $('.loading-info').show(); //show loading animation
-   load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id"));
+   //load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id"));
+   setTimeout(function () { load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")) }, 1000);
 		
     });
  
@@ -27,10 +41,12 @@ load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")); //initia
 
 $(window).scroll(function() { //detect page scroll
   if (flag==true){
-   if($(window).scrollTop() >550) {
+  if ($(window).scrollTop() + $(window).height() == $(document).height())
+   //if($(window).scrollTop() >550) {
       track_page++; //page number increment
-      load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")); //load content   
-    }
+      //load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")); //load content   
+	  setTimeout(function () { load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")) }, 1000);
+    //}
 	}
 });       
 
@@ -43,22 +59,7 @@ function load_contents(track_page,sor){
 		$.post( '/includes/manufacturers_loader.php', {
 		'page': track_page,
 		'Token':'<?php echo $Ptoken;?>',
-		//
-		<?php if(isset($_GET["manufacturers_id"]) && (!empty(trim($_GET["manufacturers_id"]))))
-//isset($_GET["categories_id"]) && (!empty(trim($_GET["categories_id"])))
-{
- echo "'manufacturers_id':'".filter_var($_REQUEST["manufacturers_id"], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH)."',";
- 
- //filter_var($_REQUEST["categories_id"], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH)".'";
- $PgHeading= $manufacturers-> getmannamebyid($_REQUEST["manufacturers_id"]);
-}
-else
-{
-echo "'manufacturers_id':'all',";
-$PgHeading= 'All Publishers';
-}?>
-		//
-		
+		'manufacturers_id':'<?php echo $Mid;?>',
 		'sortt':sor
 		}, 
 		
@@ -153,3 +154,8 @@ $PgHeading= 'All Publishers';
 include(__DIR__.'/includes/recent.php');
 include(__DIR__.'/includes/footer.php');
 ?>
+<script type="text/javascript">
+$(document).on({
+   	 ajaxStart: function() { $body.removeClass("loading");    }, 
+});
+</script>
