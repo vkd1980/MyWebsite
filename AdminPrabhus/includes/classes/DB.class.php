@@ -68,7 +68,7 @@ class DB {
 	$dbcon = $this->connect();
 		foreach ($data as $column => $value) {
 			$sql = "UPDATE $table SET $column = $value WHERE $where";
-				
+
 			mysqli_query($dbcon,$sql) or die(mysql_error());
 		}
 		mysqli_close($dbcon);

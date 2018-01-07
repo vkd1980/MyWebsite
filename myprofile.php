@@ -108,6 +108,7 @@ data: {
 cache: false,
 success: function(html)
 {
+  console.log(html);
 if($.trim(html) === ""){
 
 $('#City')

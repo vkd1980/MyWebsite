@@ -8,6 +8,7 @@ require_once (__DIR__.'/includes/classes/global.inc.php');
 if(!empty($_REQUEST['Token']) && isset($_FILES["file"]["type"]) &&(hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/book_master.php', $_SESSION['csrf_token']))))
 {
 $pmodel=isset($_REQUEST['pmodel']) ? filter_var(($_REQUEST['pmodel']), FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH): '';
+$pid=isset($_REQUEST['pid']) ? filter_var(($_REQUEST['pid']), FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH): '';
 $validextensions = array("jpeg", "jpg", "png");
 $temporary = explode(".", $_FILES["file"]["name"]);
 $file_extension = end($temporary);
@@ -78,9 +79,12 @@ else
     //$data = array("products_image" => "'$remote_file'");
 //Update to DB
 $DBC = new DB();
-$DBC->updatedb("UPDATE `products` SET `products_image`='".$remote_file."' WHERE  `products_model`='".$pmodel."';");
+$DBC->updatedb("UPDATE `products` SET `products_image`='".$remote_file."' WHERE  `products_id`='".$pid."';");
 //Eof New
-echo "<span id='success'>Image Uploaded Successfully...!!</span><br/>";
+$response= array("OK", "Image Uploaded Successfully...!!");
+echo json_encode($response);
+
+//echo "<span id='success'>Image Uploaded Successfully...!!</span><br/>";
 //imagedestroy($_FILES["file"]["tmp_name"]);
 
 }
@@ -89,6 +93,12 @@ echo "<span id='success'>Image Uploaded Successfully...!!</span><br/>";
 }
 else
 {
-echo "<span id='invalid'>***Invalid file Size or Type***<span>";
+	$response= array("ERROR", "***Invalid file Size or Type***");
+	echo json_encode($response);
+//echo "<span id='invalid'>***Invalid file Size or Type***<span>";
 }
+}
+else {
+	$response= array("ERROR", "***Something Went Wrong.. !!***");
+	echo json_encode($response);
 }

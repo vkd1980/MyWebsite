@@ -105,6 +105,9 @@ require_once (__DIR__.'/includes/header.php');
 					</li>
 					</ul>
 		</div>
+		<div class="col-xs-12 col-md-12 well well-sm" id="type">
+
+		</div>
 	</div>
 	<!--/ Slider ends -->
 

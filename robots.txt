@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /AdminPrabhus/
+Disallow: /email/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /email/
+Disallow: /fonts/
+Disallow: /includes/
+Disallow: /js/
+Disallow: /img/

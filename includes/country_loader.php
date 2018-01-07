@@ -9,8 +9,8 @@ $id	= 	filter_var(($_REQUEST['id']), FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STR
 $page=  filter_var(($_REQUEST['page']), FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 $type=  filter_var(($_REQUEST['type']), FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 switch($page){
-case "signup.php" || "checkout.php":
-if ((hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/signup.php', $_SESSION['csrf_token']))) || (hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/checkout.php', $_SESSION['csrf_token'])))|| (hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/Myprofile.php', $_SESSION['csrf_token'])))){
+case "signup.php" || "checkout.php" || "myprofile.php":
+if ((hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/signup.php', $_SESSION['csrf_token']))) || (hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/checkout.php', $_SESSION['csrf_token'])))|| (hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/myprofile.php', $_SESSION['csrf_token'])))){
 		switch($type){
 			case "state":
 			$DBC = new DB();

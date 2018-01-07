@@ -203,29 +203,28 @@ require_once (__DIR__.'/includes/sidebar.php');
  <!-- Modal -->
 <div id="myModalImage" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
-    <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title"> Upload Image </h4>
       </div>
       <div class="modal-body">
-
+        <div class="alert alert-success" id="messageImg" align="center"></div>
         <form class="form-vertical" role="form" id="uploadimage" action="" method="post" enctype="multipart/form-data">
-          <div class="col-xs-12 col-md-12">
+          <div class="row">
+            <div class="col-xs-12 col-md-12">
             <h4><label id="Lisbn" class="control-label">ISBN</label>
             &nbsp;&nbsp;<label id="LTitle" class="control-label">Title</label></h4>
            </div>
-        <div class="col-xs-12 col-md-12" id="image_preview"><img id="previewing" width="130px" height="150px" src="/img/photos/default.png" /></div>
-
-        <div class="form-group col-xs-12 col-md-12" id="selectImage">
+           <div class="col-xs-12 col-md-12" id="image_preview"><img id="previewing" width="130px" height="150px" src="/img/photos/default.png" /></div>
+           <div class="form-group col-xs-12 col-md-12" id="selectImage">
           <div class="form-group col-xs-6 col-md-6">
       <label for="file" class="control-label">Select Your Image File</label>
         <input type="file" name="file" id="file" required />
       </div>
       <div class="form-group col-xs-6 col-md-6">
         <input name="pmodel" type="hidden" id="pmodel" >
+        <input name="pid" type="hidden" id="pid" >
       <input name="Token" type="hidden" id="Token"value="<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>" >
         <input name="max_width_box" type="hidden" id="max_width_box" value="236" size="4">
         <input name="max_height_box" type="hidden" id="max_height_box" value="409" size="4">
@@ -234,16 +233,13 @@ require_once (__DIR__.'/includes/sidebar.php');
         <div class="clearfix"></div>
           </div>
         </div>
+         </div>
         </form>
-        <h4 id='loading' >loading..</h4>
-        <div id="message"></div>
-
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           </div>
     </div>
-
   </div>
 </div>
  <!--EOF Upload Image Modal-->
@@ -254,6 +250,11 @@ require_once (__DIR__.'/includes/footer.php');
  <script type="text/javascript">
 $(document).ready(function () {
   $('#message').hide();
+  $('#messageImg').hide();
+  $("#myModal").on("hidden.bs.modal", function () {
+  clear()
+});
+
   CKEDITOR.replace( 'products_description1' );
   /**********/
   var dataTable = $('#data-table-12').DataTable( {
@@ -324,6 +325,7 @@ $(document).ready(function () {
              $('#Lisbn').text('ISBN/Code :-'+data[2]);
              $('#LTitle').text('Title :-'+data[4]);
              $('#pmodel').val(data[2]);
+             $('#pid').val(data[0]);
            $.ajax({
     url:'/img/photos/'+data[2]+'.jpg',
     type:'HEAD',
@@ -445,6 +447,7 @@ $(document).ready(function () {
 
       //Eof Get data from DB
     });
+
     $("#btncancel,#btnrf").on('click', function() {
     	clear()
     	dataTable.ajax.reload();
@@ -545,20 +548,34 @@ var PD= CKEDITOR.instances['products_description1'].getData();
   /*********Image*********/
   $("#uploadimage").on('submit',(function(e) {
 e.preventDefault();
-$("#message").empty();
+$("#messageImg").empty();
 $('#loading').show();
 $.ajax({
 url: "image_up_loader.php", // Url to which the request is send
-type: "POST",             // Type of request to be send, called as method
+type: "POST",
+dataType: "json",            // Type of request to be send, called as method
 data: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
 contentType: false,       // The content type used when sending data to the server.
 cache: false,             // To unable request pages to be cached
 processData:false,        // To send DOMDocument or non processed data file it is set to false
 success: function(data)   // A function to be called if request succeeds
 {
-console.log(data);
+  console.log(data);
+if (data[0] == 'OK') {
 $('#loading').hide();
-$("#message").html(data);
+$("#messageImg").removeClass('alert-danger');
+$("#messageImg").addClass('alert-success');
+$("#messageImg").fadeIn();
+$('#messageImg').text(data[1]);
+$('#messageImg').delay(3000).fadeOut();
+}
+else {
+  $("#messageImg").fadeIn();
+  $("#messageImg").removeClass('alert-success');
+  $("#messageImg").addClass('alert-danger');
+  $('#messageImg').text(data[1]);
+  $('#messageImg').delay(3000).fadeOut();
+}
 }
 });
 }));
@@ -566,7 +583,7 @@ $("#message").html(data);
 // Function to preview image after validation
 $(function() {
 $("#file").change(function() {
-$("#message").empty(); // To remove the previous error message
+$("#messageImg").empty(); // To remove the previous error message
 var file = this.files[0];
 var imagefile = file.type;
 var match= ["image/jpeg","image/png","image/jpg"];
@@ -574,7 +591,7 @@ if(!((imagefile==match[0]) || (imagefile==match[1]) || (imagefile==match[2])))
 {
 $('#previewing').attr('src','/img/photos/default.png');
 
-$("#message").html("<p id='error'>Please Select A valid Image File</p>"+"<h4>Note</h4>"+"<span id='error_message'>Only jpeg, jpg and png Images type allowed</span>");
+$("#messageImg").text("Please Select A valid Image File"+"<br>Only jpeg, jpg and png Images type allowed");
 return false;
 }
 else

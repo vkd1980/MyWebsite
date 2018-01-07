@@ -29,6 +29,23 @@
 <link rel="stylesheet" type="text/css" href="../css/settings.css" />
 <link rel="stylesheet" type="text/css" href="../css/sidebar-nav.css" />
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
+<style>
+#type {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 200;
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-50249535-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-50249535-1');
+</script>
+
 </head>
 <body>
 <!-- Javascript files -->
@@ -54,7 +71,7 @@
 <!-- Custom JS-->
 <script src="../js/bootstrap-dropdownhover.min.js"></script>
 
-	
+
 <div class="col-md-8 pull-right">
 
 </div>
@@ -75,7 +92,7 @@
 								  <th>Quantity</th>
 								  <th>Price</th>
 								  <th>Total</th>
-								  
+
 								</tr>
 							</thead>
 							<tbody>
@@ -99,7 +116,7 @@
 								  <th><?php echo $cart->total_weight()?>Kg</th>
 								  <th>Total</th>
 								  <th align="right"> <?php echo '<span class="fa fa-inr"></span> '.number_format( (float) $cart->total(), 2, '.', '').''; ?></th>
-								  
+
 								</tr>
 							</tbody>
 						</table>
@@ -112,7 +129,7 @@
 			</div>
 		</div>
 		<!--/ Cart modal ends -->
-		
+
 <!-- Header starts -->
 <header>
   <div class="container">
@@ -125,7 +142,7 @@
         </div>
       </div>
       <div class="col-md-4 col-md-offset-4">
-        <!-- Search form 
+        <!-- Search form
         <form role="form">
         <div class="input-group">
             <input type="email" class="form-control" id="search1" placeholder="Search">
@@ -162,8 +179,8 @@
     <img src="" class="imagepreview">
    </div>
    <div class="modal-footer">
-   
-  
+
+
   </div>
   </div>
 
