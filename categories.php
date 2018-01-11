@@ -17,65 +17,96 @@ $PgHeading= 'All Subjects';
 }?>
 
 <script>
-$(document).ready(function () {
-var track_page = 1; //track user scroll as page number, right now page number is 1
-var loading  = false; //prevents multiple loads
-var flag = true;//stop checking
+var ajax_arry=[];
+ var ajax_index =0;
+ var sctp = 100;
+ $(function(){
+ $('.loading-info').show()
+ $('#nomore').hide();//hide no more
+ $.ajax({
+ url:'./includes/categories_loader1.php',
+ type:"POST",
+ data:{
+ 'page': '1',
+ 'Token':'<?php echo $Ptoken;?>',
+ 'categories_id':'<?php echo $catID;?>',
+ 'sortt':'all'
+ },
+ cache: false,
+ success: function(response){
+ $('.loading-info').hide();
+ $('#results').html(response);
+ }
+ });
+ $('#ddlViewBy').change(function () {
 
-   $('#ddlViewBy').change(function () {
-   flag = true;
-   track_page=1;
    $('#results').html('');
    $('.loading-info').show(); //show loading animation
-   load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id"));
-   //setTimeout(function () { load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")) }, 1000);
-
+  $.ajax({
+ url:'./includes/categories_loader1.php',
+ type:"POST",
+ data:{
+ 'page': '1',
+ 'Token':'<?php echo $Ptoken;?>',
+ 'categories_id':'<?php echo $catID;?>',
+ 'sortt':$('#ddlViewBy').find(":selected").attr("id")
+ },
+ cache: false,
+ success: function(response){
+ $('.loading-info').hide();
+ $('#results').html(response);
+ }
+ });
     });
- //alert(srt);
-load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")); //initial content load
-$(window).scroll(function() { //detect page scroll
-  if (flag==true){
-  if ($(window).scrollTop() >= ($(document).height() - $(window).height())*0.5){
-   //if($(window).scrollTop() >550) {
-      track_page++; //page number increment
-	  //setTimeout(function () { load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")) }, 1000);
-      load_contents(track_page,$('#ddlViewBy').find(":selected").attr("id")); //load content
-    }
-	}
-});
-//Ajax load function
-function load_contents(track_page,sor){
-    if(loading == false){
-        loading = true;  //set loading flag on
-		 $('#nomore').hide();//hide no more
-        $('.loading-info').show(); //show loading animation
-		$.post( './includes/categories_loader.php', {
-		'page': track_page,
-		'Token':'<?php echo $Ptoken;?>',
-		'categories_id':'<?php echo $catID;?>',
-		'sortt':sor
-		},
+ $(window).scroll(function(){
 
-	function(data){
-    console.log(track_page,sor);
-        loading = false; //set loading flag off once the content is loaded
-		if(data.trim().length == 0){
-		//notify user if nothing to load
-		$('#nomore').show();
+ var height = $('#results').height();
+ var scroll_top = $(this).scrollTop();
+ if(ajax_arry.length>0){
+ $('.loading-info').hide();
+ for(var i=0;i<ajax_arry.length;i++){
+ ajax_arry[i].abort();
+ }
+ }
+ var page = $('#results').find('.nextpage').val();
+ var isload = $('#results').find('.isload').val();
+var sortt=$('#ddlViewBy').find(":selected").attr("id");
+ //if ((($(window).scrollTop()+document.body.clientHeight)==$(window).height()) && isload=='true'){
+ if (($(window).scrollTop() >= ($(document).height() - $(window).height())*0.5)&& isload=='true'){
+ $('.loading-info').show()
+ var ajaxreq = $.ajax({
+ url:'./includes/categories_loader1.php',
+ type:"POST",
+ data:{
+ 'page': page,
+ 'Token':'<?php echo $Ptoken;?>',
+ 'categories_id':'<?php echo $catID;?>',
+ 'sortt':sortt
+ },
+ cache: false,
+ success: function(response){
+      if(response.trim().length == 0){
+		   //notify user if nothing to load
+		  $('#nomore').show();
         $('.loading-info').hide(); //show loading animation
-        flag=false;
+        $('#results').find('.isload').val('false');
         return;
         }
-        $('.loading-info').hide(); //hide loading animation once data is received
 
-        $("#results").append(data); //append data into #results element
-
-        }).fail(function(xhr, ajaxOptions, thrownError) { //any errors?
-            alert(thrownError); //alert with HTTP error
-        })
-    }
-}
+ $('#results').find('.nextpage').remove();
+ $('#results').find('.isload').remove();
+ //$('#results').hide();
+ $('#results').append(response);
+ }
  });
+ ajax_arry[ajax_index++]= ajaxreq;
+ }
+ return false;
+ if($(window).scrollTop() == $(window).height()) {
+ alert("bottom!");
+ }
+ });
+});
  </script>
 <!-- Items -->
 

@@ -22,3 +22,11 @@ code: E_NOTICE
 message: Undefined index: sortt
 ##################################################
 
+time: 11 Jan 18 - 10:34:10 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\categories_loader1.php
+line: 150
+
+code: E_NOTICE
+message: Undefined variable: page
+##################################################
+

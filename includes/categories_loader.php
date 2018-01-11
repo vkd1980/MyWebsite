@@ -4,7 +4,7 @@ require_once (__DIR__.'/classes/global.inc.php');
 /* testing begin*/
 if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
   //Request identified as ajax request
-  if ((isset($_REQUEST['Token']))&&(!empty($_REQUEST['page'])) &&(hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/categories.php', $_SESSION['csrf_token'])))){
+  if ((isset($_REQUEST['Token']))&&(!empty($_REQUEST['page'])) &&(hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/categories1.php', $_SESSION['csrf_token'])))){
 
   /*********************/
   if(isset($_REQUEST['page'])){
@@ -28,7 +28,7 @@ if(isset($_REQUEST['Token'])){
       exit();
     }
     //elseif (hash_equals($_REQUEST['Token'] ,hash_hmac('sha256', $_SERVER['SERVER_NAME'].'categories.php', $_SESSION['csrf_token'])){
-	elseif(hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/categories.php', $_SESSION['csrf_token']))){
+	elseif(hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/categories1.php', $_SESSION['csrf_token']))){
 
 
 		}
@@ -147,6 +147,7 @@ else{
 }
 
     }
+    echo '<input type="hidden" class="nextpage" value="'.($page_number+1).'"><input type="hidden" class="isload" value="true">';
 	}
 break;
 case "a2z":
@@ -242,6 +243,7 @@ else{
 								</div>';
 }
     }
+    echo '<input type="hidden" class="nextpage" value="'.($page_number+1).'"><input type="hidden" class="isload" value="true">';
 	}
 break;
 case "z2a":
@@ -337,6 +339,7 @@ else{
 								</div>';
 }
     }
+    echo '<input type="hidden" class="nextpage" value="'.($page_number+1).'"><input type="hidden" class="isload" value="true">';
 	}
 break;
 case "l2h":
@@ -432,6 +435,7 @@ else{
 								</div>';
 }
     }
+    echo '<input type="hidden" class="nextpage" value="'.($page_number+1).'"><input type="hidden" class="isload" value="true">';
 	}
 break;
 case "h2l":
@@ -527,6 +531,7 @@ else{
 								</div>';
 }
     }
+    echo '<input type="hidden" class="nextpage" value="'.($page_number+1).'"><input type="hidden" class="isload" value="true">';
 	}
 break;
 
