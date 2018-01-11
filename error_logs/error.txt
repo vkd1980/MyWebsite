@@ -1,0 +1,24 @@
+time: 8 Jan 18 - 9:40:34 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\headermenu.php
+line: 93
+
+code: E_NOTICE
+message: Undefined index: Adm_UserData
+##################################################
+
+time: 9 Jan 18 - 9:38:53 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\categories_loader.php
+line: 54
+
+code: E_NOTICE
+message: Undefined index: sortt
+##################################################
+
+time: 9 Jan 18 - 9:39:10 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\categories_loader.php
+line: 54
+
+code: E_NOTICE
+message: Undefined index: sortt
+##################################################
+

@@ -57,6 +57,7 @@ function load_contents(track_page,sor){
 		},
 
 	function(data){
+    console.log(track_page,sor);
         loading = false; //set loading flag off once the content is loaded
 		if(data.trim().length == 0){
 		//notify user if nothing to load
@@ -128,6 +129,6 @@ include(__DIR__.'/includes/footer.php');
 ?>
 <script type="text/javascript">
 $(document).on({
-   	 ajaxStart: function() { $body.removeClass("loading");    }, 
+   	 ajaxStart: function() { $body.removeClass("loading");    },
 });
 </script>

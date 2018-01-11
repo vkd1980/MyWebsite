@@ -4,31 +4,31 @@ require_once (__DIR__.'/classes/global.inc.php');
 /* testing begin*/
 if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
   //Request identified as ajax request
-  if ((isset($_POST['Token']))&&(!empty($_POST['page'])) &&(hash_equals($_POST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/categories.php', $_SESSION['csrf_token'])))){
+  if ((isset($_REQUEST['Token']))&&(!empty($_REQUEST['page'])) &&(hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/categories.php', $_SESSION['csrf_token'])))){
 
   /*********************/
-  if(isset($_POST['page'])){
+  if(isset($_REQUEST['page'])){
 
-    if(empty($_POST['page'])){
+    if(empty($_REQUEST['page'])){
       $page_number = 1;
     }
-    elseif(!is_numeric($_POST['page'])){
+    elseif(!is_numeric($_REQUEST['page'])){
 	 echo 'page must be numeric';
 	 exit();
 	 }
 	else
 	{
-	$page_number = filter_var($_POST["page"], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH);
+	$page_number = filter_var($_REQUEST["page"], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH);
 	}
 }
 //check Token is empty
-if(isset($_POST['Token'])){
+if(isset($_REQUEST['Token'])){
 
-    if(empty($_POST['Token'])){
+    if(empty($_REQUEST['Token'])){
       exit();
     }
-    //elseif (hash_equals($_POST['Token'] ,hash_hmac('sha256', $_SERVER['SERVER_NAME'].'categories.php', $_SESSION['csrf_token'])){
-	elseif(hash_equals($_POST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/categories.php', $_SESSION['csrf_token']))){
+    //elseif (hash_equals($_REQUEST['Token'] ,hash_hmac('sha256', $_SERVER['SERVER_NAME'].'categories.php', $_SESSION['csrf_token'])){
+	elseif(hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/categories.php', $_SESSION['csrf_token']))){
 
 
 		}
@@ -38,20 +38,20 @@ if(isset($_POST['Token'])){
 	}
 }
 //check manufacturers_id is empty
-if(isset($_POST["categories_id"])){
+if(isset($_REQUEST["categories_id"])){
 
-    if((empty($_POST["categories_id"]))||(!is_numeric($_POST["categories_id"]))){
+    if((empty($_REQUEST["categories_id"]))||(!is_numeric($_REQUEST["categories_id"]))){
       	  $where = "master_categories_id LIKE '%'";
     }
     else{
-	$where = "master_categories_id=".filter_var($_POST["categories_id"], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH);
+	$where = "master_categories_id=".filter_var($_REQUEST["categories_id"], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH);
 	}
 }
 else{
  $categories_id= "'%'";
 }
 
-$srt = filter_var($_POST["sortt"], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+$srt = filter_var($_REQUEST["sortt"], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 switch($srt){
 case "all":
 $position = (($page_number-1) * $item_per_page);
