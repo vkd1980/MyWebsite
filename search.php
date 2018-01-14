@@ -80,6 +80,7 @@ if(searchid!='')
     cache: false,
     success: function(html)
     {
+			//console.log(html);
     $("#searchresult").html(html).show();
     }
     });
@@ -116,7 +117,7 @@ $('#searchid' )
       <div class="col-md-9 col-sm-9">
         <div class="container">
           <input type="text" class="search" id="searchid" placeholder="Keywords of Book Name, Author, Category, Publisher" />
-          <div id="searchresultt" ></div>
+          <div id="searchresult" ></div>
         </div>
       </div>
     </div>
@@ -126,3 +127,8 @@ $('#searchid' )
 
  include(__DIR__.'/includes/footer.php');
 ?>
+<script type="text/javascript">
+$(document).on({
+   	 ajaxStart: function() { $body.removeClass("loading");    },
+});
+</script>

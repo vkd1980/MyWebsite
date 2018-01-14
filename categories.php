@@ -19,12 +19,12 @@ $PgHeading= 'All Subjects';
 <script>
 var ajax_arry=[];
  var ajax_index =0;
- var sctp = 100;
+ var sctp = 10;
  $(function(){
  $('.loading-info').show()
  $('#nomore').hide();//hide no more
  $.ajax({
- url:'./includes/categories_loader1.php',
+ url:'./includes/categories_loader.php',
  type:"POST",
  data:{
  'page': '1',
@@ -43,7 +43,7 @@ var ajax_arry=[];
    $('#results').html('');
    $('.loading-info').show(); //show loading animation
   $.ajax({
- url:'./includes/categories_loader1.php',
+ url:'./includes/categories_loader.php',
  type:"POST",
  data:{
  'page': '1',
@@ -67,15 +67,15 @@ var ajax_arry=[];
  for(var i=0;i<ajax_arry.length;i++){
  ajax_arry[i].abort();
  }
- }
+}
  var page = $('#results').find('.nextpage').val();
  var isload = $('#results').find('.isload').val();
 var sortt=$('#ddlViewBy').find(":selected").attr("id");
  //if ((($(window).scrollTop()+document.body.clientHeight)==$(window).height()) && isload=='true'){
- if (($(window).scrollTop() >= ($(document).height() - $(window).height())*0.5)&& isload=='true'){
+ if (($(window).scrollTop() >= ($(document).height() - $(window).height())*0.6)&& isload=='true'){
  $('.loading-info').show()
  var ajaxreq = $.ajax({
- url:'./includes/categories_loader1.php',
+ url:'./includes/categories_loader.php',
  type:"POST",
  data:{
  'page': page,

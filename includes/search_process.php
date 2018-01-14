@@ -1,12 +1,14 @@
 <?php
-if((empty($_SERVER['HTTP_X_REQUESTED_WITH']) or strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') or empty($_POST)){/*Detect AJAX and POST request*/
-  exit("Unauthorized Access");
-}
+//if((empty($_SERVER['HTTP_X_REQUESTED_WITH']) or strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') or empty($_REQUEST)){/*Detect AJAX and POST request*/
+  //exit("Unauthorized Access");
+//}
 require_once (__DIR__.'/classes/global.inc.php');
-if($_POST)
+if($_REQUEST)
 {
-$q=filter_var($_POST['search'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+$q=filter_var($_REQUEST['search'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 $sql_res=$product->getprodSearchid("products_name like '%$q%' or products_author like '%$q%' or manufacturers_name like '%$q%' or categories_name like '%$q%'");
+$num_rows = mysqli_num_rows($sql_res);
+if($num_rows > 0){
 while($row=mysqli_fetch_array($sql_res))
 {
 $prod_name= strtoupper($row['products_name']);
@@ -26,8 +28,16 @@ echo'<div class="show" align="left">
 <b>PUBLISHER :- </b>'.strtoupper($b_prod_man).'
 
 </div>';
-			
 
+
+}
+}
+else{
+  echo'<div class="show" align="left">
+   <p><b>No produts found !</b></p>
+
+
+  </div>';
 }
 }
 ?>
