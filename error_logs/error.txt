@@ -1,142 +1,14 @@
-time: 14 Jan 18 - 8:49:54 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: order
-##################################################
-
-time: 14 Jan 18 - 8:49:54 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: 
-##################################################
-
-time: 14 Jan 18 - 8:49:54 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: order
-##################################################
-
-time: 14 Jan 18 - 8:49:54 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: start
-##################################################
-
-time: 14 Jan 18 - 8:49:54 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: length
-##################################################
-
-time: 14 Jan 18 - 8:49:54 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 47
+time: 15 Jan 18 - 10:28:57 PM (IST)
+file: E:\prabhusbooks\htdocs\myaccount.php
+line: 45
 
 code: E_WARNING
-message: mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given
+message: mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given
 ##################################################
 
-time: 14 Jan 18 - 8:51:11 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: order
-##################################################
-
-time: 14 Jan 18 - 8:51:11 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: 
-##################################################
-
-time: 14 Jan 18 - 8:51:11 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: order
-##################################################
-
-time: 14 Jan 18 - 8:51:11 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: start
-##################################################
-
-time: 14 Jan 18 - 8:51:11 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: length
-##################################################
-
-time: 14 Jan 18 - 8:51:11 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 47
-
-code: E_WARNING
-message: mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given
-##################################################
-
-time: 14 Jan 18 - 8:51:39 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: order
-##################################################
-
-time: 14 Jan 18 - 8:51:39 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: 
-##################################################
-
-time: 14 Jan 18 - 8:51:39 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: order
-##################################################
-
-time: 14 Jan 18 - 8:51:39 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: start
-##################################################
-
-time: 14 Jan 18 - 8:51:39 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 42
-
-code: E_NOTICE
-message: Undefined index: length
-##################################################
-
-time: 14 Jan 18 - 8:51:39 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\order_loader.php
-line: 47
+time: 15 Jan 18 - 10:28:57 PM (IST)
+file: E:\prabhusbooks\htdocs\myaccount.php
+line: 49
 
 code: E_WARNING
 message: mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given
