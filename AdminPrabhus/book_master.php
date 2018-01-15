@@ -51,7 +51,7 @@ require_once (__DIR__.'/includes/sidebar.php');
    						<!-- Table -->
    						<div class="table-responsive">
    							<div class="form-group col-xs-3 col-md-3 pull-right ">
-   								<input type="button" id="btnaddnew" value="Add New" title="Add New" class="btn btn-success" data-toggle="modal" data-target="#myModal" />
+   								<input type="button" id="btnaddnew" value="Add New" title="Add New" class="btn btn-success"  />
    								<input type="button" id="btnrf" value="Refresh" title="Refresh" class="btn btn-warning" />
    							</div>
    							<table cellpadding="0" cellspacing="0" border="0" id="data-table-12" width="100%">
@@ -99,13 +99,13 @@ require_once (__DIR__.'/includes/sidebar.php');
 </div>
 
            <!--form-->
-           <form class="form-vertical" role="form" name="gridder_addform" id="gridder_addform" autocomplete="off">
+           <form class="form-vertical" role="form" name="gridder_addform" id="gridder_addform" >
              <div class="alert alert-success" id="message" align="center"></div>
              <div class="form-group col-xs-3 col-md-3">
                <label for="products_model" class="control-label">ISBN/Code</label>
                <input type="text" name="products_model" class="form-control" id="products_model" placeholder="ISBN/Code">
-               <input type="hidden" name="action" id= "action" value="addnew" />
-               <input type="hidden"  name="products_id" id="products_id" value="0" />
+               <input type="hidden" name="action" id= "action" value="addnew" >
+               <input type="hidden"  name="products_id" id="products_id" value="0" >
              </div>
              <div class="form-group col-xs-3 col-md-3">
                <label for="products_author" class="control-label">Author</label>
@@ -251,10 +251,6 @@ require_once (__DIR__.'/includes/footer.php');
 $(document).ready(function () {
   $('#message').hide();
   $('#messageImg').hide();
-  $("#myModal").on("hidden.bs.modal", function () {
-  clear()
-});
-
   CKEDITOR.replace( 'products_description1' );
   /**********/
   var dataTable = $('#data-table-12').DataTable( {
@@ -365,7 +361,7 @@ $(document).ready(function () {
             //$("#products_model").val("").css("display", 2);
         }
     });
-    $("#products_model").autocomplete( "option", "appendTo", "#gridder_addform" );
+    //$("#products_model").autocomplete( "option", "appendTo", "#gridder_addform" );
     /**************/
     function getvalues(catid) {
         //var empcode = $("input[name='Emp_Code']:text").val();
@@ -426,9 +422,11 @@ $(document).ready(function () {
       $.getJSON(
           "includes/book_master_loader.php?action=search&Token=<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>&catid=" + $("#products_model").val(),
           function (data) {
+            console.log(data);
             if (data[0]!=0){
-              $("#products_id").val(output[0]['products_id']),
+              $("#action").val("update");
               $("#products_model").val(data[0]['products_model']),
+              $("#products_id").val(data[0]['products_id']),
               $("#products_author").val(data[0]['products_author']),
               $("#products_name").val(data[0]['products_name']),
               $("#products_edition").val(data[0]['products_edition'])
@@ -442,106 +440,115 @@ $(document).ready(function () {
               $("#products_image").val(data[0]['products_image']),
               $("#products_quantity").val(data[0]['products_quantity']),
               CKEDITOR.instances['products_description1'].setData(data[0]['products_description']);
+              $('#btnsave').val('Edit');
             }
           });
 
       //Eof Get data from DB
     });
+    /**Form Validation**/
+    $("#gridder_addform").validate({
+    					rules: {
+                  products_model: {required: true},
+                  products_author: {required: true},
+                  products_name: {required: true},
+                  manufacturers_id: {selectcat: "-1",required: true},
+                  master_categories_id: {selectcat: "-1",required: true},
+                  products_edition: {required: true},
+                  products_curid: {selectcat: "-1",required: true},
+                  products_rate: {required: true,number:true},
+                  products_price:{required: true,number:true},
+                  products_quantity:{required: true,number:true},
+                  product_min_qty:{required: true,number:true},
+                  products_weight:{required: true,number:true}
+    								},
+    					messages: {
+                  products_model: {required: "Please enter ISBN/Code"},
+                  products_author: {required: "Please enter Author Name"},
+                  products_name: {required: "Please enter Book Name"},
+                  products_edition: {required: "Please enter Edition"},
+                  products_rate: {required: "Please enter Book Price",number:"Please enter Book Price in Number"},
+                  products_quantity:{required: "Please enter Stock or Enter 0",number:"Please enter Stock in Number"},
+                  product_min_qty:{required: "Please enter Re-Order Qty or Enter 0",number:"Please enter Re-Order Qty in Number"},
+                  products_weight:{required: "Please enter Weight in KG",number:"Please enter Weight in Number"}
+    						},
+    	showErrors: function(errorMap, errorList) {
+    				$.each(this.successList, function(index, value) {
+    				return $(value)
+    					.popover("hide");
+    					});
+    			return $.each(errorList, function(index, value) {
+    				var _popover;
+    					//console.log(value.message);
+    				_popover = $(value.element)
+    				.popover({
+    				trigger: "manual",
+    				placement: "top",
+    				content: value.message,
+    				template: "<div class=\"popover\"><div class=\"arrow\"></div><div class=\"popover-inner\"><div class=\"popover-content\"><p></p></div></div></div>"
+    				});
+    				_popover.data("popover")
+    				.options.content = value.message;
+    				return $(value.element)
+    				.popover("show");
+    				});
+    								},
 
-    $("#btncancel,#btnrf").on('click', function() {
-    	clear()
+    		submitHandler: function() {
+          var fdata = $("#gridder_addform").serialize();
+  var PD= CKEDITOR.instances['products_description1'].getData();
+          $.ajax({
+              url: 'includes/book_master_loader.php',
+              type: 'POST',
+              data: "products_description=" + PD + "&" + fdata,
+              dataType: "json",
+              beforeSend: function() {
+                calcprice()
+                  $("#message").removeClass('alert-success');
+                  $("#message").addClass('alert-danger');
+                  $('#message').text('Please Wait.....');
+              },
+              success: function(output) {
+                  if (output[0] == 'OK') {
+                      $("#message").removeClass('alert-danger');
+                      $("#message").addClass('alert-success');
+                      $("#message").fadeIn();
+                      $('#message').text(output[1]);
+                      $('#message').delay(3000).fadeOut();
+                      alert(output[1]);
+                      clear();
+                  } else {
+                    alert (output[1]);
+                      $("#message").fadeIn();
+                      $("#message").removeClass('alert-success');
+                      $("#message").addClass('alert-danger');
+                      $('#message').text(output[1]);
+                      alert(output[1]);
+                      $('#message').delay(3000).fadeOut();
+                  }
+              }
+          });
+          /***************/
+    			}
+    });
+    /**EOF Form Validation**/
+$("#btncancel").on('click', function() {
+  clear()
+  });
+  $("#btnaddnew").on('click', function() {
+    clear()
+    $('#myModal').modal('show');
+    });
+    $("#btnrf").on('click', function() {
+    	//clear()
     	dataTable.ajax.reload();
     	return false;
     	});
       $.validator.addMethod("selectcat", function(value, element, arg) {
           return arg != value;
       }, "Select This.");
-  /**Form Validation**/
-  $("#gridder_addform").validate({
-  					rules: {
-                products_model: {required: true},
-                products_author: {required: true},
-                products_name: {required: true},
-                manufacturers_id: {selectcat: "-1",required: true},
-                master_categories_id: {selectcat: "-1",required: true},
-                products_edition: {required: true},
-                products_curid: {selectcat: "-1",required: true},
-                products_rate: {required: true,number:true},
-                products_price:{required: true,number:true},
-                products_quantity:{required: true,number:true},
-                product_min_qty:{required: true,number:true},
-                products_weight:{required: true,number:true}
-  								},
-  					messages: {
-                products_model: {required: "Please enter ISBN/Code"},
-                products_author: {required: "Please enter Author Name"},
-                products_name: {required: "Please enter Book Name"},
-                products_edition: {required: "Please enter Edition"},
-                products_rate: {required: "Please enter Book Price",number:"Please enter Book Price in Number"},
-                products_quantity:{required: "Please enter Stock or Enter 0",number:"Please enter Stock in Number"},
-                product_min_qty:{required: "Please enter Re-Order Qty or Enter 0",number:"Please enter Re-Order Qty in Number"},
-                products_weight:{required: "Please enter Weight in KG",number:"Please enter Weight in Number"}
-  						},
-  	showErrors: function(errorMap, errorList) {
-  				$.each(this.successList, function(index, value) {
-  				return $(value)
-  					.popover("hide");
-  					});
-  			return $.each(errorList, function(index, value) {
-  				var _popover;
-  					//console.log(value.message);
-  				_popover = $(value.element)
-  				.popover({
-  				trigger: "manual",
-  				placement: "top",
-  				content: value.message,
-  				template: "<div class=\"popover\"><div class=\"arrow\"></div><div class=\"popover-inner\"><div class=\"popover-content\"><p></p></div></div></div>"
-  				});
-  				_popover.data("popover")
-  				.options.content = value.message;
-  				return $(value.element)
-  				.popover("show");
-  				});
-  								},
 
-  		submitHandler: function() {
-        var fdata = $("#gridder_addform").serialize();
-var PD= CKEDITOR.instances['products_description1'].getData();
-        $.ajax({
-            url: 'includes/book_master_loader.php',
-            type: 'POST',
-            data: "products_description=" + PD + "&" + fdata,
-            dataType: "json",
-            beforeSend: function() {
-              calcprice()
-                $("#message").removeClass('alert-success');
-                $("#message").addClass('alert-danger');
-                $('#message').text('Please Wait.....');
-            },
-            success: function(output) {
-                if (output[0] == 'OK') {
-                    $("#message").removeClass('alert-danger');
-                    $("#message").addClass('alert-success');
-                    $("#message").fadeIn();
-                    $('#message').text(output[1]);
-                    $('#message').delay(3000).fadeOut();
-                    alert(output[1]);
-                    clear();
-                } else {
-                  alert (output[1]);
-                    $("#message").fadeIn();
-                    $("#message").removeClass('alert-success');
-                    $("#message").addClass('alert-danger');
-                    $('#message').text(output[1]);
-                    alert(output[1]);
-                    $('#message').delay(3000).fadeOut();
-                }
-            }
-        });
-        /***************/
-  			}
-  });
-  /**EOF Form Validation**/
+
   $("#products_rate").focusout(function(){
     calcprice()
   });
@@ -611,6 +618,7 @@ $('#previewing').attr('height', '130px');
 };
 /*********Image*********/
 });
+
 function clear() {
 		$("#action").val("addnew");
       $("#products_id").val('0'),
@@ -634,7 +642,7 @@ function clear() {
       function calcprice(){
         var id = $("#products_curid").val();
         $.ajax({
-            url: '/includes/currency_master_loader.php',
+            url: 'includes/currency_master_loader.php',
             type: 'POST',
             data: {
                 action: "Rate",

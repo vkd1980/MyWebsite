@@ -11,7 +11,7 @@ include(__DIR__.'/includes/classes/Crypto.php');
 
 </body>
 <?php
-
+echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>'
 
 //$cart->destroy();
 
@@ -28,5 +28,5 @@ include(__DIR__.'/includes/classes/Crypto.php');
 //PHP/5.6.3
 ?>
 <?php
-include(__DIR__.'/includes/footer.php');
+//include(__DIR__.'/includes/footer.php');
 ?>

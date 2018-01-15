@@ -28,6 +28,7 @@ include(__DIR__.'/error_handler.class.php');
 require_once (__DIR__.'/UserTools.class.php');
 require_once (__DIR__.'/DB.class.php');
 require_once (__DIR__.'/products.class.php');
+require_once (__DIR__.'/products.class.php');
 require_once (__DIR__.'/category.class.php');
 require_once (__DIR__.'/manufacturers.class.php');
 require_once (__DIR__.'/recentview.class.php');

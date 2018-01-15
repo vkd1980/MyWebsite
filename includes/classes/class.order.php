@@ -18,12 +18,12 @@ class Order{
 		$result = $DBC->select($orders_products_query);
 		return $result;
 	}
-	function QueryOrderHeader(){
+	function QueryOrderHeader($customerid){
 		$DBC = new DB();
 		$orders_header = "SELECT orders.orders_id,orders.date_purchased,orders.order_total,orders_status.orders_status_name,orders_status_history.orders_id,orders_status_history.orders_status_id
 FROM (orders_status_history
 LEFT JOIN orders ON orders.orders_id = orders_status_history.orders_id)
-LEFT JOIN orders_status ON orders_status.orders_status_id = orders_status_history.orders_status_id WHERE orders_status.orders_status_id<>0";
+LEFT JOIN orders_status ON orders_status.orders_status_id = orders_status_history.orders_status_id WHERE orders_status.orders_status_id<>0 AND customers_id=$customerid";
 	$result = $DBC->select($orders_header);
 		return $result;
 	}

@@ -6,7 +6,7 @@ class recentview{
 //Set recentview
 
 function setRecentlyViewed ( $prodID ) {
-if((isset($_SESSION['items'])) &&(!in_array($prodID,$_SESSION['items'],TRUE)))
+if((isset($_SESSION['items'])) &&(!in_array("'".$prodID."'",$_SESSION['items'],TRUE)))
 {
 $_SESSION['items'][] = $prodID ;
 }

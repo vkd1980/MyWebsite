@@ -25,9 +25,9 @@
       </li>
 
       <li class="has_sub">
-  <a href="#"><i class="fa fa-list-alt"></i> Widgets  <span class="pull-right"><i class="fa fa-chevron-right"></i></span></a>
+  <a href="#"><i class="fa fa-list-alt"></i> Orders  <span class="pull-right"><i class="fa fa-chevron-right"></i></span></a>
         <ul>
-          <li><a href="widgets1.html">Widgets #1</a></li>
+          <li><a href="orders.php">Orders</a></li>
           <li><a href="widgets2.html">Widgets #2</a></li>
           <li><a href="widgets3.html">Widgets #3</a></li>
         </ul>

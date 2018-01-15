@@ -1,9 +1,9 @@
 <?php
-//if((empty($_SERVER['HTTP_X_REQUESTED_WITH']) or strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') or empty($_REQUEST)){/*Detect AJAX and POST request*/
-  //$response= array("ERROR","Hacking attempt");
-	//echo json_encode($response);
-  //exit();
-//}
+if((empty($_SERVER['HTTP_X_REQUESTED_WITH']) or strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') or empty($_REQUEST)){/*Detect AJAX and POST request*/
+  $response= array("ERROR","Hacking attempt");
+	echo json_encode($response);
+  exit();
+}
 require_once (__DIR__.'/classes/global.inc.php');
 require_once (__DIR__.'/classes/HTMLPuri/HTMLPurifier.auto.php');
 $config = HTMLPurifier_Config::createDefault();
@@ -45,7 +45,7 @@ if(!empty($_REQUEST['Token']) && (hash_equals($_REQUEST['Token'],hash_hmac('sha2
 
   // getting total number records without any search
 
-  $sql = "SELECT currencies_id FROM currencies ";
+  $sql = "SELECT products_id FROM products ";
   $query=$db->select($sql);
   $totalData = mysqli_num_rows($query);
   $totalFiltered = $totalData;  // when there is no search parameter then total number rows = total number filtered rows.
@@ -103,7 +103,8 @@ $sql.=" OR categories.categories_name LIKE '%".filter_var(($requestData['search'
 
   case "search":
 $catid = isset($_REQUEST['catid']) ? filter_var(($_REQUEST['catid']), FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH) : '';
-$query = "SELECT products.*,products_description.* FROM (products
+$query = "SELECT products.products_id,products.products_quantity,products.products_model,products.products_image,products.products_price,products.products_curid,products.product_min_qty,products.products_rate,products.products_weight,products.manufacturers_id,products.master_categories_id,products.products_name,products.products_author,products.products_edition,
+products_description.products_description FROM (products
 LEFT JOIN products_description ON products.products_id = products_description.products_id) WHERE products_model = '".$catid."' ORDER BY products_model LIMIT 1";
 $result = $db->select($query);
 $num_rows = mysqli_num_rows($result);

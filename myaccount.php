@@ -19,7 +19,7 @@ require_once(__DIR__.'/includes/header.php');
 			   </noscript>'; exit;
 			}
 	 }else{
-		 
+
 		 $email="'".$_SESSION['UserData'][1]."'";
 		 //echo $email;
 		 $results=$CustAddress->GetCustDAddress("'".$_SESSION['UserData'][1]."'");
@@ -41,7 +41,7 @@ require_once(__DIR__.'/includes/header.php');
 				</address></h7>
 			  </div>';
 	 }
-	 $details=$order->QueryOrderHeader();
+	 $details=$order->QueryOrderHeader($_SESSION['UserData'][0]);
 	$num_row_details = mysqli_num_rows($details);
 	$detailed_rows='';
 	if($num_rows > 0)

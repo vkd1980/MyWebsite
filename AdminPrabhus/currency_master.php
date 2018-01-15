@@ -197,11 +197,11 @@ require_once (__DIR__.'/includes/sidebar.php');
 
     });
    /***************/
-   dataTable.on( 'order.dt search.dt', function () {
+   /*dataTable.on( 'order.dt search.dt', function () {
            dataTable.column(1, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
                cell.innerHTML = i+1;
            });
-       }).draw();
+       }).draw();*/
        //Delegate Action Button
         $('#data-table-12 tbody').on( 'click', '#gridder_addnew', function () {
              var data = dataTable.row( $(this).parents('tr') ).data();
