@@ -14,7 +14,7 @@ if(!empty($_REQUEST['Token']) && (hash_equals($_REQUEST['Token'],hash_hmac('sha2
     // datatable column index  => database column name
       1 => 'orders.orders_id',
       2 => 'date_purchased',
-      3 => 'customers_firstname',
+      3 => 'customers.customers_firstname customers.customers_lastname',
       4 => 'order_total',
       5 => 'orders_status_name');
       $OrderMaster= $order->QueryOrderHeader();
@@ -23,13 +23,11 @@ if(!empty($_REQUEST['Token']) && (hash_equals($_REQUEST['Token'],hash_hmac('sha2
   $query=$db->select($sql);
   $totalData = mysqli_num_rows($query);
   $totalFiltered = $totalData;
-  $sql="SELECT orders.orders_id,orders.customers_id,orders.date_purchased,orders.order_total,orders_status.orders_status_name,orders_status_history.orders_id,orders_status_history.orders_status_id,customers.customers_firstname,customers.customers_lastname
-FROM (orders_status_history
-LEFT JOIN orders ON orders.orders_id = orders_status_history.orders_id)
-LEFT JOIN orders_status ON orders_status.orders_status_id = orders_status_history.orders_status_id
-LEFT JOIN customers ON customers.customers_id = orders.customers_id
-WHERE orders_status.orders_status_id<>0";
-//$sql .="WHERE 1=1";
+  $sql="SELECT orders.orders_id,orders.customers_id,orders.date_purchased,orders.order_total,orders_status.orders_status_name,customers.customers_firstname,customers.customers_lastname
+FROM (orders_status
+LEFT JOIN orders ON orders.orders_status = orders_status.orders_status_id)
+LEFT JOIN customers ON customers.customers_id = orders.customers_id WHERE orders_status.orders_status_id<>0 ";
+//$sql .="WHERE orders_status.orders_status_id<>0";
 if( !empty($requestData['search']['value']) ) {   // if there is a search parameter, $requestData['search']['value'] contains search parameter
 $sql.=" AND ( customers.customers_firstname LIKE '%".filter_var(($requestData['search']['value']), FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH)."%' ";
 $sql.=" OR customers.customers_lastname LIKE '%".filter_var(($requestData['search']['value']), FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH)."%' ";
@@ -47,8 +45,8 @@ while( $row=mysqli_fetch_array($query) ) {  // preparing an array
   $nestedData[] =$i;
   $nestedData[] = $row["orders_id"];
   $nestedData[] = $row["date_purchased"];
-  $nestedData[] =$row["customers_firstname"];
-  $nestedData[] = $row["customers_lastname"];
+  $nestedData[] =$row["customers_firstname"].''.$row["customers_lastname"];
+  //$nestedData[] = $row["customers_lastname"];
   $nestedData[] = $row["order_total"];
   $nestedData[] = $row["orders_status_name"];
   $data[] = $nestedData;
