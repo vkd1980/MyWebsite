@@ -127,15 +127,15 @@
 		$pdf->SetFont('Arial','',8);
 		$y = 97;
 		// 1ere page = LIMIT 0,18 ;  2eme page = LIMIT 18,36 etc...
-		$sql = 'select libelle,qte,pu,taux_tva FROM ligne_BILL where id_BILL=' .$var_id_BILL . ' order by libelle';
+		$sql = 'select Wording,Qty,pu,taux_tva FROM ligne_BILL where id_BILL=' .$var_id_BILL . ' order by Wording';
 		$sql .= ' LIMIT ' . $limit_inf . ',' . $limit_sup;
 		$res = mysqli_query($mysqli, $sql)  or die ('Erreur SQL : ' .$sql .mysqli_connect_error() );
 		while ($data =  mysqli_fetch_assoc($res))
 		{
-			// libelle
-			$pdf->SetXY( 7, $y+9 ); $pdf->Cell( 140, 5, $data['libelle'], 0, 0, 'L');
-			// qte
-			$pdf->SetXY( 145, $y+9 ); $pdf->Cell( 13, 5, strrev(wordwrap(strrev($data['qte']), 3, ' ', true)), 0, 0, 'R');
+			// Wording
+			$pdf->SetXY( 7, $y+9 ); $pdf->Cell( 140, 5, $data['Wording'], 0, 0, 'L');
+			// Qty	
+			$pdf->SetXY( 145, $y+9 ); $pdf->Cell( 13, 5, strrev(wordwrap(strrev($data['Qty']), 3, ' ', true)), 0, 0, 'R');
 			// PU
 			$nombre_format_francais = number_format($data['pu'], 2, ',', ' ');
 			$pdf->SetXY( 158, $y+9 ); $pdf->Cell( 18, 5, $nombre_format_francais, 0, 0, 'R');
@@ -143,7 +143,7 @@
 			$nombre_format_francais = number_format($data['taux_tva'], 2, ',', ' ');
 			$pdf->SetXY( 177, $y+9 ); $pdf->Cell( 10, 5, $nombre_format_francais, 0, 0, 'R');
 			// total
-			$nombre_format_francais = number_format($data['pu']*$data['qte'], 2, ',', ' ');
+			$nombre_format_francais = number_format($data['pu']*$data['Qty'], 2, ',', ' ');
 			$pdf->SetXY( 187, $y+9 ); $pdf->Cell( 18, 5, $nombre_format_francais, 0, 0, 'R');
 			
 			$pdf->Line(5, $y+14, 205, $y+14);
@@ -152,16 +152,16 @@
 		}
 		mysqli_free_result($res);
 
-		// si derniere page alors afficher cadre des VAT
+		// if last page then display VAT box
 		if ($num_page == $nb_page)
 		{
-			// le detail des totaux, demarre a 221 après le cadre des totaux
+			// the details of totals, start at 221 after the totals frame
 			$pdf->SetLineWidth(0.1); $pdf->Rect(130, 221, 75, 24, "D");
-			// les traits verticaux
+			// vertical lines
 			$pdf->Line(147, 221, 147, 245); $pdf->Line(164, 221, 164, 245); $pdf->Line(181, 221, 181, 245);
-			// les traits horizontaux pas de 6 et demarre a 221
+			// horizontal lines not 6 and starts at 221
 			$pdf->Line(130, 227, 205, 227); $pdf->Line(130, 233, 205, 233); $pdf->Line(130, 239, 205, 239);
-			// les titres
+			// the titles
 			$pdf->SetFont('Arial','B',8); $pdf->SetXY( 181, 221 ); $pdf->Cell( 24, 6, "TOTAL", 0, 0, 'C');
 			$pdf->SetFont('Arial','',8);
 			$pdf->SetXY( 105, 221 ); $pdf->Cell( 25, 6, "Taux VAT", 0, 0, 'R');
