@@ -15,8 +15,8 @@ class Order{
 		$orders_products_query = "select * from orders_products
                                   where orders_id = '" . (int)$order_id . "'
                                   order by orders_products_id";
-		$result = $DBC->select($orders_products_query);
-		return $result;
+			$result = $DBC->select($orders_products_query);
+			return $result;
 	}
 	function QueryOrderHeader(){
 		$DBC = new DB();
@@ -45,6 +45,14 @@ LEFT JOIN orders_status ON orders_status.orders_status_id = orders_status_histor
 					return false;
 					}
 
+	}
+	function getorderHistory($orderid){
+		$DBC = new DB();
+		$Order_history="SELECT *
+FROM orders_status_history
+WHERE orders_id='" . (int)$orderid."'";
+		$result = $DBC->select($Order_history);
+		return $result;
 	}
 	function SavePaymentDetails($order_id,$tracking_id,$Order_id_cca,$bank_ref_no,$order_status,$payment_mode,$card_name,$status_code,$status_message,$amount){
 		$DBC = new DB();
