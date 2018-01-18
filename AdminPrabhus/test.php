@@ -129,7 +129,29 @@ $summary= '<!--BOF Order Confirmation-->
                   <td class="no-line text-right"><h6><span class="fa fa-inr"></span>'.number_format($rows['order_total'],2).'</h6></td>
                 </tr>
               </tbody>
-            </table>
+            </table><table width="100%" >
+              <tr>
+              <th width="1%">&nbsp;</th>
+                <th width="20%">Order Status History </th>
+                <th width="20%">DateTime</th>
+              </tr>
+              ';
+              $i=1;
+            while($Ordrows =  mysqli_fetch_array($OrderHistory)){
+              $summary= $summary.'<tr><td>'.$i.'</td><td>'.$Ordrows['comments'].'<td>'.$Ordrows['date_added'].'</td>
+            </tr>';
+            $i++;
+            }
+          $summary= $summary.'
+
+              <tr><td>&nbsp;</td><td><select name="select">
+                </select>
+              </td>
+              <td><input type="submit" name="Submit" value="Submit" /></td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+
           </div>
         </div>
       </div>
@@ -152,12 +174,6 @@ $summary= '<!--BOF Order Confirmation-->
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body" id="OrderDetails"><?php echo $summary;?></div>
-      <?php
-      while($Ordrows =  mysqli_fetch_array($OrderHistory)){
-        echo $Ordrows['comments'] ;
-      }
-
-       ?>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
