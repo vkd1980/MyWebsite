@@ -5,7 +5,12 @@ require_once (__DIR__.'/classes/global.inc.php');
 
 </style>
 <script>
+function refreshCaptcha() {
+$("#captcha_code").attr('src','/includes/captcha_code.php');
+}
 $(document).ready(function(){
+
+
     $('#newsletter-signup').submit(function(){
 
     //check the form is not currently submitting
@@ -85,9 +90,12 @@ $(document).ready(function(){
         <p>Leave us your Email,We will Notify the Exiting offers to your mailbox</p>
         <form class="form-inline" role="form" id="newsletter-signup" method="post" action="/includes/Newsletter_process.php" autocomplete="off">
           <div class="form-group">
+
             <!--<input type="email" class="form-control" id="search" placeholder="Subscribe">-->
             <input type="email" name="Email" class="form-control" id="Email" placeholder="Email address"  required >
             <input type="hidden" name="Token" value="<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/includes/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>" >
+            <img id="captcha_code" src="/includes/captcha_code.php" /><button  class="btnRefresh" onClick="refreshCaptcha();">Refresh Captcha</button>
+            <input type="text" name="captcha" id="captcha" class="demoInputBox" required><br>
           </div>
           <button type="submit" class="btn btn-default" id="signup-button">Subscribe</button>
           <strong>

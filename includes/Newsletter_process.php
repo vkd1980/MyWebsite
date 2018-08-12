@@ -1,10 +1,12 @@
 <?php
-/*if((empty($_SERVER['HTTP_X_REQUESTED_WITH']) or strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') or empty($_POST)){/*Detect AJAX and POST request*/
-  /*exit("Unauthorized Access");
-}*/
+if((empty($_SERVER['HTTP_X_REQUESTED_WITH']) or strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') or empty($_POST)){/*Detect AJAX and POST request*/
+  exit("Unauthorized Access");
+}
 require_once (__DIR__.'/classes/global.inc.php');
 
 if(!empty($_REQUEST['Token']) && (hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/includes/Newsletter.php', $_SESSION['csrf_token'])))){
+
+if($_REQUEST["captcha"]==$_SESSION["captcha_code"]){
 
 $email =$_REQUEST['Email'];
 $newsletter = new Newsletter();
@@ -64,6 +66,17 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
 
     exit;
 
+}
+else{
+    $status = "error";
+      $message = "Ooops, Enter Correct Captcha Code.!";
+      $data = array(
+        'status' => $status,
+        'message' => $message
+    );
+	echo json_encode($data);
+  exit;
+}
 }
 else{
 

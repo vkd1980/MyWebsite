@@ -60,6 +60,8 @@
 <script src="js/custom.js"></script> <!-- Custom codes -->
 <script src="js/charts.js"></script> <!-- Charts & Graphs -->
 <script src="js/jquery.validate.js"></script> <!-- Validator -->
+<script src="js/jquery.ui.datepicker.validation.min.js"></script> <!-- datepickerValidator -->
+<script src="js/jquery.validate.unobtrusive.min.js"></script> <!-- unobtrusive -->
 <!-- Script for this page -->
 <script type="text/javascript">
 /**********************/

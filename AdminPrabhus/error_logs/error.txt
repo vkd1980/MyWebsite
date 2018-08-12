@@ -1,16 +1,24 @@
-time: 16 Jan 18 - 10:20:37 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\test.php
-line: 154
+time: 11 Aug 18 - 4:16:23 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\headermenu.php
+line: 93
 
-code: E_WARNING
-message: mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given
+code: E_NOTICE
+message: Undefined index: Adm_UserData
 ##################################################
 
-time: 16 Jan 18 - 10:22:51 PM (IST)
-file: E:\prabhusbooks\htdocs\AdminPrabhus\test.php
-line: 154
+time: 11 Aug 18 - 9:45:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\headermenu.php
+line: 93
 
-code: E_WARNING
-message: mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given
+code: E_NOTICE
+message: Undefined index: Adm_UserData
+##################################################
+
+time: 12 Aug 18 - 11:09:45 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\headermenu.php
+line: 93
+
+code: E_NOTICE
+message: Undefined index: Adm_UserData
 ##################################################
 

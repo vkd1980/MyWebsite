@@ -8,7 +8,7 @@ require_once (__DIR__.'/classes/global.inc.php');
 require_once (__DIR__.'/classes/HTMLPuri/HTMLPurifier.auto.php');
 $config = HTMLPurifier_Config::createDefault();
 $purifier = new HTMLPurifier($config);
-if(!empty($_REQUEST['Token']) && (hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/book_master.php', $_SESSION['csrf_token']))) && !empty($_REQUEST['action']) ){
+if(!empty($_REQUEST['Token']) && ((hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/book_master.php', $_SESSION['csrf_token'])))||(hash_equals($_REQUEST['Token'],hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/test.php', $_SESSION['csrf_token'])))) && !empty($_REQUEST['action']) ){
   $action = isset($_REQUEST['action']) ? filter_var(($_REQUEST['action']), FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH): '';
   switch($action) {
     case "ModSearch":

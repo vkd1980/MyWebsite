@@ -467,6 +467,7 @@ function savedata(frm,page,Token) {
             $("#message").removeClass('alert-success');
             $("#message").addClass('alert-danger');
             $('#message').text('Please Wait.....');
+            $("#message").fadeIn();   
         },
         success: function(output) {
           console.log(output);
@@ -479,11 +480,12 @@ function savedata(frm,page,Token) {
                 clear();
             } else {
               alert (output[1]);
-                $("#message").fadeIn();
                 $("#message").removeClass('alert-success');
                 $("#message").addClass('alert-danger');
+                $("#message").fadeIn();
                 $('#message').text(output[1]);
                 $('#message').delay(3000).fadeOut();
+                alert(output[1]);
             }
         }
     });

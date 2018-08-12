@@ -46,11 +46,19 @@ LEFT JOIN orders_status ON orders_status.orders_status_id = orders_status_histor
 					}
 
 	}
+	function UpdateOrderStatus()
+	{
+		$DBC = new DB();
+	}
 	function getorderHistory($orderid){
 		$DBC = new DB();
-		$Order_history="SELECT *
+		/*$Order_history="SELECT *
 FROM orders_status_history
-WHERE orders_id='" . (int)$orderid."'";
+WHERE orders_id='" . (int)$orderid."'";*/
+$Order_history="SELECT orders_status.orders_status_id,orders_status_name,orders_id,orders_status_history.orders_status_id,date_added,comments
+FROM (orders_status_history
+LEFT JOIN orders_status ON orders_status.orders_status_id =orders_status_history.orders_status_id )
+WHERE orders_id='" . (int)$orderid."' ORDER BY date_added";
 		$result = $DBC->select($Order_history);
 		return $result;
 	}
@@ -77,6 +85,12 @@ WHERE orders_id='" . (int)$orderid."'";
 					return false;
 					}
 	}
-
+function getorderstatus(){
+	$DBC = new DB();
+	$qry ="SELECT *
+FROM orders_status";
+$result= $DBC->select($qry);
+  return $result;
+}
 }
 ?>

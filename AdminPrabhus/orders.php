@@ -6,6 +6,27 @@ require_once (__DIR__.'/includes/header.php');
 require_once (__DIR__.'/includes/headermenu.php');
 ?>
 <div class="content">
+  <!-- BOF Modal -->
+  <div id="myModalOrder" class="modal fade bs-example-modal-lg" role="dialog">
+    <div class="modal-dialog modal-dialog modal-lg"style="width: 99%;height: 100%;margin: 10px;padding:0;overflow-y:initial !important">
+
+      <!-- Modal content-->
+      <div class="modal-content" style="height:auto;min-height: 100%;border-radius: 0;height: 250px;overflow-y: auto;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" id="OrderDetails"><!--BOF Order Confirmation-->
+          <!--Eof Order Confirmation-->
+          >
+        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+</div>
+<!-- EOF Modal -->
   <!-- Sidebar -->
 <?php
 require_once (__DIR__.'/includes/sidebar.php');
@@ -96,68 +117,16 @@ require_once (__DIR__.'/includes/sidebar.php');
  <div class="clearfix"></div>
  </div>
  <!-- Content ends -->
- <!-- BOF Modal DEL -->
-  <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-                  </button>
-                  <br /><div class="modal-header" align="center">
-      <h3 class="modal-title"> Currency Master </h3>
-  </div>
 
-  <div class="modal-body"  align="center">
-      </div>
-
-              </div>
-              <div class="modal-body">
-
-  			<!-- form-->
-  			<form name="gridder_addform" id="gridder_addform">
-          <div class="alert alert-success" id="message" align="center"></div>
-  <input type="hidden" name="action" id= "action" value="addnew" />
-  <input type="hidden"  name="currencies_id" id="currencies_id" class="gridder_add" />
-  <table class="table table-bordered table-striped ">
-                          <thead>
-                              <tr>
-                   <td> CUR Title </td>
-  								<td> CUR Code </td>
-                 <td> CUR Symbol </td>
-                 <td> CUR Value </td>
-  								<td>Action</td>
-                              </tr>
-                          </thead>
-                          <tr>
-                              <td><input type="text"  name="title" id="title" autocomplete="off" class="form-control" required autofocus /></td>
-                              <td><input type="text"  name="code" id="code" autocomplete="off" class="form-control" required /></td>
-                              <td><input type="text"  name="symbol_left" id="symbol_left" autocomplete="off" class="form-control" required /></td>
-                              <td><input type="text"  name="value" id="value" autocomplete="off" class="form-control" required/></td>
-                              <td align="center">
-                                  <input type="submit" value="Save" class="btn btn-info" id="btnsave" />
-                                  <input type="button" id="btncancel" value="Clear" title="Clear" class="btn btn-warning" />
-                              </td>
-                          </tr>
-
-                      </table>
-                  </form>
-  </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-default" id="btnmodalclose"data-dismiss="modal">Close</button>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- EOF Modal DEL -->
 
 
  <?php
  require_once (__DIR__.'/includes/footer.php');
   ?>
+
   <script type="text/javascript">
  $(document).ready(function () {
-
-   /**********/
+     /**********/
    var dataTable = $('#data-table-12').DataTable( {
        "lengthMenu": [[25, 50, 100], [25, 50, 100]],
        "order": [[ 1, "desc" ]],
@@ -218,113 +187,34 @@ require_once (__DIR__.'/includes/sidebar.php');
        //Delegate Action Button
         $('#data-table-12 tbody').on( 'click', '#gridder_addnew', function () {
              var data = dataTable.row( $(this).parents('tr') ).data();
-          alert(data[0]);
-            getvalues(data[0]);
+          //alert(data[1]);
+            getvalues(data[1]);
          });
          $("#title").focus();
          $('#message').hide();
 
-         /***********Form Validation****************/
-         $("#gridder_addform").validate({
-             rules: {
-                   title: {minlength: 4,required: true},
-                   code: {minlength: 3,maxlength:3,required: true},
-                   symbol_left:{required: true},
-                   value:{required: true,number:true}
-                   },
-            messages: {
-      				  title: {required: "Please enter Currency Name",minlength: "CUR Name must consist of at least 4 characters"},
-      					code: {required: "Please enter Currency Code",maxlength:"Code Name must consist of 3 characters only",minlength: "Code Name must consist of at least 3 characters"},
-      					symbol_left: {required: "Please enter Currency Symbol"},
-      					value: {required: "Please enter Currency Value",number:"Please Enter digits only"}
-                      },
-             showErrors: function(errorMap, errorList) {
-                 $.each(this.successList, function(index, value) {
-                 return $(value)
-                 .popover("hide");
-                             });
-                   return $.each(errorList, function(index, value) {
-                     var _popover;
-                     //console.log(value.message);
-                             _popover = $(value.element)
-                               .popover({
-                               trigger: "manual",
-                               placement: "top",
-                               content: value.message,
-                               template: "<div class=\"popover\"><div class=\"arrow\"></div><div class=\"popover-inner\"><div class=\"popover-content\"><p></p></div></div></div>"
-                               });
-                           _popover.data("popover").options.content = value.message;
-                           return $(value.element)
-                           .popover("show");
-                             });
-                         },
-                     submitHandler: function() {
-                     savedata('#gridder_addform','includes/currency_master_loader.php','<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>');
-                     }
-                     });
-                     $('#title').focusout(function(){
-				this.value = this.value.toUpperCase();
-				});
-				$('#code').focusout(function(){
-				this.value = this.value.toUpperCase();
-				});
-				$('#value').focusout(function(){
-				this.value =numeral(this.value).format('0.00');
-				});
-                     /***********Form Validation EOF ****************/
          function getvalues(catid) {
              //var empcode = $("input[name='Emp_Code']:text").val();
              if (catid == null || catid == undefined || catid == '') {
 
              } else {
                  $.ajax({
-                     url: "includes/currency_master_loader.php",
+                     url: "includes/order_loader.php",
                      data: {
-                         action: "search",
-                         catid: catid,
+                         action: "Search",
+                         OrderID: catid,
                          Token: '<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>'
                      },
                      type: 'post',
-                     dataType: "json",
-                     success: function(output) {
-                       console.log(output);
-                         var siteArray = output.array;
-                         if (!$.isArray(siteArray) || !siteArray.length) {
+                     success: function(data) {
+                       //console.log(data);
+                       $('#OrderDetails').empty();
+			                 $('#myModalOrder').modal('show'),
+                      $('#OrderDetails').append(data);
+                    //  $("OrderStatFrm").removeData("validator");
+                    //$("OrderStatFrm").removeData("unobtrusiveValidation");
+                    //$.validator.unobtrusive.parse("form");
 
-                             if (output[0] == 0) {
-                                 window.alert(output[2]);
-                                 $("#action")
-                                     .val("addnew");
-                                 $("#currencies_id")
-                                     .val("");
-                                 $("#title")
-                                     .val("");
-                                  $("#code")
-                                      .val("");
-                                  $("#symbol_left")
-                                        .val("");
-                                  $("#value")
-                                      .val("");
-
-                             } else {
-                                 $("#action")
-                                     .val("update");
-                                 $("#currencies_id")
-                                     .val(output[0]);
-                                 $("#title")
-                                     .val(output[1]);
-                                 $("#code")
-                                 .val(output[2]);
-                                 $("#symbol_left")
-                                 .val(output[3]);
-                                 $("#value")
-                                 .val(output[4]);
-                                 $('#btnsave').val('Edit');
-                                 $('#myModal').modal('show');
-                                 $("#title").focus();
-
-                             }
-                         }
 
                      }
 
@@ -337,21 +227,24 @@ require_once (__DIR__.'/includes/sidebar.php');
        return false;
              });
 
+
 });
+
+/*function reinitialiseFormValidation(elementSelector) {
+  //  var validator = $(elementSelector).validate();
+    /validator.destroy();
+     $.validator.unobtrusive.parse(elementSelector);
+};*/
+function saveedata() {
+  savedata('#OrderStatFrm','includes/order_loader.php','<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>');
+}
 function clear() {
-  $("#action")
-      .val("addnew");
-  $("#currencies_id")
-      .val("");
-  $("#title")
-      .val("");
-   $("#code")
-       .val("");
-   $("#symbol_left")
-         .val("");
-   $("#value")
-       .val("");
-    $('#btnsave').val('Addnew');
+  $("#comments")
+          .val("");
+  $("#StatusID")
+              .val('0');
+  $('#StatusIDName').val("");
 
 }
+
 </script>

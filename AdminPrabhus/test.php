@@ -4,193 +4,474 @@
 //© I biz Info Solutions
 require_once (__DIR__.'/includes/header.php');
 require_once (__DIR__.'/includes/headermenu.php');
-$summary='';
-$Order_ID='';
-$EmailOrderMstr=$order->QueryOrderMaster(1);
-$EmailOrderDet=$order->QueryOrderDetails(1);
-$OrderHistory=$order->getorderHistory(1);
+?>
+<div class="content">
+  <!-- Sidebar -->
+<?php
+require_once (__DIR__.'/includes/sidebar.php');
+ ?>
+  <!-- Sidebar ends -->
+  <!-- Main bar -->
+  <div class="mainbar">
+    <!-- Page heading -->
+    <div class="page-head">
+      <h2 class="pull-left"><i class="fa fa-file-o"></i> Add/Edit - Specials</h2>
 
+      <!-- Breadcrumb -->
+      <div class="bread-crumb pull-right">
+        <a href="index.php"><i class="fa fa-home"></i> Home</a>
+        <!-- Divider -->
+        <span class="divider">/</span>
+        <a href="./specials.php" class="bread-current">Specials</a>
+      </div>
 
-$rows =  mysqli_fetch_array($EmailOrderMstr);
-$SubTotal=0;
-$Odetails='';
-$summary= '<!--BOF Order Confirmation-->
-    <div class="row">
-	<!-- Bof Message-->
-<div class="clearfix"></div>
-	  <div class="clearfix"></div>
+      <div class="clearfix"></div>
 
-	<div class="container">
-    <div class="row">
-
-	  </div>
-	  </div>
-<!-- Eof Message-->
-        <div class="col-xs-12">
-    		<div class="invoice-title">
-    			<h2>Invoice</h2><h3 class="pull-right">Order # '.$rows['orders_id'].'</h3>
-    		</div>
-    		<hr>
-    		<div class="row">
-    			<div class="col-xs-6">
-    				<address><h6>
-    				<strong>Billed To:</strong><br></h6>
-    					<h7>'.strtoupper($rows['customers_name']).'<br>';
-
-						if ((!empty($rows['customers_company']))){
-						$summary= $summary.strtoupper($rows['customers_company']).'<br>';
-						}
-    					$summary= $summary.strtoupper($rows['customers_street_address']).' ,'.strtoupper($rows['customers_suburb']).'<br>';
-    					 $summary= $summary.strtoupper($rows['customers_city']).' , '.strtoupper($rows['customers_state']).' - '.$rows['customers_postcode'].'
-    				</h7></address>
-    			</div>
-    			<div class="col-xs-6 text-right">
-    				<address><h6>
-        			<strong>Shipped To:</strong><br></h6><h7>'.
-    					strtoupper($rows['delivery_name']).'<br>';
-
-
-						if ((!empty($rows['customers_company']))){
-						$summary= $summary. strtoupper($rows['delivery_company']).'<br>';
-						}
-
-    					$summary= $summary. strtoupper($rows['delivery_street_address']).' , '.strtoupper($rows['delivery_suburb']).'<br>';
-    					$summary= $summary. strtoupper($rows['delivery_city']).' ,'.strtoupper($rows['delivery_state']).' - '.$rows['delivery_postcode'].'
-    				</h7></address>
-    			</div>
-    		</div>
-    		<div class="row">
-    			<div class="col-xs-6">
-    				<address>
-    					<strong>Payment Method:</strong><br><h7>
-    					'.$rows['payment_method'].'<br></h7>
-
-    				</address>
-    			</div>
-    			<div class="col-xs-6 text-right">
-    				<address>
-    					<strong>Shipping Method:</strong><br><h7>
-    					'.$rows['shipping_method'].'<br></h7>
-
-    				</address>
-    			</div>
-    		</div>
-
-    	</div>
     </div>
+    <!-- Page heading ends -->
+    <!-- Matter -->
 
-    <div class="row">
-    	<div class="col-md-12">
-    		<div class="panel panel-default">
-    			<div class="panel-heading">
-    				<h3 class="panel-title"><strong>Order Details</strong></h3>
-    			</div>
-    			<div class="panel-body">
-    				<div class="table-responsive">
-    					<table class="table table-condensed">
-    						<thead>
-                                <tr>
-        							<td><strong>Item</strong></td>
-									<td class="text-center"><strong>Quantity</strong></td>
-        							<td class="text-right"><strong>Price</strong></td>
+    <div class="matter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
 
-        							<td class="text-right"><strong>Totals</strong></td>
-                                </tr>
-    						</thead>
-    						<tbody>';
-                while($rowsD=mysqli_fetch_array($EmailOrderDet)){
-      							$SubTotal=$SubTotal+$rowsD['final_price'];
-      										 $Odetails=$Odetails.'<tr>
-          								<td><h7>'.strtoupper($rowsD['products_name']).'</h7></td>
-          								<td class="text-center"><h7>'.$rowsD['products_quantity'].'</h7></td>
-      									<td class="text-right"><h7><span class="fa fa-inr"></span>'.number_format($rowsD['products_price'],2).'</h7></td>
-          								<td class="text-right"><h7><span class="fa fa-inr"></span> '.number_format($rowsD['final_price'],2).'</h7></td>
-          							</tr>';
-      										 }
-                           $summary= $summary.$Odetails;
+            <div class="widget">
+              <div class="widget-head">
+                <div class="pull-left"> Specials </div>
+                <div class="widget-icons pull-right">
+                  <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
+                  <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
 
+              <div class="widget-content">
 
-                 							$summary= $summary.'<tr>
-                  <td class="thick-line"></td>
-                  <td class="thick-line"></td>
-                  <td class="thick-line text-center"><h6><strong>Subtotal</strong></h6></td>
-                  <td class="thick-line text-right"><h6><span class="fa fa-inr"></span>'.number_format($SubTotal,2).'</h65></td>
-                </tr>
-                <tr>
-                  <td class="no-line"></td>
-                  <td class="no-line"></td>
-                  <td class="no-line text-center"><h6><strong>Shipping</strong></h6></td>
-                  <td class="no-line text-right"><h6><span class="fa fa-inr"></span> '.number_format($rows['shipping_cost'],2).'</h6></td>
-                </tr>
-                <tr>
-                  <td class="no-line"></td>
-                  <td class="no-line"></td>
-                  <td class="no-line text-center"><h6><strong>Total</strong></h6></td>
-                  <td class="no-line text-right"><h6><span class="fa fa-inr"></span>'.number_format($rows['order_total'],2).'</h6></td>
-                </tr>
-              </tbody>
-            </table><table width="100%" >
-              <tr>
-              <th width="1%">&nbsp;</th>
-                <th width="20%">Order Status History </th>
-                <th width="20%">DateTime</th>
-              </tr>
-              ';
-              $i=1;
-            while($Ordrows =  mysqli_fetch_array($OrderHistory)){
-              $summary= $summary.'<tr><td>'.$i.'</td><td>'.$Ordrows['comments'].'<td>'.$Ordrows['date_added'].'</td>
-            </tr>';
-            $i++;
-            }
-          $summary= $summary.'
+                <div class="padd">
 
-              <tr><td>&nbsp;</td><td><select name="select">
-                </select>
-              </td>
-              <td><input type="submit" name="Submit" value="Submit" /></td>
-              <td>&nbsp;</td>
-            </tr>
-          </table>
+            <!-- Table Page -->
+            <div class="page-tables">
+              <!-- Table -->
+              <div class="table-responsive">
+                <div class="form-group col-xs-3 col-md-3 pull-right ">
+                  <input type="button" id="btnaddnew" value="Add New" title="Add New" class="btn btn-success" data-toggle="modal" data-target="#myModal" />
+                  <input type="button" id="btnrf" value="Refresh" title="Refresh" class="btn btn-warning" />
+                </div>
+                <table cellpadding="0" cellspacing="0" border="0" id="data-table-12" width="100%">
+                  <thead>
+                    <tr>
+                      <th>SL no</th>
+                      <th>Specials ID</th>
+                      <th>ISBN</th>
+                      <th>Product Name</th>
+                      <th>Special Price</th>
+                      <th>Expiry Date</th>
+                      <th>Status</th>
+                      <th>Action</th>
+
+                    </tr>
+                  </thead>
+
+                </table>
+                <div class="clearfix"></div>
+              </div>
+              </div>
+            </div>
+                </div>
+                <div class="widget-foot">
+                  <!-- Footer goes here -->
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-<!--Eof Order Confirmation-->';
+  <!-- Matter ends -->
+ <div class="clearfix"></div>
 
+</div>
+<!-- Content ends -->
+<!-- BOF Modal DEL -->
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                </button>
+                <br /><div class="modal-header" align="center">
+    <h3 class="modal-title">Specials</h3>
+</div>
 
-?>
-
-<button type="button" class="btn btn-info btn-xs Orderd" id="'.$rows_details['orders_id'].'">Show Order</button>
-<!-- Modal -->
-<div id="myModalOrder" class="modal fade bs-example-modal-lg" role="dialog">
-  <div class="modal-dialog modal-dialog modal-lg"style="width: 99%;height: 100%;margin: 10px;padding:0;overflow-y:initial !important">
-
-    <!-- Modal content-->
-    <div class="modal-content" style="height:auto;min-height: 100%;border-radius: 0;height: 250px;overflow-y: auto;">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body" id="OrderDetails"><?php echo $summary;?></div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+<div class="modal-body"  align="center">
     </div>
 
-  </div>
-</div>
-<?php
-require_once(__DIR__.'/includes/footer.php');
-?>
-<script>
-$(document).ready(function()
-{
+            </div>
+            <div class="modal-body">
 
- $('.Orderd').click(function(){
-   $('#myModalOrder').modal('show');
+			<!-- form-->
+			<form name="gridder_addform" id="gridder_addform">
+        <div class="alert alert-success" id="message" align="center"></div>
+<input type="hidden" name="action" id= "action" value="addnew" />
+<input type="hidden"  name="specials_id" id="specials_id"  value="#" />
+<input type="hidden"  name="products_id" id="products_id" value="#"/>
+<input type="hidden"  name="specials_date_available" id="specials_date_available" />
+<table class="table table-bordered table-striped ">
+                        <thead>
+                            <tr>
+                                <td>ISBN</td>
+								<td>Author</td>
+								<td>Title</td>
+                <td>Price</td>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td><input type="text"  name="products_model" id="products_model"  autocomplete="off" class="form-control" required autofocus /><br><input type="button" value="Find" class="btn btn-info" id="btnfind" /></td>
+
+							<td><input type="text"  name="products_author" id="products_author"  autocomplete="off" class="form-control" required/></td>
+              <td><input type="text"  name="products_name" id="products_name"  autocomplete="off" class="form-control" required/></td>
+              <td><input type="text"  name="products_price" id="products_price"  autocomplete="off" class="form-control" required/></td>
+                        </tr>
+                        <tr>
+                          <td>Special Price</td>
+                          <td>Expiry Date</td>
+                            <td>Date Available</td>
+                              <td>Status</td>
+
+                        </tr>
+
+                        <tr>
+                          <td><input type="text"  name="price" id="price"  autocomplete="off" class="form-control" required/></td>
+                          <td>
+                            <input data-format="dd-MM-yyyy" id="expires_date" type="text" class="form-control" name="expires_date">
+                 						</td>
+
+                          <td>
+                 						<input data-format="dd-MM-yyyy" id="date_available" type="text"  class="form-control" name="date_available">
+
+                          </td>
+                    <td><select name="status" id="status"  class="form-control"  >
+             <option value="-1" required>Select </option>
+              <option value="0">InActive </option>
+              <option value="1" >Active </option>
+
+              </select></td>
+
+
+                        </tr>
+                        <tr>
+                          <td align="center" colspan="4">Action</td>
+                        </tr>
+                        <tr>
+                          <td align="center" colspan="4"><input type="submit" value="Save" class="btn btn-info" id="btnsave" />
+                          <input type="button" id="btncancel" value="Clear" title="Clear" class="btn btn-warning" /></td>
+                        </tr>
+                    </table>
+
+                </form>
+</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" id='btnmodalclose'data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- EOF Modal DEL -->
+<?php
+require_once (__DIR__.'/includes/footer.php');
+ ?>
+<script type="text/javascript">
+$(document).ready(function () {
+   /**********/
+   $('#expires_date,#date_available').datepicker({minDate: 0,
+   dateFormat: "dd-mm-yy"
  });
+ var dataTable = $('#data-table-12').DataTable( {
+     "lengthMenu": [[25, 50, 100], [25, 50, 100]],
+     "order": [[ 1, "desc" ]],
+    dom: 'lBfrtip',
+    searching: false,
+    buttons: [
+        {extend: 'csv',title: 'Specials',exportOptions: {columns: [ 1, 2, 3, 4, 5]},action: newExportAction,text: '<span class="fa fa-file-excel-o"></span> Export to CSV'},
+        {extend: 'excel',title: 'Specials',exportOptions: {columns: [ 1, 2, 3, 4, 5]},action: newExportAction,text: '<span class="fa fa-file-excel-o"></span> Export to Excel '},
+        {extend: 'print',title: 'Specials',exportOptions: {columns: [ 1, 2, 3, 4, 5]},action: newExportAction,text: '<i class="fa fa-print"></i> Print'}
+    ],
+
+    "processing": true,
+    "serverSide": true,
+    "sPaginationType": "full_numbers",
+"aoColumns" :[{ "bSearchable": false, "bSortable": false,"width": "5%"},
+{"bSearchable": false, "bSortable": false,"width": "5%"},
+{"bSearchable": true, "bSortable": false,"width": "10%"},
+{ "bSearchable": true, "bSortable": false,"width": "20%" },
+{ "bSearchable": false, "bSortable": false,"width": "5%" },
+{ "bSearchable": false, "bSortable": false,"width": "5%" },
+{ "bSearchable": false, "bSortable": false,"width": "5%" },
+{ "data": null,  //can be null or undefined
+"bSortable": false,
+"bSearchable": false,
+"width": "10%",
+"defaultContent": "<div class='btn-group'><button class='btn btn-info dropdown-toggle' data-toggle='dropdown'>Action <span class='caret'></span></button><ul class='dropdown-menu'><li id='gridder_addnew'><a href='#'>Edit</a></li><li><a href='#'>Something else here</a></li><li class='divider'></li><li><a href='#'>Separated link</a></li></ul></div>"
+}],
+
+    "ajax":{
+      url :"includes/specials_loader.php?Token=<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>&action=All&catid=0",
+      type: "post",  // method  , by default get
+      error: function(){  // error handling
+        $("#data-table-12").append('<tbody"><tr><th colspan="3">No data found in the server</th></tr></tbody>');
+      }
+    },
+    "rowCallback": function(row, data, index){
+  if(data[6]== '1'){
+      $(row).find('td:eq(6)').text('Active');
+      $(row).find('td:eq(6)').css('color', 'green');
+
+  }
+  if(data[6]== '0'){
+    $(row).find('td:eq(6)').text('InActive');
+      $(row).find('td:eq(6)').css('color', 'red');
+  }
+
+}
+
   });
+ /***************/
+
+ /*dataTable.on( 'order.dt search.dt', function () {
+         dataTable.column(1, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+             cell.innerHTML = i+1;
+         });
+     }).draw();*/
+     //Delegate Action Button
+      $('#data-table-12 tbody').on( 'click', '#gridder_addnew', function () {
+           var data = dataTable.row( $(this).parents('tr') ).data();
+       //alert(data[2]);
+         getvalues(data[1]);
+       });
+       /****/
+       $("#btnfind").on('click', function() {
+         var data = $("#products_model").val();
+         findvalues(data);
+       });
+       /****/
+       //Delegate Action Button
+
+       /**************/
+       function findvalues(catid) {
+           //var empcode = $("input[name='Emp_Code']:text").val();
+           if (catid == null || catid == undefined || catid == '') {
+
+           } else {
+               $.ajax({
+                   url: "includes/book_master_loader.php",
+                   data: {
+                       action: "search",
+                       catid: catid,
+                       Token: '<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>'
+                   },
+                   type: 'post',
+                   dataType: "json",
+                   success: function(output) {
+                     console.log(output);
+                       var siteArray = output.array;
+                       if (!$.isArray(siteArray) || !siteArray.length) {
+
+                           if (output[0] == 0) {
+                               window.alert(output[2]);
+                               clear();
+
+                           } else {
+                                   $("#action").val("update");
+                                   $("#products_id").val(output[0]['products_id']),
+                                   $("#products_model").val(output[0]['products_model']),
+                                   $("#products_author").val(output[0]['products_author']),
+                                   $("#products_name").val(output[0]['products_name']),
+                                   $("#products_price").val(output[0]['products_price']);
+                                   $('#myModal').modal('show');
+                               $("#price").focus();
+
+                           }
+                       }
+
+                   }
+
+               });
+           }
+       }
+       /**************/
+       /**************/
+       function getvalues(catid) {
+           //var empcode = $("input[name='Emp_Code']:text").val();
+           if (catid == null || catid == undefined || catid == '') {
+
+           } else {
+               $.ajax({
+                   url: "includes/specials_loader.php",
+                   data: {
+                       action: "search",
+                       catid: catid,
+                       Token: '<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>'
+                   },
+                   type: 'post',
+                   dataType: "json",
+                   success: function(output) {
+                     console.log(output);
+                       var siteArray = output.array;
+                       if (!$.isArray(siteArray) || !siteArray.length) {
+
+                           if (output[0] == 0) {
+                               window.alert(output[2]);
+                               clear();
+
+                           } else {
+                                   $("#action").val("update");
+                                   $("#products_id").val(output[0]['products_id']),
+                                   $("#products_model").val(output[0]['products_model']),
+                                   $("#products_author").val(output[0]['products_author']),
+                                   $("#products_name").val(output[0]['products_name']),
+                                   $("#products_price").val(output[0]['products_price']);
+                                   $("#price").val(output[0]['specials_new_products_price']),
+                                   $("#expires_date").val(output[0]['expires_date']),
+                                   $("#date_available").val(output[0]['specials_date_available']),
+                                   $('#status').val(output[0]['status']),
+                                   $('#btnsave').val('Edit');
+                                   $('#myModal').modal('show');
+                                   $("#price").focus();
+
+                           }
+                       }
+
+                   }
+
+               });
+           }
+       }
+       /**************/
+
+ $("#btncancel,#btnrf").on('click', function() {
+   clear()
+   dataTable.ajax.reload();
+     return false;
+           });
+
+
+});
+
+/*function reinitialiseFormValidation(elementSelector) {
+//  var validator = $(elementSelector).validate();
+  /validator.destroy();
+   $.validator.unobtrusive.parse(elementSelector);
+};*/
+/**Form Validation**/
+$("#gridder_addform").validate({
+  errorPlacement: $.datepicker.errorPlacement,
+            rules: {
+              products_model: {required: true},
+              price:{required: true,number:true},
+              expires_date: {
+                required: true,
+                dpDate: true
+                      },
+                date_available: {
+                  required: true,
+                  dpDate: true,
+                  dpCompareDate: ['before', '#expires_date']
+                }
+
+                },
+          messages: {
+              products_model: {required: "Please enter ISBN/Code"},
+              price:{required: "Please enter Special Price",number:"Please enter Price in Number"},
+              expires_date: 'Please enter a valid date (dd-mm-yyyy)',
+              date_available:{ required: 'Please enter a valid date (dd-mm-yyyy)',
+              dpCompareDate:'Please enter a date before Expiry Date'
+            }
+            },
+  showErrors: function(errorMap, errorList) {
+        $.each(this.successList, function(index, value) {
+        return $(value)
+          .popover("hide");
+          });
+      return $.each(errorList, function(index, value) {
+        var _popover;
+          //console.log(value.message);
+        _popover = $(value.element)
+        .popover({
+        trigger: "manual",
+        placement: "top",
+        content: value.message,
+        template: "<div class=\"popover\"><div class=\"arrow\"></div><div class=\"popover-inner\"><div class=\"popover-content\"><p></p></div></div></div>"
+        });
+        _popover.data("popover")
+        .options.content = value.message;
+        return $(value.element)
+        .popover("show");
+        });
+                },
+
+    submitHandler: function() {
+      var fdata = $("#gridder_addform").serialize();
+var PD= CKEDITOR.instances['products_description1'].getData();
+      $.ajax({
+          url: 'includes/book_master_loader.php',
+          type: 'POST',
+          data: "products_description=" + PD + "&" + fdata,
+          dataType: "json",
+          beforeSend: function() {
+            calcprice()
+              $("#message").removeClass('alert-success');
+              $("#message").addClass('alert-danger');
+              $('#message').text('Please Wait.....');
+          },
+          success: function(output) {
+              if (output[0] == 'OK') {
+                  $("#message").removeClass('alert-danger');
+                  $("#message").addClass('alert-success');
+                  $("#message").fadeIn();
+                  $('#message').text(output[1]);
+                  $('#message').delay(3000).fadeOut();
+                  alert(output[1]);
+                  clear();
+              } else {
+                alert (output[1]);
+                  $("#message").fadeIn();
+                  $("#message").removeClass('alert-success');
+                  $("#message").addClass('alert-danger');
+                  $('#message').text(output[1]);
+                  alert(output[1]);
+                  $('#message').delay(3000).fadeOut();
+              }
+          }
+      });
+      /***************/
+      }
+});
+/**EOF Form Validation**/
+
+function saveedata() {
+savedata('#OrderStatFrm','includes/order_loader.php','<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>');
+}
+function clear() {
+$("#products_model")
+        .val("");
+$("#specials_id ")
+        .val("#");
+$("#products_id")
+      .val("#");
+$("#products_author")
+            .val('');
+$('#products_name').val("");
+$('#products_price').val("");
+$('#price').val("");
+$('#expires_date').val("");
+$('#date_available').val("");
+$('#status')
+    .val(-1)
+    .attr("selected", "selected");
+
+}
 
 </script>

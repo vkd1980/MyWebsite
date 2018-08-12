@@ -14,3 +14,91 @@ code: E_WARNING
 message: mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given
 ##################################################
 
+time: 3 Mar 18 - 7:52:21 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\Newsletter_process.php
+line: 9
+
+code: E_NOTICE
+message: Undefined index: captcha_code
+##################################################
+
+time: 3 Mar 18 - 7:54:22 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\Newsletter_process.php
+line: 9
+
+code: E_NOTICE
+message: Undefined index: captcha_code
+##################################################
+
+time: 3 Mar 18 - 7:54:38 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\Newsletter_process.php
+line: 9
+
+code: E_NOTICE
+message: Undefined index: captcha_code
+##################################################
+
+time: 3 Mar 18 - 7:54:55 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\Newsletter_process.php
+line: 9
+
+code: E_NOTICE
+message: Undefined index: captcha_code
+##################################################
+
+time: 3 Mar 18 - 7:55:30 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\Newsletter.php
+line: 104
+
+code: E_NOTICE
+message: Undefined index: captcha_code
+##################################################
+
+time: 3 Mar 18 - 7:55:56 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\Newsletter.php
+line: 104
+
+code: E_NOTICE
+message: Undefined index: captcha_code
+##################################################
+
+time: 3 Mar 18 - 7:56:12 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\Newsletter.php
+line: 104
+
+code: E_NOTICE
+message: Undefined index: captcha_code
+##################################################
+
+time: 3 Mar 18 - 7:56:50 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\Newsletter.php
+line: 104
+
+code: E_NOTICE
+message: Undefined index: captcha_code
+##################################################
+
+time: 3 Mar 18 - 7:57:50 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\Newsletter.php
+line: 104
+
+code: E_NOTICE
+message: Undefined index: captcha_code
+##################################################
+
+time: 3 Mar 18 - 8:06:17 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\Newsletter.php
+line: 104
+
+code: E_NOTICE
+message: Undefined index: captcha_code
+##################################################
+
+time: 3 Mar 18 - 8:08:49 PM (IST)
+file: E:\prabhusbooks\htdocs\includes\Newsletter.php
+line: 104
+
+code: E_NOTICE
+message: Undefined index: captcha_code
+##################################################
+
