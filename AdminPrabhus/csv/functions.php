@@ -3,8 +3,8 @@ include('connection.php');
 $con = getdb();
 
 
-   if(isset($_POST["Import"])){		
-		echo $filename=$_FILES["file"]["tmp_name"];	
+   if(isset($_POST["Import"])){
+		echo $filename=$_FILES["file"]["tmp_name"];
 
 		 if($_FILES["file"]["size"] > 0)
 		 {
@@ -20,7 +20,7 @@ $con = getdb();
 					echo "<script type=\"text/javascript\">
 							alert(\"Invalid File:Please Upload CSV File.\");
 							window.location = \"index.php\"
-						  </script>";		
+						  </script>";
 				}
 				else {
 					  echo "<script type=\"text/javascript\">
@@ -29,31 +29,47 @@ $con = getdb();
 					</script>";
 				}
 	         }
-			
-	         fclose($file);	
+
+	         fclose($file);
 		 }
-	}	 
-	
+	}
+
+If (isset ($_POST['ExportPro'])){
+    header('Content-Type: text/csv; charset=utf-8');
+    header('Content-Disposition: attachment; filename=data.csv');
+    $output = fopen("php://output", "w");
+      fputcsv($output, array('products_id', 'products_quantity', 'products_model', 'products_image', 'products_price','products_curid','product_min_qty','products_rate','products_date_added'
+,'products_last_modified','products_weight','manufacturers_id','master_categories_id','products_name','products_author','products_edition'));
+$date= date("Y-m-d", strtotime($_REQUEST['Date']));
+$query = "SELECT * FROM products WHERE products_date_added >'".$date."'ORDER BY products_id DESC";
+$result = mysqli_query($con, $query);
+while($row = mysqli_fetch_assoc($result))
+{
+     fputcsv($output, $row);
+}
+fclose($output);
+  }
+
 	 if(isset($_POST["Export"])){
-		 
-      header('Content-Type: text/csv; charset=utf-8');  
-      header('Content-Disposition: attachment; filename=data.csv');  
-      $output = fopen("php://output", "w");  
-      fputcsv($output, array('ID', 'First Name', 'Last Name', 'Email', 'Joining Date'));  
-      $query = "SELECT * from employeeinfo ORDER BY emp_id DESC";  
-      $result = mysqli_query($con, $query);  
-      while($row = mysqli_fetch_assoc($result))  
-      {  
-           fputcsv($output, $row);  
-      }  
-      fclose($output);  
- }  
-	
+
+      header('Content-Type: text/csv; charset=utf-8');
+      header('Content-Disposition: attachment; filename=data.csv');
+      $output = fopen("php://output", "w");
+      fputcsv($output, array('ID', 'First Name', 'Last Name', 'Email', 'Joining Date'));
+      $query = "SELECT * from employeeinfo ORDER BY emp_id DESC";
+      $result = mysqli_query($con, $query);
+      while($row = mysqli_fetch_assoc($result))
+      {
+           fputcsv($output, $row);
+      }
+      fclose($output);
+ }
+
 function get_all_records(){
     $con = getdb();
 
     $Sql = "SELECT * FROM employeeinfo";
-    $result = mysqli_query($con, $Sql);  
+    $result = mysqli_query($con, $Sql);
 
     if (mysqli_num_rows($result) > 0) {
      echo "<div class='table-responsive'><table id='myTable' class='table table-striped table-bordered'>
@@ -74,11 +90,11 @@ function get_all_records(){
                    <td>" . $row['lastname']."</td>
                    <td>" . $row['email']."</td>
                    <td>" . $row['reg_date']."</td></tr>";
-         
+
      }
 	//  echo "<tr> <td><a href='' class='btn btn-danger' id='status_btn' data-loading-text='Changing Status..'>Export</a></td></tr>";
      echo "</tbody></table></div>";
-	 
+
 } else {
      echo "you have no recent pending orders";
 }

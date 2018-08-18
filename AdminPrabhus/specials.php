@@ -146,11 +146,11 @@ require_once (__DIR__.'/includes/sidebar.php');
                         <tr>
                           <td><input type="text"  name="price" id="price"  autocomplete="off" class="form-control" required/></td>
                           <td>
-                            <input data-format="dd-MM-yyyy" id="expires_date" type="text" class="form-control" name="expires_date">
+                            <input data-format="dd-MM-yyyy" id="expires_date" type="text" class="form-control" autocomplete="off"  name="expires_date">
                  						</td>
 
                           <td>
-                 						<input data-format="dd-MM-yyyy" id="date_available" type="text"  class="form-control" name="date_available">
+                 						<input data-format="dd-MM-yyyy" id="date_available" type="text"  class="form-control" autocomplete="off"  name="date_available">
 
                           </td>
                     <td><select name="status" id="status"  class="form-control"  >
@@ -186,6 +186,7 @@ require_once (__DIR__.'/includes/footer.php');
 <script type="text/javascript">
 $(document).ready(function () {
    /**********/
+   $("#message").hide();
    $('#expires_date,#date_available').datepicker({minDate: 0,
    dateFormat: "dd-mm-yy"
  });
@@ -284,13 +285,14 @@ $(document).ready(function () {
                                clear();
 
                            } else {
+
                                    $("#products_id").val(output[0]['products_id']),
                                    $("#products_model").val(output[0]['products_model']),
                                    $("#products_author").val(output[0]['products_author']),
                                    $("#products_name").val(output[0]['products_name']),
                                    $("#products_price").val(output[0]['products_price']);
                                    $('#myModal').modal('show');
-                               $("#price").focus();
+                                   $("#price").focus();
 
                            }
                        }
@@ -326,6 +328,7 @@ $(document).ready(function () {
                                clear();
 
                            } else {
+                                  $("#btnfind").hide();
                                    $("#action").val("update");
                                    $("#specials_id").val(output[0]['specials_id']),
                                    $("#products_id").val(output[0]['products_id']),
@@ -468,6 +471,7 @@ $('#status')
     .val(-1)
     .attr("selected", "selected");
 $('#btnsave').val('AddNew');
+  $("#btnfind").show();
 }
 
 </script>

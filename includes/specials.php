@@ -1,5 +1,5 @@
 <?php
-$results = $product->getspecials(FEATURED_NUM_ROWS,"'".date("Y-m-d")."'");
+$results = $product->getspecials(SPECIALS_NUM_ROWS,"'".date("Y-m-d")."'");
 $str='<html><div class="items">
   <div class="container">
     <div class="row">
@@ -23,7 +23,7 @@ while($rows =  mysqli_fetch_array($results)){
             <p>Something about the product goes here. Not More than 2 lines. Something about the product goes here. Not More than 2 lines</p> -->
             <hr />
             <!-- Price -->
-            <div class="item-price pull-left "><span class="fa fa-inr"></span> '.$rows['products_price'].'</div>
+            <div class="item-price pull-left "><span style="text-decoration: line-through"><span class="fa fa-inr"></span> '.$rows['products_price'].'</span><br><span class="fa fa-inr"></span> '.number_format($rows['specials_new_products_price'],2).'</div>
             <!-- Add to cart -->
             <div class="button pull-right"><a href="../'.strtolower(preg_replace('#[ -]+#', '-',preg_replace("/[^a-zA-Z0-9\s]/", "",  $rows['categories_name']))).'-c-'.$rows['master_categories_id'].'/'.strtolower(preg_replace('#[ -]+#', '-',preg_replace("/[^a-zA-Z0-9\s]/", "",  $rows['products_name']))).'-ps-'.$rows['products_id'].'.html">Details</a></div>
             <div class="clearfix"></div>

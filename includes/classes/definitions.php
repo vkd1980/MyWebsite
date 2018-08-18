@@ -14,7 +14,7 @@ define('RECENT_ITEMS','Recently Viewed Items');
 define('NEW_ARRIVALS','New Arrivals');
 define('FEATURED_NAME','Featured Items');
 define('SPECIAL_OFFERS','Special Offers');
-define('SPECIALS_NUM_ROWS','8');//Must be Multiples of 3
+define('SPECIALS_NUM_ROWS','12');//Must be Multiples of 3
 define('FEATURED_NUM_ROWS','8');//Must be Multiples of 3
 define('FEATURED_SIDEBAR_NUM_ROWS','10');//Any Numbers not more than 10
 define('NEW_ARRIVALS_NUM_ROWS','8');//Must be Multiples of 3

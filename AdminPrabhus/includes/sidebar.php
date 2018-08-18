@@ -21,6 +21,7 @@
           <li><a href="publisher_master.php">Publisher Master</a></li>
           <li><a href="book_master.php">Book Master</a></li>
             <li><a href="currency_master.php">Currency Master</a></li>
+            <li><a href="specials.php">Specials</a></li>
         </ul>
       </li>
 
