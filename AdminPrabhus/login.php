@@ -135,6 +135,6 @@ $.ajax({
 </script>
 </body>
 </html>
-<?php echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>';
-echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'], $_SESSION['csrf_token']);
+<?php //echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>';
+//echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF'], $_SESSION['csrf_token']);
 ?>

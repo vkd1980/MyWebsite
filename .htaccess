@@ -37,6 +37,7 @@ ErrorDocument 404 /404.html
 # Turn Rewrite Engine On
 RewriteEngine on
 RewriteBase /
+RewriteCond %{REQUEST_URI} !^/AdminPrabhus/
 # Rewrite for products.php
 RewriteRule ^(.*)-c-([0-9_]+)/(.*)-p-([0-9]+)(.*)$ products\.php?Pid=$4&Type=Product&%{QUERY_STRING} [L]
 RewriteRule ^(.*)-c-([0-9_]+)/(.*)-ps-([0-9]+)(.*)$ products\.php?Pid=$4&Type=Specials&%{QUERY_STRING} [L]

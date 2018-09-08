@@ -248,7 +248,10 @@ require_once (__DIR__.'/includes/footer.php');
  ?>
 
  <script type="text/javascript">
-$(document).ready(function () {
+ $(document).ready(function () {
+  $(this).find('.open').removeClass("open");
+  $('#Masters').addClass('open')
+  $('#book_master').css('background',' #1aaef3','border-bottom',' 1px solid #ddd');
   $('#message').hide();
   $('#messageImg').hide();
   CKEDITOR.replace( 'products_description1' );

@@ -158,7 +158,9 @@ require_once (__DIR__.'/includes/footer.php');
  ?>
  <script type="text/javascript">
 $(document).ready(function () {
-
+  $(this).find('.open').removeClass("open");
+  $('#Masters').addClass('open')
+  $('#subject_master').css('background',' #1aaef3','border-bottom',' 1px solid #ddd');
   /**********/
   var dataTable = $('#data-table-12').DataTable( {
       "lengthMenu": [[25, 50, 100], [25, 50, 100]],
