@@ -189,6 +189,19 @@ mysqli_close($dbcon);
 		}
 
 			}
+	Public function checkrow($field, $table, $where){
+		$sql = "SELECT $field from $table where $where";
+		$dbcon = $this->connect();
+		$result = mysqli_query($dbcon,$sql);
+		if( mysqli_num_rows($result) == 1)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
 
 }
 

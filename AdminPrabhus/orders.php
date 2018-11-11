@@ -37,7 +37,7 @@ require_once (__DIR__.'/includes/sidebar.php');
 
    <!-- Page heading -->
    <div class="page-head">
-     <h2 class="pull-left"><i class="fa fa-table"></i> Add/Edit ==> Currency </h2>
+     <h2 class="pull-left"><i class="fa fa-table"></i> Add/Edit ==> Orders </h2>
 
      <!-- Breadcrumb -->
      <div class="bread-crumb pull-right">
@@ -60,7 +60,7 @@ require_once (__DIR__.'/includes/sidebar.php');
 
  					<div class="widget">
  						<div class="widget-head">
- 							<div class="pull-left"> Currency Master </div>
+ 							<div class="pull-left"> Orders </div>
  							<div class="widget-icons pull-right">
  								<a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
  								<a href="#" class="wclose"><i class="fa fa-times"></i></a>
@@ -154,7 +154,7 @@ require_once (__DIR__.'/includes/sidebar.php');
  "bSortable": false,
  "bSearchable": false,
  "width": "10%",
- "defaultContent": "<div class='btn-group'><button class='btn btn-info dropdown-toggle' data-toggle='dropdown'>Action <span class='caret'></span></button><ul class='dropdown-menu'><li id='gridder_addnew'><a href='#'>Edit</a></li><li><a href='#'>Something else here</a></li><li class='divider'></li><li><a href='#'>Separated link</a></li></ul></div>"
+ "defaultContent": "<div class='btn-group'><button class='btn btn-info dropdown-toggle' data-toggle='dropdown'>Action <span class='caret'></span></button><ul class='dropdown-menu'><li id='gridder_addnew'><a href='#'>Edit</a></li><li id='idInv'><a href='#'>Invoice</a></li><li class='divider'></li><li><a href='#'>Separated link</a></li></ul></div>"
  }],
 
       "ajax":{
@@ -195,6 +195,17 @@ require_once (__DIR__.'/includes/sidebar.php');
          });
          $("#title").focus();
          $('#message').hide();
+
+         $('#data-table-12 tbody').on( 'click', '#idInv', function () {
+              var id = dataTable.row( $(this).parents('tr') ).data();
+              var url = 'invoice.php?Oid='+id[1]+'&Token=<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>&action=Search'
+              var win = window.open(url, '_blank');
+              win.focus();
+           alert(url);
+
+          });
+          $("#title").focus();
+          $('#message').hide();
 
          function getvalues(catid) {
              //var empcode = $("input[name='Emp_Code']:text").val();

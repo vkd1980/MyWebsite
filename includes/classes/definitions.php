@@ -20,5 +20,5 @@ define('FEATURED_SIDEBAR_NUM_ROWS','10');//Any Numbers not more than 10
 define('NEW_ARRIVALS_NUM_ROWS','8');//Must be Multiples of 3
 define('SMTP_SERVER','smtp.prabhusbooks.com');
 define('SMTP_USER_NAME','admin@prabhusbooks.com');
-define('SMTP_PASSWORD','Vinod123*');
+define('SMTP_PASSWORD','Prabhus123*');
 ?>

@@ -1,0 +1,5296 @@
+time: 8 Nov 18 - 7:29:45 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 8 Nov 18 - 7:29:45 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 8 Nov 18 - 7:29:45 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 8 Nov 18 - 7:29:45 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:03:07 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:03:07 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:03:07 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:03:07 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:03:57 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:03:57 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:03:57 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:03:57 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:05:11 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:05:11 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:05:12 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:05:12 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:05:31 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:05:31 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:05:31 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:05:31 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:06:05 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:06:05 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:06:05 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:06:05 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:06:17 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:06:17 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:06:17 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:06:17 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:07:20 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:07:20 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:07:20 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:07:20 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:07:20 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\fpdf.php
+line: 1576
+
+code: E_WARNING
+message: file_get_contents(E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes/font/Rupee_Foradian.z): failed to open stream: No such file or directory
+##################################################
+
+time: 9 Nov 18 - 7:08:00 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:08:00 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:08:00 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:08:00 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:08:45 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:08:45 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:08:46 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:08:46 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:08:46 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\fpdf.php
+line: 1143
+
+code: E_WARNING
+message: include(E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes/font/rupeeforadianb.php): failed to open stream: No such file or directory
+##################################################
+
+time: 9 Nov 18 - 7:08:46 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\fpdf.php
+line: 1143
+
+code: E_WARNING
+message: include(): Failed opening 'E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes/font/rupeeforadianb.php' for inclusion (include_path='.;C:\php\pear')
+##################################################
+
+time: 9 Nov 18 - 7:09:03 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:09:03 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:09:03 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:09:03 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:15:53 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:15:53 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:15:53 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:15:53 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:21:42 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:21:42 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 9 Nov 18 - 7:21:42 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 9 Nov 18 - 7:21:42 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:56:15 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:56:15 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:56:15 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:56:15 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 1:45:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 1:45:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 1:45:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 1:45:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 1:46:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 1:46:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 1:57:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 1:57:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 1:58:42 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 1:58:42 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 1:59:17 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 1:59:17 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 1:59:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 1:59:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 1:59:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 1:59:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:00:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:00:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:00:35 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 67
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:00:35 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 71
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:03:06 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:03:06 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:04:22 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:04:22 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:05:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:05:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\fpdf.php
+line: 1143
+
+code: E_WARNING
+message: include(E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes/font/rupeeforadianb.php): failed to open stream: No such file or directory
+##################################################
+
+time: 10 Nov 18 - 2:05:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\fpdf.php
+line: 1143
+
+code: E_WARNING
+message: include(): Failed opening 'E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes/font/rupeeforadianb.php' for inclusion (include_path='.;C:\php\pear')
+##################################################
+
+time: 10 Nov 18 - 2:05:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:05:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:07:48 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:07:48 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:08:09 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:08:09 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:08:18 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:08:18 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:08:50 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:08:50 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:09:17 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:09:17 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:09:37 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:09:37 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:09:51 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:09:52 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:10:20 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:10:20 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:37:03 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:37:03 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:37:31 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:37:31 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:38:01 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:38:01 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:38:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:38:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:38:52 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:38:52 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:39:03 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:39:03 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:39:10 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:39:10 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:39:36 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:39:36 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:44:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:44:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:45:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:45:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:46:37 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:46:37 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:47:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:47:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:49:17 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:49:17 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:52:18 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:52:18 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:52:57 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:52:57 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:53:18 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:53:18 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:53:29 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:53:29 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:53:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:53:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:53:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:53:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:54:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:54:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:54:38 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:54:38 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:54:59 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:54:59 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:55:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:55:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:55:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:55:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:55:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:55:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:56:22 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:56:22 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:57:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:57:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:57:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:57:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:58:03 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:58:03 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:58:39 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:58:39 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 2:59:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 2:59:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 3:04:42 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 3:04:42 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 3:04:55 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 3:04:55 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 3:05:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 3:05:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 3:05:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 3:05:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 3:06:01 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 3:06:01 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 3:06:14 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 3:06:14 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 3:06:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 3:06:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 3:06:39 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 3:06:39 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 3:07:01 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 3:07:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 3:07:20 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 3:07:20 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 8:56:23 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 8:56:23 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 8:57:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 8:57:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 8:57:36 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 8:57:36 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 8:58:10 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 8:58:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:07:29 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:07:29 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:07:29 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\fpdf.php
+line: 1143
+
+code: E_WARNING
+message: include(E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes/font/rupeeforadianb.php): failed to open stream: No such file or directory
+##################################################
+
+time: 10 Nov 18 - 9:07:29 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\fpdf.php
+line: 1143
+
+code: E_WARNING
+message: include(): Failed opening 'E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes/font/rupeeforadianb.php' for inclusion (include_path='.;C:\php\pear')
+##################################################
+
+time: 10 Nov 18 - 9:07:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:07:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:37:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:37:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:38:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:38:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:38:42 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:38:42 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:39:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:39:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:39:48 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:39:48 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:41:17 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:41:17 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:41:31 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:41:31 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:41:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:41:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:42:13 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:42:13 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:42:59 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:42:59 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:43:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:43:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:43:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:43:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:43:48 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:43:48 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:44:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:44:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:44:27 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:44:27 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:44:54 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:44:54 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:47:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:47:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:47:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:47:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:48:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:48:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:48:39 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:48:39 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:49:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:49:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:51:35 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:51:35 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:51:48 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:51:48 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:51:57 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:51:57 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:52:07 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:52:07 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:52:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:52:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:52:51 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:52:51 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:52:57 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:52:57 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:53:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:53:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:53:54 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:53:54 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:54:59 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:54:59 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:55:20 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:55:20 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:56:43 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:56:43 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:57:43 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:57:43 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:57:57 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:57:57 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:58:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:58:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:59:14 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:59:14 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:59:23 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:59:23 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 9:59:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 9:59:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:01:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:01:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:01:51 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:01:51 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:02:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:02:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:02:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\fpdf.php
+line: 1143
+
+code: E_WARNING
+message: include(E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes/font/rupeeforadianb.php): failed to open stream: No such file or directory
+##################################################
+
+time: 10 Nov 18 - 10:02:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\fpdf.php
+line: 1143
+
+code: E_WARNING
+message: include(): Failed opening 'E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes/font/rupeeforadianb.php' for inclusion (include_path='.;C:\php\pear')
+##################################################
+
+time: 10 Nov 18 - 10:02:36 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:02:36 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:03:39 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:03:39 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:04:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:04:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:04:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:04:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:05:26 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:05:26 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:06:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:06:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:06:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:06:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:07:22 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:07:22 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:08:00 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:08:00 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:08:20 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:08:20 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:08:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:08:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:09:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:09:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:09:54 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:09:54 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:11:41 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:11:41 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:11:41 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:11:41 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:13:23 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:13:23 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:13:23 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:13:23 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:14:57 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:14:57 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:14:57 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:14:57 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:15:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:15:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:15:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:15:44 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:16:07 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:16:07 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:16:07 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:16:07 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:16:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:16:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:16:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:16:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:16:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:16:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:16:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:16:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:17:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:17:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:17:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:17:04 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:17:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:17:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:17:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:17:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:17:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:17:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:17:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:17:58 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:18:41 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:18:41 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:18:41 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:18:41 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:19:33 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:19:33 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:19:33 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:19:33 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:23:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:23:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:23:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:23:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:24:59 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:24:59 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:24:59 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:25:00 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:26:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:26:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:26:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:26:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:26:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:26:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:26:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:26:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:27:18 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:27:18 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:27:18 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:27:18 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:27:54 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:27:54 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:27:54 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:27:54 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:28:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:28:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:28:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:28:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:30:17 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:30:17 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:31:25 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:31:25 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:31:25 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:31:25 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:32:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:32:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:32:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:32:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:33:06 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:33:06 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:33:06 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:33:06 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:33:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:33:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:33:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:33:56 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:34:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:34:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:34:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:34:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:34:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:34:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:34:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:34:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:35:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:35:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:35:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:35:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:35:21 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:35:21 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:35:22 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:35:22 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:35:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:35:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:35:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:35:41 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:36:34 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:36:34 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:36:34 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:36:34 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:37:50 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:37:50 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:37:50 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:37:50 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:38:07 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:38:07 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:38:07 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:38:08 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:38:34 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:38:35 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:38:35 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:38:35 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:39:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:39:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:39:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:39:32 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:39:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:39:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:39:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:39:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:40:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:40:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:40:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:40:24 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:48:03 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:48:03 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:48:03 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:48:03 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:48:03 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:48:03 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:48:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:48:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:48:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:48:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:48:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:48:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:49:14 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:49:14 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:49:14 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:49:14 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:49:14 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:49:14 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:50:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:50:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:50:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:50:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:50:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:50:11 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:52:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:52:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:52:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:52:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:52:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:52:19 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:52:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:52:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:52:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:52:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:52:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:52:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:53:05 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:53:05 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:53:05 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:53:05 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:53:05 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:53:06 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:53:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:53:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:53:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:53:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:53:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:53:16 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:53:29 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:53:29 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:53:29 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:53:29 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:53:29 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:53:29 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:53:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:53:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:53:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:53:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:53:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:53:49 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 10:54:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:54:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:54:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:54:40 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:54:55 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:54:55 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:54:55 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 10:54:55 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:54:55 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:54:55 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 10:57:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:57:02 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:58:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:58:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:58:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:58:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:59:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:59:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 10:59:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 10:59:47 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:00:30 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:00:30 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:00:30 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:00:30 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:00:30 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:00:30 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:00:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:00:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:00:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:00:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:00:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:00:53 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:01:50 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:01:50 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:01:50 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:01:50 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:01:50 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:01:50 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:02:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:02:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:02:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:02:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:02:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:02:15 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:02:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:02:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:02:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:02:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:02:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:02:28 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:03:05 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:03:05 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:03:05 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:03:05 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:03:05 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:03:06 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:03:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:03:12 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:03:13 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:03:13 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:03:13 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:03:13 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 226 and defined
+##################################################
+
+time: 10 Nov 18 - 11:03:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:03:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:03:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 10 Nov 18 - 11:03:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 10 Nov 18 - 11:03:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 10 Nov 18 - 11:03:45 PM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 225 and defined
+##################################################
+
+time: 11 Nov 18 - 6:41:53 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 6:41:53 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 6:41:53 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 6:41:53 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 6:41:53 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 6:47:18 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 6:47:18 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 6:47:18 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 6:47:18 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 6:47:18 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 6:48:24 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 6:48:24 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 6:48:24 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 6:48:24 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 6:48:24 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 6:49:02 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 6:49:02 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 6:49:03 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 6:49:03 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 6:49:03 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 6:49:26 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 6:49:27 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 6:49:27 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 6:49:27 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 6:49:27 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 9:14:30 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:14:30 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:14:30 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:14:30 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:14:30 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 9:15:42 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:15:42 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:15:42 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:15:42 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:15:42 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 9:17:35 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:17:35 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:17:35 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:17:35 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:17:35 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 9:18:18 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:18:18 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:18:18 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:18:18 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:18:18 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 9:19:25 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:19:25 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:19:25 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:19:25 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:19:25 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 9:19:58 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:19:58 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:19:58 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:19:58 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:19:58 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 9:20:17 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:20:17 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:20:17 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:20:17 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:20:17 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 9:21:48 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:21:48 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:21:48 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:21:48 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:21:48 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 9:22:04 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:22:04 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:22:04 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:22:04 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:22:04 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 9:22:56 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:22:56 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:22:56 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:22:56 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:22:56 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+
+time: 11 Nov 18 - 9:23:16 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:23:16 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:23:16 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 70
+
+code: E_NOTICE
+message: Undefined variable: annee
+##################################################
+
+time: 11 Nov 18 - 9:23:16 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php
+line: 74
+
+code: E_NOTICE
+message: Undefined variable: row
+##################################################
+
+time: 11 Nov 18 - 9:23:16 AM (IST)
+file: E:\prabhusbooks\htdocs\AdminPrabhus\includes\classes\Functions.php
+line: 439
+
+code: E_RECOVERABLE_ERROR
+message: Argument 1 passed to getIndianCurrency() must be an instance of float, string given, called in E:\prabhusbooks\htdocs\AdminPrabhus\invoice.php on line 236 and defined
+##################################################
+

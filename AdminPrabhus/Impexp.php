@@ -37,7 +37,7 @@ require_once (__DIR__.'/includes/sidebar.php');
 
             <div class="widget">
               <div class="widget-head">
-                <div class="pull-left"> Export New Products </div>
+                <div class="pull-left"><b> EXPORT NEW PRODUCTS </b></div>
                 <div class="widget-icons pull-right">
                   <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
                   <a href="#" class="wclose"><i class="fa fa-times"></i></a>
@@ -48,19 +48,21 @@ require_once (__DIR__.'/includes/sidebar.php');
               <div class="widget-content">
 
                 <div class="padd">
-                <p> Select Today's Date to Export New Products Added Till Yesterday </p>
+              <b> <p> Select "From Date" and Today's Date as "To Date" to Export New Products Added Till Yesterday </b></p>
 <form action="includes/export.php" method="post" name="upload_excel" enctype="multipart/form-data">
   <input type="hidden" name="action" id= "action" value="ExportPro" />
   <input type="hidden" name="Token" id= "Token" value="<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>" />
 <table class="table table-bordered table-striped ">
   <thead>
       <tr>
-      <td>Date</td>
+      <td>From Date</td>
+      <td>To Date</td>
       <td>Action</td>
       </tr>
   </thead>
   <tr>
-    <td><input type="text" name="Date"required class="form-control" autocomplete="off"  id="Date"></td>
+    <td><input type="text" name="FrmDate"required class="form-control" autocomplete="off"  id="FrmDate"></td>
+    <td><input type="text" name="ToDate"required class="form-control" autocomplete="off"  id="ToDate"></td>
     <td><input type="submit" name="ExportPro" class="btn btn-success" value="Export to CSV"/><input type="button" id="btncancel" value="Clear" title="Clear" class="btn btn-warning" /></td>
   </tr>
   </table>
@@ -116,6 +118,86 @@ require_once (__DIR__.'/includes/sidebar.php');
                 </div><!--Widget-->
               </div>
             <!--Eof Export Stock-->
+            <!--Bof Subject Export-->
+            <div class="col-md-12">
+
+              <div class="widget">
+                <div class="widget-head">
+                  <div class="pull-left"> Export Subject </div>
+                  <div class="widget-icons pull-right">
+                    <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
+                    <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="widget-content">
+
+                  <div class="padd">
+<p> Export Subject </p>
+<form action="includes/export.php" method="post" name="ExportSbjt" enctype="multipart/form-data">
+  <input type="hidden" name="action" id= "action" value="ExportSbjt" />
+  <input type="hidden" name="Token" id= "Token" value="<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>" />
+<table class="table table-bordered table-striped ">
+<thead>
+<tr>
+<td>Action</td>
+</tr>
+</thead>
+<tr>
+<td><input type="submit" name="ExportSbjt" class="btn btn-success" value="Export to CSV"/><input type="button" id="btncancel" value="Clear" title="Clear" class="btn btn-warning" /></td>
+</tr>
+</table>
+</form>
+              </div>
+                  </div>
+                  <div class="widget-foot">
+                    <!-- Footer goes here -->
+                  </div>
+                </div><!--Widget-->
+              </div>
+            <!--Eof Subject Export-->
+
+            <!--Bof Publisher Export-->
+            <div class="col-md-12">
+
+              <div class="widget">
+                <div class="widget-head">
+                  <div class="pull-left"> Export Publisher </div>
+                  <div class="widget-icons pull-right">
+                    <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
+                    <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="widget-content">
+
+                  <div class="padd">
+<p> Export Publisher </p>
+<form action="includes/export.php" method="post" name="ExportPub" enctype="multipart/form-data">
+  <input type="hidden" name="action" id= "action" value="ExportPub" />
+  <input type="hidden" name="Token" id= "Token" value="<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>" />
+<table class="table table-bordered table-striped ">
+<thead>
+<tr>
+<td>Action</td>
+</tr>
+</thead>
+<tr>
+<td><input type="submit" name="ExportPub" class="btn btn-success" value="Export to CSV"/><input type="button" id="btncancel" value="Clear" title="Clear" class="btn btn-warning" /></td>
+</tr>
+</table>
+</form>
+              </div>
+                  </div>
+                  <div class="widget-foot">
+                    <!-- Footer goes here -->
+                  </div>
+                </div><!--Widget-->
+              </div>
+            <!--Eof Publisher Export-->
+
             <div class="col-md-12">
 
               <div class="widget">
@@ -198,6 +280,88 @@ require_once (__DIR__.'/includes/sidebar.php');
                             </div><!--Widget-->
                           </div>
                         <!--Eof Import Stock-->
+                        <!--Bof Import Subject-->
+                        <div class="col-md-12">
+
+                          <div class="widget">
+                            <div class="widget-head">
+                              <div class="pull-left"> Import Subject </div>
+                              <div class="widget-icons pull-right">
+                                <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
+                                <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                              </div>
+                              <div class="clearfix"></div>
+                            </div>
+
+                            <div class="widget-content">
+
+                              <div class="padd">
+            <p> Select File (ExportSbjt.csv) to Import Subject </p>
+            <form action="includes/export.php" method="post" name="ImportSbjt" enctype="multipart/form-data">
+              <input type="hidden" name="action" id= "action" value="ImportSbjt" />
+              <input type="hidden" name="Token" id= "Token" value="<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>" />
+            <table class="table table-bordered table-striped ">
+            <thead>
+            <tr>
+            <td><label class="col-md-4 control-label" for="filebutton">Select File</label></td>
+            <td>Action</td>
+            </tr>
+            </thead>
+            <tr>
+            <td><input type="file" name="fileSbjt" id="fileSbjt" class="input-large" required></td>
+            <td><button type="submit" id="submit" name="ImportSbjt" class="btn btn-primary button-loading" data-loading-text="Loading...">Upload</button><input type="button" id="btncancel" value="Clear" title="Clear" class="btn btn-warning" /></td>
+            </tr>
+            </table>
+            </form>
+                          </div>
+                              </div>
+                              <div class="widget-foot">
+                                <!-- Footer goes here -->
+                              </div>
+                            </div><!--Widget-->
+                          </div>
+                        <!--Eof Import Subject-->
+                        <!--Bof Import Publisher-->
+                        <div class="col-md-12">
+
+                          <div class="widget">
+                            <div class="widget-head">
+                              <div class="pull-left"> Import Publisher </div>
+                              <div class="widget-icons pull-right">
+                                <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
+                                <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                              </div>
+                              <div class="clearfix"></div>
+                            </div>
+
+                            <div class="widget-content">
+
+                              <div class="padd">
+            <p> Select File (ExportPub.csv) to Import Publisher </p>
+            <form action="includes/export.php" method="post" name="ImportPub" enctype="multipart/form-data">
+              <input type="hidden" name="action" id= "action" value="ImportPub" />
+              <input type="hidden" name="Token" id= "Token" value="<?php echo hash_hmac('sha256', $_SERVER['SERVER_NAME'].'/'.basename(__FILE__, '.php').'.php', $_SESSION['csrf_token']);?>" />
+            <table class="table table-bordered table-striped ">
+            <thead>
+            <tr>
+            <td><label class="col-md-4 control-label" for="filebutton">Select File</label></td>
+            <td>Action</td>
+            </tr>
+            </thead>
+            <tr>
+            <td><input type="file" name="filePub" id="filePub" class="input-large" required></td>
+            <td><button type="submit" id="submit" name="ImportPub" class="btn btn-primary button-loading" data-loading-text="Loading...">Upload</button><input type="button" id="btncancel" value="Clear" title="Clear" class="btn btn-warning" /></td>
+            </tr>
+            </table>
+            </form>
+                          </div>
+                              </div>
+                              <div class="widget-foot">
+                                <!-- Footer goes here -->
+                              </div>
+                            </div><!--Widget-->
+                          </div>
+                        <!--Eof Import Pub-->
 
           </div><!--Row-->
         </div>
@@ -213,9 +377,11 @@ require_once (__DIR__.'/includes/sidebar.php');
      ?>
      <script>
      $(document).ready(function () {
-     $( "#Date,#StockDate" ).datepicker().datepicker("setDate", new Date());
+     $( "#FrmDate,#StockDate,#ToDate,#SbjtDt" ).datepicker().datepicker("setDate", new Date());
      } );
-     $('#Date,#StockDate').datepicker({minDate: 0,maxDate:0,
+     $('#FrmDate,#StockDate,#SbjtDt').datepicker({maxDate:0,
      dateFormat: "dd-mm-yy"
    });
+   $('#ToDate').datepicker({minDate: 0,
+   dateFormat: "dd-mm-yy" });
      </script>

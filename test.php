@@ -11,10 +11,12 @@ include(__DIR__.'/includes/classes/Crypto.php');
 
 </body>
 <?php
-echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>'
+echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>';
 
 //$cart->destroy();
 
+//
+echo $_SERVER['REQUEST_URI'];
 //echo phpinfo();
 //production
 //PHP Version 5.4.7

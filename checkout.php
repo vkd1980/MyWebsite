@@ -1258,7 +1258,7 @@ echo '<tr>
               <tale>
                 <tr>
               <td><input type="checkbox" name="terms" id="terms"></td>
-              <td> <h7> I hereby Accept <a href="terms.html">Terms & conditions</a></h7></td>
+              <td> <h7> I hereby Accept <a href="terms.html" target="_blank">Terms & conditions</a></h7></td>
             </tr>
             </table>
             </div>
@@ -1493,7 +1493,7 @@ $(document).ready(function()
 
 	 </div>
 	  </div><?php
-	
+
 
 }
  else/*Default View of Shopping cart*/

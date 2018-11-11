@@ -105,7 +105,7 @@ require_once (__DIR__.'/includes/header.php');
 					</li>
 					</ul>
 		</div>
-		<div class="col-xs-12 col-md-12 well well-sm" id="type">
+		<div class="col-xs-12 col-md-12 well well-sm" id="MsgScroll">
 
 		</div>
 	</div>
@@ -113,9 +113,9 @@ require_once (__DIR__.'/includes/header.php');
 
 
 <?php
+require_once(__DIR__.'/includes/New_arrival.php');
 require_once(__DIR__.'/includes/specials.php');
 require_once(__DIR__.'/includes/popular_deals.php');
-require_once(__DIR__.'/includes/New_arrival.php');
 require_once (__DIR__.'/includes/recent.php');
 
 require_once (__DIR__.'/includes/footer.php');

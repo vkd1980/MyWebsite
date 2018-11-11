@@ -17,7 +17,6 @@ if(!empty($_REQUEST['Token']) && (hash_equals($_REQUEST['Token'],hash_hmac('sha2
       3 => 'products.products_name',
       4 => 'expires_date',
       5 =>  'status');
-      $OrderMaster= $order->QueryOrderHeader();
 
   $sql = "SELECT featured_id FROM featured ";
   $query=$db->select($sql);

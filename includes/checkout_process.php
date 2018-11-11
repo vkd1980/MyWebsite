@@ -197,8 +197,8 @@ switch($Process){
 			//$merchant_data.=$key.'='.$value.'&';
 			//}
 			$encrypted_data=encrypt($merchant_data,$working_key); // Method for encrypting the data.
-			//$production_url='https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction&encRequest='.$encrypted_data.'&access_code='.$access_code;
-			$production_url='https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction&encRequest='.$encrypted_data.'&access_code='.$access_code;
+			$production_url='https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction&encRequest='.$encrypted_data.'&access_code='.$access_code;
+			//$production_url='https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction&encRequest='.$encrypted_data.'&access_code='.$access_code;
 
 			$data = array(
 						'status' => "success",
@@ -436,7 +436,7 @@ elseif(!sendsms($rows['customers_telephone'],"Dear ".$rows['customers_name']." ,
 				unset($_SESSION['Shipping']);
 				unset($_SESSION['Payment']);
 				$cart->destroy();
-			
+
 			}
 			else{
 				echo $summary;
@@ -445,7 +445,7 @@ elseif(!sendsms($rows['customers_telephone'],"Dear ".$rows['customers_name']." ,
 				unset($_SESSION['Shipping']);
 				unset($_SESSION['Payment']);
 				$cart->destroy();
-			
+
 			}
 }
 else

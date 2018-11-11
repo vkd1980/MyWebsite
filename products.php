@@ -27,7 +27,7 @@ $results = $product->getfeaturedbyID($pid,"'".date("Y-m-d")."'");
 $num_rows = mysqli_num_rows($results);
 if($num_rows > 0){
 while($rows =  mysqli_fetch_array($results)){
- $meta= $meta.'<meta property=og:type content=books.book /><meta property=og:title content='.$rows["products_name"].' /><meta property="books:isbn" content="'.$rows["products_model"].'" /><meta property= og:url content='.curPageURL().'/><meta property=og:description content="ISBN/CODE : '.$rows["products_model"].' Author : '.$rows["products_author"].' Publisher : '.$rows["manufacturers_name"].' Subject : '.$rows["categories_name"].'" /><meta property=og:image content=http://'.$_SERVER["SERVER_NAME"].'/img/photos/'.$rows["products_image"].' />';
+$meta= $meta.'<meta property=og:type content=books.book /><meta property=og:title content="'.$rows["products_name"].'" /><meta property="books:isbn" content="'.$rows["products_model"].'" /><meta property= og:url content="'.curPageURL().'"/><meta property=og:description content="Author : '.$rows["products_author"].' Publisher : '.$rows["manufacturers_name"].' Subject : '.$rows["categories_name"].' " /><meta property=og:image content=http://'.$_SERVER["SERVER_NAME"].'/img/photos/'.$rows["products_image"].' /><meta property="og:image:height" content="600" /><meta property="og:image:width" content="315" />';
  $title=$rows["products_name"].' ['.$rows["products_model"].'] -&#8377; '.$rows["products_price"] ;
 $html.='<!-- Image. Flex slider -->
 
@@ -277,7 +277,7 @@ $results = $product->getspecialsbyID($pid,"'".date("Y-m-d")."'");
 $num_rows = mysqli_num_rows($results);
 if($num_rows > 0){
 while($rows =  mysqli_fetch_array($results)){
-$meta= $meta.'<meta property=og:type content=books.book /><meta property=og:title content='.$rows["products_name"].' /><meta property="books:isbn" content="'.$rows["products_model"].'" /><meta property= og:url content='.curPageURL().'/><meta property=og:description content="ISBN/CODE : '.$rows["products_model"].' Author : '.$rows["products_author"].' Publisher : '.$rows["manufacturers_name"].' Subject : '.$rows["categories_name"].'" /><meta property=og:image content=http://'.$_SERVER["SERVER_NAME"].'/img/photos/'.$rows["products_image"].' />';
+  $meta= $meta.'<meta property=og:type content=books.book /><meta property=og:title content="'.$rows["products_name"].'" /><meta property="books:isbn" content="'.$rows["products_model"].'" /><meta property= og:url content="'.curPageURL().'"/><meta property=og:description content="Author : '.$rows["products_author"].' Publisher : '.$rows["manufacturers_name"].' Subject : '.$rows["categories_name"].' " /><meta property=og:image content=http://'.$_SERVER["SERVER_NAME"].'/img/photos/'.$rows["products_image"].' /><meta property="og:image:height" content="600" /><meta property="og:image:width" content="315" />';
  $title=$rows["products_name"].' ['.$rows["products_model"].'] -&#8377; '.$rows["products_price"] ;
 $disc=(100-( str_replace("," , "", $rows["specials_new_products_price"])/ str_replace("," , "", $rows["products_price"]))*100);
 $html.='<!-- Image. Flex slider -->
@@ -534,7 +534,7 @@ $results = $product->getproduct($pid);
 $num_rows = mysqli_num_rows($results);
 if($num_rows > 0){
 while($rows =  mysqli_fetch_array($results)){
-$meta= $meta.'<meta property=og:type content=books.book /><meta property=og:title content='.$rows["products_name"].' /><meta property="books:isbn" content="'.$rows["products_model"].'" /><meta property= og:url content='.curPageURL().'/><meta property=og:description content="ISBN/CODE : '.$rows["products_model"].' Author : '.$rows["products_author"].' Publisher : '.$rows["manufacturers_name"].' Subject : '.$rows["categories_name"].'" /><meta property=og:image content=http://'.$_SERVER["SERVER_NAME"].'/img/photos/'.$rows["products_image"].' />';
+  $meta= $meta.'<meta property=og:type content=books.book /><meta property=og:title content="'.$rows["products_name"].'" /><meta property="books:isbn" content="'.$rows["products_model"].'" /><meta property= og:url content="'.curPageURL().'"/><meta property=og:description content="Author : '.$rows["products_author"].' Publisher : '.$rows["manufacturers_name"].' Subject : '.$rows["categories_name"].' " /><meta property=og:image content=http://'.$_SERVER["SERVER_NAME"].'/img/photos/'.$rows["products_image"].' /><meta property="og:image:height" content="600" /><meta property="og:image:width" content="315" />';
  $title=$rows["products_name"].' ['.$rows["products_model"].'] -&#8377; '.$rows["products_price"] ;
 $html.='<!-- Image. Flex slider -->
 

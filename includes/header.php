@@ -9,13 +9,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!-- Title here -->
-<?php echo ("<title>$title ..::: Prabhus Books Online :::.. Books, Buy Books,Book Shop,Bookstore,Online Bookstore, Online Shopping,India </title>")?>
+<?php echo ("<title>$title ..::: Prabhus Books Online :::.. </title>")?>
 <!-- Description, Keywords and Author -->
 <meta name="csrf-token" content="<?= $_SESSION['csrf_token'] ?>">
-<meta name="description" content="Your description">
+<meta name="description" content="Books, Buy Books,Book Shop,Bookstore,Online Bookstore, Online Shopping,India">
 <meta name="keywords" content="Online Bookstore, Online Shopping, online shopping ">
-<meta name="author" content="IBiz Info Solutions&reg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href=<?php echo curPageURL()?>/>
 <?php echo ("$meta")?>
 <?php $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";?>
 <link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
@@ -30,7 +30,7 @@
 <link rel="stylesheet" type="text/css" href="../css/sidebar-nav.css" />
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <style>
-#type {
+#MsgScroll {
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: 200;

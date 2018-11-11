@@ -149,4 +149,4 @@ $('.cartclose').click(function(){
         })(0);
     };
 
-                $('#type').typer(['<b>Its a Beta Site, Products Mentioned are only for Demonstration Purpose DO not place Orders</b> ']);
+                $('#MsgScroll').typer(['<b>We are back Online You can Place Orders</b> ']);

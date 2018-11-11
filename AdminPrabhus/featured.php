@@ -187,7 +187,7 @@ $(document).ready(function () {
   $(this).find('.open').removeClass("open");
   $('#Masters').addClass('open')
   $('#featured').css('background',' #1aaef3','border-bottom',' 1px solid #ddd');
-  
+
    /**********/
    $('#expires_date,#date_available').datepicker({minDate: 0,
    dateFormat: "dd-mm-yy"

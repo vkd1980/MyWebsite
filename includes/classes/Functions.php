@@ -160,7 +160,8 @@ function curPageURL() {
  } else {
   $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
  }
- return $pageURL;
+    return $pageURL;
+
 }
  function get_ip_address() {
     if (isset($_SERVER)) {
@@ -380,7 +381,7 @@ while($rows =  mysqli_fetch_array($result)){
 function ShowPayments()
 {
 $DBC = new DB();
-$qry="SELECT * FROM payment_modules WHERE STATUS= TRUE;";
+$qry="SELECT * FROM payment_modules WHERE Status= TRUE and Online_Status= TRUE ;";
 $result= $DBC->select($qry);
 	if(mysqli_num_rows($result) > 0)
 	{
